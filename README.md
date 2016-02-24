@@ -1,2 +1,2 @@
-# Webiny Master Layout
-This repo holds the HTML and CSS code for the Webiny Platform administration layout.
+# Webiny Layouts
+This repo holds layouts for different parts of Webiny Platform
