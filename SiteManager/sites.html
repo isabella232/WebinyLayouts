@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webiny - Sites</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
+          type='text/css'>
+
+
+</head>
+<body class="container">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="/" class="navbar-brand"><img src="img/webiny-logo-2x.png" height="38" alt="Webiny"></a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="sites.html">Sites</a></li>
+                <li><a href="billing-overview.html">Billing</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-new-site">Create a
+                    Site
+                </button>
+
+                <div class="dropdown balloon">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="icon icon-user"></span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">sven@webiny.com</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="notifications.html">Notifications</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log out</a></li>
+                    </ul>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<div class="container container-fluid sites">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Sites</h1>
+        </div>
+        <div class="col-md-4 pull-right">
+            <form class="" role="search">
+                <input type="text" class="form-control" placeholder="Search by name">
+            </form>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-simple">
+                    <thead>
+                    <tr>
+                        <th class="text-left">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-help-status"><span class="icon icon-info"></span></a> Status
+                        </th>
+                        <th class="text-left" style="width: 40%">Site name</th>
+                        <th class="text-left"><a href="#" data-toggle="modal"
+                                                 data-target="#modal-help-api-key"><span class="icon icon-info"></span></a> API Key</th>
+                        <th class="text-left">Created</th>
+                        <th class="text-left"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span class="label label-danger">Inactive</span></td>
+                        <td><strong>www.webiny.com</strong> <br/><span class="small">www.webiny.com.h1.webiny.net</span>
+                        </td>
+                        <td><a href="#" data-toggle="modal" data-target="#modal-api-key">Show</a></td>
+                        <td>7 months ago</td>
+                        <td>
+                            <div class="dropdown balloon">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Access Site</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">CNAME Options</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Clone Site</a></li>
+                                    <li role="presentation"><a href="#">Create a Backup</a></li>
+                                    <li role="presentation"><a href="#">View Backups</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Transfer Ownership</a></li>
+                                    <li role="presentation"><a href="#">Deactivate Site</a></li>
+                                    <li role="presentation"><a href="#">Destroy</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="label label-success">Active and CNAMEd</span></td>
+                        <td><strong>www.huckletree.com</strong> <br/><span class="small">www.huckletree.com.h1.webiny.net</span>
+                        </td>
+                        <td><a href="#">Show</a></td>
+                        <td>6 weeks ago</td>
+                        <td>
+                            <div class="dropdown balloon">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Access Site</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">CNAME Options</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Clone Site</a></li>
+                                    <li role="presentation"><a href="#">Create a Backup</a></li>
+                                    <li role="presentation"><a href="#">View Backups</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Transfer Ownership</a></li>
+                                    <li role="presentation"><a href="#">Deactivate Site</a></li>
+                                    <li role="presentation"><a href="#">Destroy</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="label label-warning">Active but not CNAMEd</span></td>
+                        <td><strong>www.selecto.com</strong> <br/><span
+                                class="small">www.selecto.com.h1.webiny.net</span></td>
+                        <td><a href="#">Show</a></td>
+                        <td>5 hours ago</td>
+                        <td>
+                            <div class="dropdown balloon">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Access Site</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">CNAME Options</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Clone Site</a></li>
+                                    <li role="presentation"><a href="#">Create a Backup</a></li>
+                                    <li role="presentation"><a href="#">View Backups</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a href="#">Transfer Ownership</a></li>
+                                    <li role="presentation"><a href="#">Deactivate Site</a></li>
+                                    <li role="presentation"><a href="#">Destroy</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 text-right">
+            <ul class="pagination">
+                <li class="previous">
+                    <a href="#">
+                        <span class="icon icon-caret-down"></span>
+                        <span>PREVIOUS</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next">
+                    <a href="#">
+                        <span>NEXT</span>
+                        <span class="icon icon-caret-down"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-12">
+            <div class="porlet">
+                <div class="porlet-body text-center">
+                    <h2>Sorry, but no site matched your query.</h2>
+                    <p>Try changing your search parameter.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-new-site">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>New Site</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <form action="">
+                            <fieldset>
+                                <legend>To create you new site, just enter the site name:</legend>
+
+                                <div class="form-group">
+                                    <p>
+                                        <input type="email" placeholder="www.example.com" class="form-control">
+                                        <small>Don't worry, you can change this later at any time.</small>
+                                    </p>
+                                </div>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal"
+                        data-target="#modal-new-site-deployment">Proceed
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-new-site-deployment" tabindex="-1" role="dialog" aria-hidden="false">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>New Site</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row text-center">
+
+                    <div class="col-md-12">
+                        <h4>Deploying ... </h4>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active"
+                                 role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                 style="width: 45%">
+                                <span class="sr-only">45% Complete</span>
+                            </div>
+                        </div>
+                        <p>Please wait while we deploy your new site</p>
+                        <small><a href="#" data-dismiss="modal" data-toggle="modal"
+                                  data-target="#modal-new-site-deployed">Show deployed modal</a></small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" disabled data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" disabled data-dismiss="modal" data-toggle="modal"
+                        data-target="#modal-new-site-deployment">Proceed
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="modal" id="modal-new-site-deployed" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row text-center">
+
+                    <div class="col-md-12">
+                        <div class="icon icon-ok-circled icon-success icon-4x"></div>
+                        <h4>Awesome!</h4>
+
+                        <p>Your new site is ready!</p>
+
+                        <a href="#" class="btn btn-success btn-lg">
+                            <span>ACCESS NEW SITE</span>
+                            <span class="icon right icon-next"></span>
+                        </a>
+                        <br/>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal" id="modal-help-status" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h4>About Status Label</h4>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-simple">
+                                <thead>
+                                <tr>
+                                    <th class="text-left">Label</th>
+                                    <th class="text-left">Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span class="label label-danger">Inactive</span></td>
+                                    <td>The site is currently not active, meaning you can only access the site
+                                        administration,
+                                        while the public part of the website is not accessible.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="label label-warning">Active but not CNAMEd</span></td>
+                                    <td>Both public part and the administration are active,
+                                        however the public part can only be accessed via the temporary domain.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><span class="label label-success">Active and CNAMEd</span></td>
+                                    <td>Both public part and the administration are active,
+                                        and the domain can be accessed via the user domain.
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<div class="modal" id="modal-help-api-key" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h4>About API Key</h4>
+                    </div>
+                    <hr/>
+                    <div class="col-md-12">
+                        <p>
+                            API Key is used if you wish to make API calls from other websites, or devices, to retrieve content from a particular site.
+                            Only requests that have the matching API key will get a proper response.
+                            <br/><br/>
+                            The API key is sent via <span class="label label-default">X-Webiny-Api-Key</span> HTTP request header.
+                            <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal" id="modal-api-key" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+                        <h4>www.webiny.com API Key</h4>
+                    </div>
+                    <hr/>
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <span class="label label-default">U857JZ69f3flC2LYmC532u1Aqg737Fyh</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+</body>
+</html>

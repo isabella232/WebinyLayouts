@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webiny - Billing</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
+          type='text/css'>
+
+
+</head>
+<body class="container">
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="/" class="navbar-brand"><img src="img/webiny-logo-2x.png" height="38" alt="Webiny"></a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="sites.html">Sites</a></li>
+                <li class="active"><a href="billing-overview.html">Billing</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="referrals.html">Referrals</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-new-site">Create a
+                    Site
+                </button>
+
+                <div class="dropdown balloon">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="icon icon-user"></span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" class="dropdown-header">sven@webiny.com</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log out</a></li>
+                    </ul>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+
+<div class="container container-fluid sites">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Billing</h1>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="billing-overview.html">Overview</a></li>
+                <li><a href="billing-invoices.html">Invoices</a></li>
+                <li class="active"><a href="billing-payment-details.html">Payment details</a></li>
+                <li><a href="billing-promo-code.html">Promo codes</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div class="porlet porlet-lg">
+                <div class="porlet-body">
+                    <div class="row">
+                        <h2 class="col-md-9">Credit Card</h2>
+
+                        <div class="col-md-3 pull-right">
+                            <button type="button" class="btn btn-default col-md-12" data-toggle="modal" data-target="#modal-billing-credit-card">Add Credit Card</button>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="table-responsive">
+                        <table class="table table-simple">
+                            <tbody>
+                            <tr>
+                                <td>Sven Al Hamad</td>
+                                <td><img src="img/visa.png" height="20" alt="Visa"/> xxxx xxxx xxxx 1234</td>
+                                <td class="text-center"><a href="#">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sven Al Hamad</td>
+                                <td><img src="img/visa.png" height="20" alt="Visa"/> xxxx xxxx xxxx 1234</td>
+                                <td class="text-center"><a href="#">Remove</a></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>We will automatically charge your credit card at the end of each month for the resources
+                        used.</p>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <br/>
+                            We use Stripe as our payment provider. All your credit card data is securely stored in a
+                            facility with the highest PCI standard.
+                            <a href="https://stripe.com/docs/security" target="_blank">Learn more</a>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <img src="img/stripe-credit-cards.png" height="80" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="porlet porlet-lg">
+                <div class="porlet-body">
+                    <div class="row">
+                        <h2 class="col-md-9">Billing details</h2>
+
+                        <div class="col-md-3 pull-right">
+                            <button type="button" class="btn btn-default col-md-12" data-toggle="modal" data-target="#modal-billing-info">Change Details</button>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div class="table-responsive">
+                        <table class="table table-simple">
+                            <tbody>
+                            <tr>
+                                <td>First name</td>
+                                <td>Sven</td>
+                            </tr>
+                            <tr>
+                                <td>Last name</td>
+                                <td>Al Hamad</td>
+                            </tr>
+
+                            <tr>
+                                <td>Company name</td>
+                                <td>Webiny LTD</td>
+                            </tr>
+
+                            <tr>
+                                <td>Phone number</td>
+                                <td>+44 7961 552 598</td>
+                            </tr>
+
+                            <tr>
+                                <td>Street address</td>
+                                <td>29 Aitons House</td>
+                            </tr>
+
+                            <tr>
+                                <td>City</td>
+                                <td>Brentford</td>
+                            </tr>
+
+                            <tr>
+                                <td>Postal code</td>
+                                <td>TW8 0FW</td>
+                            </tr>
+
+                            <tr>
+                                <td>Country</td>
+                                <td>United Kingdom</td>
+                            </tr>
+
+                            <tr>
+                                <td>VAT</td>
+                                <td>123 1231 123</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="porlet porlet-lg">
+                <div class="porlet-body">
+                    <h3>VAT Notice</h3>
+
+                    <p>
+                        <small>Webiny LTD is required to charge VAT (value added taxes) on sales to non-business European Union
+                            customers.
+                            All VAT collected from customers in the European Union will be paid to the tax authority of the
+                            appropriate EU member state.</small>
+                    </p>
+                    <p><small>If you are a registered business established inside of the EU, you may enter your VAT ID on your
+                        credit card details form.</small></p>
+                    <p><small>Please note, prices listed on the Webiny.com website exclude any applicable VAT charge.</small></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-billing-info">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Usage details</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <form action="" class="form-sm">
+                        <div class="col-md-12">
+                            <fieldset>
+                                <legend>Personal info:</legend>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="First name" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Last name" class="form-control">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="col-md-12">
+                            <fieldset>
+                                <legend>Company info:</legend>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Company name" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="VAT number" class="form-control">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="col-md-12">
+                            <fieldset>
+                                <legend>Contact info:</legend>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Phone number" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Street address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="City" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="State" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Postal code" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Country" class="form-control">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="modal-billing-credit-card">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Usage details</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <form action="" class="form-sm">
+                        <div class="col-md-12">
+                            <fieldset>
+                                <legend>Credit card info:</legend>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Credit card number" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="CVV" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Expires MM/YY" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="input" placeholder="Enter an optional name for this card" class="form-control">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

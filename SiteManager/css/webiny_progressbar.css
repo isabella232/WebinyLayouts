@@ -1,0 +1,16 @@
+.progress .progress-bar.progress-bar-danger {
+	background-color: #CC3300;
+}
+
+.progress .progress-bar,
+.progress .progress-bar.progress-bar-success {
+	background-color: #3FBFB0;
+}
+
+.progress .progress-bar.progress-baricon-info {
+	background-color: #3F89BF;
+}
+
+.progress .progress-bar.progress-bar-warning {
+	background-color: #FAA32E;
+}
