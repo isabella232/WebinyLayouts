@@ -1,0 +1,240 @@
+.hl-element {
+  color: #00CCAE; }
+
+.master-header {
+  text-align: center; }
+  .master-header h2 {
+    display: inline-block;
+    border: none; }
+  .master-header .date-picker {
+    display: block;
+    margin: auto; }
+    .master-header .date-picker .form-group {
+      min-height: 45px;
+      text-align: center; }
+    .master-header .date-picker .control-label {
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      vertical-align: middle; }
+    .master-header .date-picker .picker-holder {
+      vertical-align: middle;
+      display: inline-block;
+      width: 80%;
+      height: 45px; }
+      .master-header .date-picker .picker-holder .form-control {
+        border: 1px solid #E4E7E8;
+        background: #FBFBFB;
+        padding: 4px 18px; }
+      .master-header .date-picker .picker-holder span.icon_c {
+        color: #767676;
+        font-size: 19px;
+        top: 12px;
+        right: 8px;
+        cursor: pointer;
+        pointer-events: none; }
+
+.master-content.container-fluid.master-dashboard {
+  width: 100%;
+  background-color: #F2F2F2;
+  padding-top: 0;
+  margin-top: 0; }
+
+.row-section {
+  margin-top: 15px; }
+  .row-section::after {
+    clear: both; }
+
+.chart-block {
+  margin-top: 30px;
+  margin-bottom: 1px;
+  background-color: white;
+  height: 369px;
+  overflow: auto; }
+
+.dash-table {
+  height: 100%; }
+
+.view-switch {
+  font-size: 18px;
+  float: right;
+  margin: 5px 0 0 15px;
+  color: #313131; }
+  .view-switch .active {
+    color: #00CCAE; }
+  .view-switch .switch-graph {
+    cursor: pointer; }
+    .view-switch .switch-graph:hover {
+      color: #00CCAE; }
+  .view-switch .switch-list {
+    cursor: pointer; }
+    .view-switch .switch-list:hover {
+      color: #00CCAE; }
+  @media (max-width: 486px) {
+    .view-switch {
+      margin: 5px 0 0 0; } }
+
+#chart_browsers {
+  display: none; }
+
+#chart_os {
+  display: none; }
+
+.list-switch-drop {
+  margin-top: 10px; }
+
+.mark-as-read {
+  margin-left: 25px; }
+
+@media (min-width: 485px) and (max-width: 767px) {
+  .counter-block-element {
+    display: inline-block;
+    width: calc(100% / 2 - 2px); } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .master-header {
+    text-align: center;
+    clear: left; }
+    .master-header h2 {
+      display: inline-block;
+      border: none; }
+    .master-header .date-picker {
+      display: block;
+      margin: auto; }
+      .master-header .date-picker .form-group {
+        min-height: 45px;
+        text-align: center; }
+      .master-header .date-picker .control-label {
+        font-size: 15px;
+        font-weight: 600;
+        display: block; }
+      .master-header .date-picker .picker-holder {
+        display: inline-block;
+        height: 45px; }
+        .master-header .date-picker .picker-holder .form-control {
+          border: 1px solid #E4E7E8;
+          background: #FBFBFB;
+          padding: 4px 18px; }
+        .master-header .date-picker .picker-holder span.icon_c {
+          color: #767676;
+          font-size: 19px;
+          top: 12px;
+          right: 8px; }
+
+  .master-content.container-fluid.master-dashboard {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 0;
+    margin-top: 0; }
+
+  .row-section {
+    margin-top: 40px; }
+    .row-section::after {
+      clear: both; }
+
+  .counter-block-element {
+    display: inline-block;
+    width: calc(100% / 2 - 2px); } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .master-header {
+    height: 92px;
+    margin-top: 0;
+    text-align: left;
+    clear: left; }
+    .master-header h2 {
+      display: inline-block;
+      margin: 30px 0 0 90px; }
+    .master-header .date-picker {
+      display: inline-block;
+      float: right;
+      margin: 25px 100px 0 0; }
+      .master-header .date-picker .form-group {
+        min-height: 45px;
+        height: 45px; }
+      .master-header .date-picker .control-label {
+        font-size: 15px;
+        font-weight: 600;
+        display: inline-block; }
+      .master-header .date-picker .picker-holder {
+        margin-left: 20px;
+        display: inline-block;
+        width: 300px;
+        height: 45px; }
+        .master-header .date-picker .picker-holder .form-control {
+          border: 1px solid #E4E7E8;
+          background: #FBFBFB;
+          padding: 4px 18px; }
+        .master-header .date-picker .picker-holder span.icon_c {
+          color: #767676;
+          font-size: 19px;
+          top: 12px;
+          right: 8px; }
+
+  .visitors-counter {
+    margin-top: 0; }
+
+  .line-chart {
+    margin-top: 0; }
+
+  .row-section {
+    margin-top: 40px; }
+    .row-section::after {
+      clear: both; }
+
+  .chart-block {
+    margin-top: 0; } }
+@media (min-width: 1200px) {
+  .master-header {
+    height: 92px;
+    margin-top: 55px;
+    text-align: left; }
+    .master-header h2 {
+      display: inline-block;
+      margin: 30px 0 0 125px; }
+    .master-header .date-picker {
+      display: inline-block;
+      float: right;
+      margin: 25px 80px 0 0; }
+      .master-header .date-picker .form-group {
+        min-height: 45px;
+        height: 45px; }
+      .master-header .date-picker .control-label {
+        font-size: 15px;
+        font-weight: 600;
+        display: inline-block; }
+      .master-header .date-picker .picker-holder {
+        margin-left: 20px;
+        display: inline-block;
+        width: 300px;
+        height: 45px; }
+        .master-header .date-picker .picker-holder .form-control {
+          border: 1px solid #E4E7E8;
+          background: #FBFBFB;
+          padding: 4px 18px; }
+        .master-header .date-picker .picker-holder span.icon_c {
+          color: #767676;
+          font-size: 19px;
+          top: 12px;
+          right: 8px; }
+
+  .visitors-counter {
+    margin-top: 0; }
+
+  .line-chart {
+    margin-top: 0; }
+
+  .row-section {
+    margin-top: 40px; }
+    .row-section::after {
+      clear: both; }
+
+  .chart-block {
+    margin-top: 0;
+    margin-bottom: 1px;
+    background-color: white;
+    height: 369px;
+    overflow: auto; }
+
+  #chart {
+    padding: 0 20px; } }
+
+/*# sourceMappingURL=dashboard.css.map */

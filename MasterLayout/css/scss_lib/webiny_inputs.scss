@@ -1,0 +1,225 @@
+.form-group {
+  min-height: 72px;
+}
+
+label, .form-group label, label.control-label {
+  font-size: 16px;
+  color: #393939;
+  margin-both: 5px;
+  clear: left;
+  cursor: pointer;
+}
+
+.form-group {
+  .row {
+    margin: 0px;
+  }
+  label span.mandat {
+    color: #CC3300;
+    margin-left: 2px;
+  }
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  width: 100%;
+  line-height: 135%;
+  padding: 0px 8px;
+  background: #F5F5F5;
+  color: #333;
+  box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  &:focus {
+    background: #fff;
+    border-color: #ccc;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+  &[readonly] {
+    color: #393939 !important;
+    background-color: #F5F5F5 !important;
+    &:hover, &:focus {
+      color: #393939 !important;
+      background-color: #F5F5F5 !important;
+    }
+  }
+}
+
+input.form-control {
+  height: 45px;
+}
+
+textarea.form-control {
+  height: 145px;
+  line-height: 135%;
+  padding: 8px 8px;
+}
+
+.form-group {
+  position: relative;
+  text-align: left;
+  &.error input.form-control {
+    border-right: 1px solid #CC3300;
+    border-bottom: 3px solid #CC3300;
+  }
+  &.success input.form-control {
+    border-right: 1px solid #3FBFB0;
+    border-bottom: 3px solid #3FBFB0;
+  }
+  span.icon {
+    position: absolute;
+    top: 28px;
+    z-index: 500;
+    font-size: 41px;
+    line-height: 98%;
+    right: -6px;
+  }
+  &.error span.icon {
+    color: #CC3300;
+  }
+  &.success span.icon {
+    color: #3FBFB0;
+    top: 27px;
+    right: -4px;
+  }
+  span.info-txt {
+    float: right;
+    color: #6C6C6C;
+    margin-top: 3px;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  &.error span.info-txt {
+    color: #cc3300;
+  }
+  .bootstrap-switch {
+    margin-top: 8px;
+  }
+  label.cb-label {
+    margin-top: 10px;
+  }
+  .dropdown {
+    display: block;
+    margin-right: 0;
+    &.sel {
+      button {
+        border: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 3px solid #ccc;
+        width: 100%;
+        height: 45px;
+        line-height: 135%;
+        padding: 0px 10px;
+        background: #F5F5F5;
+        color: #333;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+      }
+      &.open button {
+        background: #fff;
+      }
+      .dropdown-value {
+        float: left;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .caret {
+        float: right;
+        margin-top: 8px;
+        margin-right: 5px;
+      }
+      .dropdown-menu {
+        width: 100%;
+        margin-top: -3px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        padding: 15px 15px 5px 15px;
+        li {
+          margin-bottom: 2px;
+          a {
+            padding: 5px 10px;
+          }
+        }
+        > li label {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+  .picker-holder {
+    position: relative;
+    cursor: pointer;
+    .ui-datepicker-trigger {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 45px;
+      width: 100%;
+      z-index: 500;
+    }
+    input {
+      cursor: pointer;
+    }
+    span.icon_c {
+      font-size: 28px;
+      color: #333;
+      top: 7px;
+      right: 6px;
+      position: absolute;
+      z-index: 8;
+    }
+  }
+}
+
+form {
+  &.form-sm {
+    .form-group {
+      margin-bottom: 10px;
+      min-height: 56px;
+      input.form-control, .dropdown.sel button {
+        height: 35px;
+      }
+      label {
+        margin-bottom: 0px;
+      }
+      input.form-control, &.error input.form-control, &.success input.form-control, textarea.form-control, &.error textarea.form-control, &.success textarea.form-control, .dropdown.sel button {
+        border-bottom-width: 2px;
+      }
+      span.icon, &.error span.icon, &.success span.icon {
+        display: none;
+      }
+    }
+    textarea.form-control {
+      height: 80px;
+    }
+    .form-group {
+      .bootstrap-switch {
+        margin-top: 3px;
+      }
+      .dropdown.sel .dropdown-menu {
+        margin-top: -5px;
+      }
+      .picker-holder span.icon_c {
+        font-size: 20px;
+      }
+    }
+  }
+  &.navbar-form {
+    margin: 0px;
+    padding: 0px;
+    .form-group {
+      min-height: 0px;
+      margin-bottom: 5px;
+      input {
+        min-width: 200px;
+      }
+    }
+  }
+}

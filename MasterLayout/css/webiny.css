@@ -1,0 +1,786 @@
+/* line 1, webiny_scss/general_settings.scss */
+body {
+  color: #464646;
+}
+
+/* line 1, webiny_scss/modifiers.scss */
+.icon-right {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #d7d7d7;
+}
+
+/* line 10, webiny_scss/modifiers.scss */
+.list-icon {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: inline-block;
+}
+
+/* BUILDING BLOCKS AND CONTAINERS */
+/* line 7, webiny_scss/building-blocks.scss */
+.block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* line 12, webiny_scss/building-blocks.scss */
+.info-block {
+  margin-bottom: 1px;
+  overflow: hidden;
+  min-height: 370px;
+}
+
+/* line 18, webiny_scss/building-blocks.scss */
+.btn-add {
+  width: 187px;
+  height: 40px;
+  border-color: #e4e7e8;
+}
+/* line 22, webiny_scss/building-blocks.scss */
+.btn-add .btn-caption {
+  position: relative;
+  padding-left: 20px;
+}
+/* line 25, webiny_scss/building-blocks.scss */
+.btn-add .btn-caption:before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #00ccae;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* line 36, webiny_scss/building-blocks.scss */
+.btn-add:hover {
+  background-color: #fff;
+  border-color: #e4e7e8;
+}
+/* line 39, webiny_scss/building-blocks.scss */
+.btn-add:hover .btn-caption {
+  color: #00ccae;
+}
+
+/* line 46, webiny_scss/building-blocks.scss */
+.block-header {
+  position: relative;
+  padding: 20px 25px 0 25px;
+  background-color: white;
+  min-height: 75px;
+}
+@media (min-width: 1200px) {
+  /* line 46, webiny_scss/building-blocks.scss */
+  .block-header {
+    padding: 30px 30px 0 30px;
+  }
+}
+/* line 54, webiny_scss/building-blocks.scss */
+.block-header:after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 62, webiny_scss/building-blocks.scss */
+.header-options {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  vertical-align: bottom;
+}
+/* line 66, webiny_scss/building-blocks.scss */
+.header-options .toggle-options {
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin-top: 5px;
+}
+/* line 71, webiny_scss/building-blocks.scss */
+.header-options .toggle-options a {
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  color: #464646;
+  text-decoration: none;
+}
+/* line 77, webiny_scss/building-blocks.scss */
+.header-options .toggle-options a:hover i {
+  color: #00ccae;
+}
+/* line 81, webiny_scss/building-blocks.scss */
+.header-options .toggle-options i {
+  color: #1b3345;
+  font-size: 19px;
+}
+/* line 85, webiny_scss/building-blocks.scss */
+.header-options .toggle-options i.icon-check-1 {
+  color: #1b3345;
+  font-size: 17px;
+}
+@media (min-width: 768px) {
+  /* line 62, webiny_scss/building-blocks.scss */
+  .header-options {
+    float: right;
+  }
+}
+
+/* line 95, webiny_scss/building-blocks.scss */
+.block-title {
+  margin: 0 0 0 0;
+  font-weight: 600;
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 75%;
+}
+@media (min-width: 486px) {
+  /* line 95, webiny_scss/building-blocks.scss */
+  .block-title {
+    width: 50%;
+  }
+}
+
+/* line 107, webiny_scss/building-blocks.scss */
+.block-title-light {
+  margin: 5px 0 0 0;
+  display: inline-block;
+  font-size: 13px;
+  opacity: 0.8;
+  vertical-align: middle;
+  float: right;
+}
+@media (max-width: 486px) {
+  /* line 107, webiny_scss/building-blocks.scss */
+  .block-title-light {
+    float: left;
+    width: 100%;
+  }
+}
+
+/* line 121, webiny_scss/building-blocks.scss */
+.block-content {
+  padding: 5px 20px 30px 20px;
+  background-color: white;
+  min-height: 295px;
+  overflow: hidden;
+  height: 295px;
+}
+@media (min-width: 486px) {
+  /* line 121, webiny_scss/building-blocks.scss */
+  .block-content {
+    padding: 5px 30px 30px 30px;
+  }
+}
+
+/* line 131, webiny_scss/building-blocks.scss */
+.block-footer {
+  padding: 5px 25px 25px 25px;
+  background-color: white;
+  min-height: 75px;
+}
+
+/* line 137, webiny_scss/building-blocks.scss */
+.new-page-block .block-content {
+  height: 310px;
+}
+/* line 139, webiny_scss/building-blocks.scss */
+.new-page-block .block-content .donut-chart {
+  margin-top: 15px;
+}
+/* line 143, webiny_scss/building-blocks.scss */
+.new-page-block .btn-holder {
+  text-align: center;
+}
+
+/* line 149, webiny_scss/building-blocks.scss */
+.list-block .block-content {
+  min-height: 385px;
+  background-color: #fafaf9;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 149, webiny_scss/building-blocks.scss */
+  .list-block .block-content {
+    padding: 15px 30px 25px 30px;
+  }
+}
+/* line 157, webiny_scss/building-blocks.scss */
+.list-block .list-header {
+  position: relative;
+  padding: 0 10px 0 15px;
+  height: 55px;
+  height: 55px;
+  overflow: visible;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  /* line 157, webiny_scss/building-blocks.scss */
+  .list-block .list-header {
+    padding: 0 10px 0 30px;
+  }
+}
+/* line 169, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 169, webiny_scss/building-blocks.scss */
+  .list-block .list-header #list_switch {
+    display: inline-block;
+  }
+}
+/* line 175, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch2 {
+  display: inline-block;
+  width: 55%;
+}
+/* line 178, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch2 button {
+  text-align: left;
+  width: 100%;
+}
+/* line 181, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch2 button .caret {
+  float: right;
+  margin-top: 8px;
+}
+/* line 186, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch2 ul {
+  width: 110%;
+}
+/* line 188, webiny_scss/building-blocks.scss */
+.list-block .list-header #list_switch2 ul li {
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  /* line 175, webiny_scss/building-blocks.scss */
+  .list-block .list-header #list_switch2 {
+    display: none;
+  }
+}
+/* line 197, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker {
+  display: inline-block;
+  float: right;
+  margin: 5px 0 0 0;
+}
+/* line 201, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .form-group {
+  min-height: 45px;
+  height: 45px;
+  margin: 0;
+}
+/* line 206, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .control-label {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+}
+/* line 211, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .picker-holder {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+@media (min-width: 768px) {
+  /* line 211, webiny_scss/building-blocks.scss */
+  .list-block .list-header .date-picker .picker-holder {
+    width: 245px;
+  }
+}
+/* line 218, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .picker-holder .form-control {
+  visibility: hidden;
+}
+/* line 221, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .picker-holder span.icon_c {
+  color: #767676;
+  font-size: 22px;
+  top: 12px;
+  right: 8px;
+}
+/* line 226, webiny_scss/building-blocks.scss */
+.list-block .list-header .date-picker .picker-holder span.icon_c:hover {
+  color: #fa5a28;
+}
+/* line 235, webiny_scss/building-blocks.scss */
+.list-block .list-header .list-nav {
+  list-style: none;
+  margin: 5px 0 0 0;
+  display: inline-block;
+  overflow: hidden;
+  height: 50px;
+  background-color: #fafaf9;
+}
+@media (min-width: 992px) {
+  /* line 235, webiny_scss/building-blocks.scss */
+  .list-block .list-header .list-nav {
+    display: inline-block;
+    margin: 0 0 0 0;
+    height: auto;
+    background-color: transparent;
+    overflow: visible;
+  }
+}
+/* line 249, webiny_scss/building-blocks.scss */
+.list-block .list-header .list-nav .list-nav-item {
+  display: block;
+  vertical-align: top;
+  height: 33px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+@media (min-width: 992px) {
+  /* line 249, webiny_scss/building-blocks.scss */
+  .list-block .list-header .list-nav .list-nav-item {
+    display: inline-block;
+    margin-top: 15px;
+    padding-left: 5px;
+  }
+}
+/* line 260, webiny_scss/building-blocks.scss */
+.list-block .list-header .list-nav .list-nav-item a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666666;
+  padding: 8px 10px 8px 10px;
+  border: 1px solid transparent;
+}
+/* line 267, webiny_scss/building-blocks.scss */
+.list-block .list-header .list-nav .list-nav-item a:hover {
+  padding: 8px 10px 8px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid #e4e7e8;
+  color: #fa5a28;
+}
+/* line 280, webiny_scss/building-blocks.scss */
+.list-block .list-header .list-nav .list-nav-item .active {
+  padding: 8px 10px 8px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid #e4e7e8;
+  color: #fa5a28;
+}
+/* line 295, webiny_scss/building-blocks.scss */
+.list-block .list-content {
+  background-color: white;
+  height: 330px;
+}
+/* line 298, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list {
+  list-style: none;
+  padding: 0 10px 20px 10px;
+  margin: 0;
+}
+@media (min-width: 486px) {
+  /* line 298, webiny_scss/building-blocks.scss */
+  .list-block .list-content .item-list {
+    padding: 0 30px 0 30px;
+  }
+}
+/* line 305, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px solid #e4e7e8;
+  min-height: 65px;
+}
+/* line 311, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li:nth-last-child(1) {
+  border: none;
+}
+/* line 314, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container {
+  padding-bottom: 8px;
+}
+/* line 316, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container .list-number {
+  margin: 15px 0 0 0;
+  display: inline-block;
+  border: none;
+  vertical-align: middle;
+  font-size: 27px;
+  color: #d7d7d7;
+}
+/* line 324, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container .list-text {
+  display: inline-block;
+  margin: 15px 0 0 10px;
+  font-size: 14px;
+  vertical-align: middle;
+  width: calc(100% - 35px);
+}
+@media (min-width: 768px) {
+  /* line 324, webiny_scss/building-blocks.scss */
+  .list-block .list-content .item-list li .list-item-container .list-text {
+    width: calc(100% - 300px);
+    font-size: 16px;
+  }
+}
+/* line 336, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container .list-item-timestamp {
+  display: inline-block;
+}
+/* line 338, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container .list-item-timestamp p {
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 0 0 35px;
+}
+/* line 343, webiny_scss/building-blocks.scss */
+.list-block .list-content .item-list li .list-item-container .list-item-timestamp p span {
+  color: #00ccae;
+  margin-right: 5px;
+}
+@media (min-width: 768px) {
+  /* line 336, webiny_scss/building-blocks.scss */
+  .list-block .list-content .item-list li .list-item-container .list-item-timestamp {
+    float: right;
+    margin: 25px 0 0 15px;
+  }
+}
+
+/* line 362, webiny_scss/building-blocks.scss */
+.notifications-block .block-title {
+  width: 40%;
+}
+/* line 365, webiny_scss/building-blocks.scss */
+.notifications-block .block-content {
+  height: 385px;
+  padding: 10px 10px 20px 10px;
+  margin: 0;
+}
+@media (min-width: 486px) {
+  /* line 365, webiny_scss/building-blocks.scss */
+  .notifications-block .block-content {
+    padding: 20px 30px 20px 30px;
+  }
+}
+
+/* line 376, webiny_scss/building-blocks.scss */
+.notifications-list {
+  clear: both;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 382, webiny_scss/building-blocks.scss */
+.notifications-list ul {
+  margin: 0;
+}
+/* line 384, webiny_scss/building-blocks.scss */
+.notifications-list ul li {
+  position: relative;
+  min-height: 55px;
+  list-style: none;
+  border-bottom: 1px solid #e4e7e8;
+  padding: 0 0 10px 0;
+  margin: 0 20px 0 10px;
+}
+/* line 391, webiny_scss/building-blocks.scss */
+.notifications-list ul li:nth-last-child(1) {
+  border: none;
+}
+/* line 394, webiny_scss/building-blocks.scss */
+.notifications-list ul li .icon {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: inline-block;
+  color: #fa5a28;
+}
+/* line 401, webiny_scss/building-blocks.scss */
+.notifications-list ul li p {
+  margin: 15px 0 0 15px;
+  display: inline-block;
+  font-size: 14px;
+  width: 90%;
+  padding-left: 25px;
+}
+/* line 410, webiny_scss/building-blocks.scss */
+.notifications-list ul .unread-notification .icon, .notifications-list ul .unread-notification p {
+  color: #e4e7e8;
+}
+
+/* line 419, webiny_scss/building-blocks.scss */
+.todo-block {
+  background: transparent;
+}
+/* line 422, webiny_scss/building-blocks.scss */
+.todo-block .block-title {
+  display: inline-block;
+  width: 30%;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 422, webiny_scss/building-blocks.scss */
+  .todo-block .block-title {
+    width: auto;
+  }
+}
+/* line 430, webiny_scss/building-blocks.scss */
+.todo-block .add-task {
+  display: inline-block;
+  float: right;
+}
+/* line 433, webiny_scss/building-blocks.scss */
+.todo-block .add-task .btn-add-task {
+  height: 40px;
+  width: 140px;
+  border: none;
+}
+/* line 437, webiny_scss/building-blocks.scss */
+.todo-block .add-task .btn-add-task span {
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  /* line 430, webiny_scss/building-blocks.scss */
+  .todo-block .add-task {
+    float: none;
+    margin: 2px 0 0 10px;
+  }
+}
+/* line 446, webiny_scss/building-blocks.scss */
+.todo-block .block-content {
+  clear: both;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  height: 385px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 446, webiny_scss/building-blocks.scss */
+  .todo-block .block-content {
+    padding: 15px 30px 25px 30px;
+  }
+}
+/* line 457, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul {
+  margin: 0;
+  width: 100%;
+}
+/* line 460, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul li {
+  overflow: auto;
+  position: relative;
+  list-style: none;
+  background-color: white;
+  margin: 0 0 6px 0;
+  min-height: 50px;
+}
+@media (min-width: 1200px) {
+  /* line 460, webiny_scss/building-blocks.scss */
+  .todo-block .block-content ul li {
+    margin-right: 15px;
+  }
+}
+/* line 470, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul li .list-icon {
+  top: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #d7d7d7;
+}
+/* line 476, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul li p {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  padding-left: 40px;
+}
+/* line 482, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul li .task-check:hover {
+  color: #00ccae;
+  cursor: pointer;
+}
+/* line 487, webiny_scss/building-blocks.scss */
+.todo-block .block-content ul li .task-check-done {
+  color: #00ccae;
+  cursor: pointer;
+}
+
+/* line 498, webiny_scss/building-blocks.scss */
+.block-header-outer {
+  padding: 10px 0;
+  background-color: transparent;
+  position: relative;
+}
+/* line 502, webiny_scss/building-blocks.scss */
+.block-header-outer .block-title {
+  margin: 10px 0 0 0;
+}
+@media (min-width: 768px) {
+  /* line 498, webiny_scss/building-blocks.scss */
+  .block-header-outer {
+    height: 75px;
+  }
+}
+
+/* line 513, webiny_scss/building-blocks.scss */
+.counter-block p {
+  line-height: 115%;
+}
+
+/* line 518, webiny_scss/building-blocks.scss */
+.counter-block-element {
+  overflow: auto;
+  height: 184px;
+  margin-bottom: 1px;
+  background-color: white;
+}
+
+/* line 525, webiny_scss/building-blocks.scss */
+.counter-main {
+  margin: 35px 0 0 25px;
+}
+@media (min-width: 1200px) {
+  /* line 525, webiny_scss/building-blocks.scss */
+  .counter-main {
+    margin: 35px 0 0 35px;
+  }
+}
+
+/* line 534, webiny_scss/building-blocks.scss */
+.counter-group-md .counter-num {
+  font-size: 60px;
+  margin: 0;
+}
+
+/* line 540, webiny_scss/building-blocks.scss */
+.counter-group-sm {
+  display: inline-block;
+  margin: 0 0 0 25px;
+}
+/* line 544, webiny_scss/building-blocks.scss */
+.counter-group-sm .counter-label {
+  font-size: 10px;
+  opacity: 0.6;
+  margin: 0;
+}
+/* line 550, webiny_scss/building-blocks.scss */
+.counter-group-sm .counter-num {
+  font-size: 19px;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  /* line 540, webiny_scss/building-blocks.scss */
+  .counter-group-sm {
+    margin: 0 0 0 35px;
+  }
+}
+
+/* line 5, webiny_scss/tables.scss */
+.stats-table {
+  width: 100%;
+}
+/* line 8, webiny_scss/tables.scss */
+.stats-table tbody tr {
+  color: #666666;
+  font-size: 14px;
+}
+/* line 11, webiny_scss/tables.scss */
+.stats-table tbody tr td {
+  padding: 5px 5px 5px 5px;
+  vertical-align: middle;
+}
+/* line 15, webiny_scss/tables.scss */
+.stats-table tbody tr .item-name {
+  width: 70%;
+}
+/* line 18, webiny_scss/tables.scss */
+.stats-table tbody tr .item-value {
+  width: 15%;
+  text-align: center;
+}
+/* line 22, webiny_scss/tables.scss */
+.stats-table tbody tr:nth-child(1) {
+  color: #fa5a28;
+  font-weight: 600;
+}
+
+/* line 30, webiny_scss/tables.scss */
+.scrollable {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 1, webiny_scss/charts.scss */
+.line-chart {
+  height: 265px;
+  margin: 20px 0 0 0;
+  padding: 0 10px;
+}
+/* line 6, webiny_scss/charts.scss */
+.line-chart .c3-ygrid {
+  stroke-dasharray: 0 0;
+}
+/* line 10, webiny_scss/charts.scss */
+.line-chart svg {
+  width: 100%;
+}
+/* line 13, webiny_scss/charts.scss */
+.line-chart path.domain {
+  stroke: white;
+}
+/* line 17, webiny_scss/charts.scss */
+.line-chart .tick line {
+  stroke: white;
+}
+/* line 21, webiny_scss/charts.scss */
+.line-chart text {
+  font-size: 11px;
+  color: red;
+}
+/* line 25, webiny_scss/charts.scss */
+.line-chart .c3 path, .line-chart .c3 line {
+  display: none;
+}
+/* line 28, webiny_scss/charts.scss */
+.line-chart .c3-tooltip td {
+  color: #313131;
+}
+@media (max-width: 486px) {
+  /* line 1, webiny_scss/charts.scss */
+  .line-chart {
+    margin: 5px 0 0 0;
+  }
+}
+
+/* line 38, webiny_scss/charts.scss */
+.pie-chart {
+  height: 265px;
+}
+/* line 40, webiny_scss/charts.scss */
+.pie-chart text {
+  font-size: 11px;
+  color: red;
+}
+/* line 44, webiny_scss/charts.scss */
+.pie-chart .c3-tooltip td {
+  color: #313131;
+}
