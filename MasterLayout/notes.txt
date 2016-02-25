@@ -1,0 +1,28 @@
+treba sve nazive class-a koje umaju underscore pretvoriti u dash
+na nifty modalu treba rucno postaviti height body-a
+
+za odraditi:
+- alert i wizard imaju premali gornji padding
+- wizard update na zadnji dizajn
+
+
+z-index ranges:
+- calendar: 5000
+- tooltips: 5000
+- modal: 2000-2100
+- wizard: 1000-1100
+- master layout: 100-200
+- dropdowns: 100-200
+- switcher: 50
+
+
+Za nenada:
+
+- razdvajaj css u vise fileova radi bolje organizacije
+- main.css: tamo stavi preko importa svoje css-ove
+- slobodno koristi flexbox i sl css stvari
+- ne trebas pisati browser-specific tagove, tipa -webkit, -o, -ms i sl..samo pisi nativne stvari
+- na tabletu/mobitelu master layout navigacija malo zeza, ali se nemoj gnjaviti sa time, to cemo mi kasnije rijesiti interno
+- slijedi nazive css klasa po bootstrapu, znaci 'css-klasa', sa minusom
+- za ikone is sl, koristi trenutni fontello build, pa ga samo nadogradjuj
+
