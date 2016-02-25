@@ -20,6 +20,8 @@ function list_switcher(list, lists_container) {
     }
 
 
+    hide_all_lists();
+    lists_container.find('.item-list:eq(0)').fadeIn();
     // RESPONSIVE LIST NAV
 
 
@@ -45,10 +47,8 @@ function list_switcher(list, lists_container) {
         else {
 
             $('#list_screener').remove();
-            hide_all_lists();
             remove_active_class();
 
-            lists_container.find('.item-list:eq(0)').fadeIn();
 
             list.find('.list-link:eq(0) a').addClass('active');
 

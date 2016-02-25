@@ -123,7 +123,6 @@
 
 .daterangepicker .calendar {
   display: none;
-  max-width: 270px;
 }
 
 .daterangepicker.show-calendar .calendar {
@@ -323,6 +322,7 @@
 
 /*  Larger Screen Styling */
 @media (min-width: 564px) {
+
   .daterangepicker{
     width: auto;
   }
@@ -358,6 +358,11 @@
   .daterangepicker .ranges,
   .daterangepicker .calendar {
     float: none;
+  }
+
+  .daterangepicker .calendar {
+    display: none;
+    max-width: 270px;
   }
 }
 
