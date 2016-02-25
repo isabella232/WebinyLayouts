@@ -5,6 +5,7 @@
 .modal-backdrop {
 	z-index: 2000;
 	background-color: rgba(0, 0, 0, 0.75);
+	opacity: 0.9;
 }
 
 .modal-dialog.modal-full-width {
@@ -41,10 +42,6 @@
 	font-size: 26px;
 	display: inline-block;
 	margin: 0;
-}
-
-.modal-content .text-center h4{
-	padding: 18px 0px;
 }
 
 .modal-content .modal-body {

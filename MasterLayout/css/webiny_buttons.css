@@ -8,10 +8,6 @@
 	display: inline-block;
 }
 
-button.btn:hover, button.btn span:hover{
-	cursor: pointer;
-}
-
 .btn.btn-lg, .btn-group.btn-group-lg .btn {
 	font-size: 18px;
 	font-weight: 300;
@@ -30,7 +26,7 @@ button.btn:hover, button.btn span:hover{
 
 .btn.btn-lg span, .btn-group.btn-group-lg .btn span {
 	float: left;
-	margin: 2px 0px;
+	margin: 2px 1px;
 }
 
 .btn.btn-lg span.icon, .btn-group.btn-group-lg .btn span.icon {
@@ -80,7 +76,7 @@ button.btn:hover, button.btn span:hover{
 .btn.btn-success.preloading:active,
 .btn.btn-success.preloading:focus{
 	background: #3FBFB0;
-	border: 1px solid #2E8B80;
+	border: 1px none;
 }
 
 .btn.btn-success:hover {

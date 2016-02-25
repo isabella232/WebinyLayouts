@@ -1,0 +1,106 @@
+.modal.preview {
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	overflow: auto;
+}
+.modal.preview .modal-dialog {
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px;
+	background: #4C5054;
+}
+.modal.preview .modal-content {
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px;
+	background: #4C5054;
+	min-height: 600px;
+}
+.modal.preview .modal-header {
+	background: #323232;
+	text-align: left;
+	color: #fff;
+	border: none;
+	margin-bottom: 0px;
+	height: auto;
+	padding-bottom:0px;
+	overflow: hidden;
+}
+.modal.preview .modal-header h4 {
+	color: #fff;
+	float: left;
+	margin-right: 45px;
+}
+.modal.preview .modal-header .btn-group {
+	padding-top: 14px;
+}
+.modal.preview .modal-header .btn.active {
+	background: #41BEAF;
+	color: #fff;
+}
+.modal.preview .modal-header a.btn {
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	padding: 8px 18px;
+	float: right;
+	margin-top: 12px;
+}
+.modal.preview .modal-header a.btn span.icon {
+	font-size: 19px;
+	margin-right: 5px;
+	margin-left: -5px;
+}
+.modal.preview .modal-header .btn-group button {
+	background: #4E4E4E;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	color: #ccc;
+	padding-left: 10px;
+}
+.modal.preview .modal-header .btn-group button span.icon {
+	margin-left: 8px;
+	margin-right: 0px;
+}
+.modal.preview .modal-header .btn-group button span.icon.icon-desktop {
+	margin-right: 5px;
+}
+.modal.preview .modal-header button:hover {
+	color: #fff;
+}
+.modal.preview .modal-header .close  {
+	color: #fff;
+	position: relative;
+}
+.modal.preview .modal-content {
+	box-shadow: none;
+}
+
+@media (min-width: 220px) and (max-width:989px)  {
+	.modal.preview .modal-header {
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.modal.preview .modal-header .close  {
+		position: absolute;
+	}
+	.modal.preview .modal-header .btn-group button span.icon {
+		display: none;
+	}
+	.modal.preview .modal-header .btn-group button  {
+		padding: 10px 15px;
+		float: none;
+		display:inline-block;
+		margin-left: -3px;
+	}
+	.modal.preview .modal-header .btn-group   {
+		width: 100%;
+		text-align: center;
+	}
+	.modal.preview .modal-header a.btn   {
+		text-align: center;
+		float: none;
+	}
+} 

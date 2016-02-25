@@ -111,3 +111,15 @@
 	}
 }
 
+/* dropdown animation */
+.dropdown-menu{
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity linear 0.1s;
+}
+
+.open>.dropdown-menu{
+	opacity: 1;
+	visibility: visible;
+}
