@@ -17,7 +17,7 @@ table.table thead {
 }
 
 table.table.table-simple thead {
-	border-top-width: 2px;
+	border-top: none;
 }
 
 table.table .dropdown > .btn {
@@ -80,12 +80,16 @@ table.table tbody tr:hover, table.table > tbody > tr:hover > td {
 }
 
 table.table tbody tr td {
-	padding: 10px 15px;
+	padding: 10px 10px;
 	font-size: 14px;
 	color: #666666;
 	text-align: left;
 	border-right: 1px solid #CCC;
 	vertical-align: middle;
+}
+
+table.table tbody tr td.text-right{
+	text-align: right;
 }
 
 table.table thead tr th:last-child,
@@ -358,4 +362,12 @@ table.table  .list-group-item-text{
 	font-size: 14px;
 	color: #666;
 	line-height: 140%;
+}
+
+table.table tr td.text-center{
+	text-align: center;
+}
+
+table.table strong{
+	font-weight: 600;
 }

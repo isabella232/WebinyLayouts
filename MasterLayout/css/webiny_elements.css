@@ -27,10 +27,6 @@
 	color: #3FBFB0;
 }
 
-.icon.icon-info {
-	color: #3F89BF;
-}
-
 .icon.icon-warning {
 	color: #FAA32E;
 }
@@ -171,6 +167,10 @@
 	border: 1px solid #E8E8E8;
 }
 
+.porlet.porlet-lg .porlet-body{
+	padding:50px 50px 40px 50px;
+}
+
 .porlet.porlet-primary{
 	background: #FA5723;
 	border-color: #ED4005;
@@ -226,7 +226,6 @@
 
 .porlet .porlet-body p{
 	margin-bottom: 0;
-	font-weight: 300;
 }
 
 .porlet.porlet-primary .porlet-body,
@@ -410,3 +409,53 @@
 }
 
 /** /Pagination **/
+
+/** HR **/
+hr{
+	display: block;
+	clear: both;
+	float: none;
+	border-bottom: 2px solid #F95722;
+}
+
+hr.lite{
+	border-bottom: 1px solid #ececec;
+}
+
+/** HR **/
+
+/** Avatar **/
+.avatar{
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 50px; /* Saf3+, Chrome */
+	border-radius: 50px; /* Opera 10.5, IE 9 */
+}
+
+/** Circle **/
+.circle{
+	border-radius:8px;
+	width:8px;
+	height:8px;
+	border:1px solid #ccc;
+	display: inline-block;
+}
+
+.circle.circle-lg{
+	border-radius:12px;
+	width:12px;
+	height:12px;
+}
+
+.circle.active,
+.circle.circle-danger{
+	background-color: #CC3300;
+}
+
+.circle.circle-success{
+	background-color: #3FBFB0;
+}
+
+.circle.circle-warning{
+	background-color: #FAA32E;
+}

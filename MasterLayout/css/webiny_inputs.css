@@ -60,6 +60,7 @@ textarea.form-control {
 
 .form-group {
 	position: relative;
+	text-align: left;
 }
 
 .form-group.error input.form-control {
@@ -105,10 +106,6 @@ textarea.form-control {
 
 .form-group .bootstrap-switch {
 	margin-top: 8px;
-}
-
-.form-group label.cb-label {
-	margin-top: 10px;
 }
 
 .form-group .dropdown {
@@ -253,4 +250,12 @@ form.navbar-form .form-group {
 
 form.navbar-form .form-group input {
 	min-width: 200px;
+}
+
+form fieldset legend{
+	border-bottom: 2px solid #F95722;
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-bottom: 5px;
+	padding-left: 2px;
 }
