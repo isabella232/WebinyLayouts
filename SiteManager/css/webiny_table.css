@@ -88,6 +88,10 @@ table.table tbody tr td {
 	vertical-align: middle;
 }
 
+table.table tbody tr td.text-right{
+	text-align: right;
+}
+
 table.table thead tr th:last-child,
 table.table tbody tr td:last-child,
 table.table tfoot tr td:last-child {

@@ -52,13 +52,19 @@
 
                 <div class="dropdown balloon">
                     <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="circle active"></span>
                         <span class="icon icon-user"></span>
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                         <li role="presentation" class="dropdown-header">sven@webiny.com</li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="notifications.html">Notifications</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="notifications.html"><span
+                                class="circle"></span> Announcements</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"
+                                                   href="notifications-whats-new.html"><span
+                                class="circle active"></span> What's New</a></li>
                         <li role="presentation" class="divider"></li>
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log out</a></li>
                     </ul>
@@ -90,23 +96,28 @@
                 <table class="table table-simple">
                     <thead>
                     <tr>
-                        <th class="text-left">
+                        <th class="text-center">
                             <a href="#" data-toggle="modal"
-                               data-target="#modal-help-status"><span class="icon icon-info"></span></a> Status
+                               data-target="#modal-help-status"><span class="icon icon-info"></span></a>
                         </th>
-                        <th class="text-left" style="width: 40%">Site name</th>
-                        <th class="text-left"><a href="#" data-toggle="modal"
-                                                 data-target="#modal-help-api-key"><span class="icon icon-info"></span></a> API Key</th>
+                        <th class="text-left" style="width: 50%">Site name</th>
+                        <th class="text-left">SSL</th>
                         <th class="text-left">Created</th>
                         <th class="text-left"></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td><span class="label label-danger">Inactive</span></td>
-                        <td><strong>www.webiny.com</strong> <br/><span class="small">www.webiny.com.h1.webiny.net</span>
+                        <td class="text-center"><span class="circle circle-success circle-lg" data-toggle="tooltip"
+                                                      data-placement="top" title="Active"></span></td>
+                        <td>
+                            <strong class="sites site-title"><a href="">www.webiny.com</a></strong>
+                            <br/><span class="small">3500 visitors / 1000 API calls</span>
                         </td>
-                        <td><a href="#" data-toggle="modal" data-target="#modal-api-key">Show</a></td>
+                        <td>
+                            <input type="checkbox" name="my-checkbox" class="switcher" checked>
+                        </td>
+
                         <td>7 months ago</td>
                         <td>
                             <div class="dropdown balloon">
@@ -132,10 +143,16 @@
                     </tr>
 
                     <tr>
-                        <td><span class="label label-success">Active and CNAMEd</span></td>
-                        <td><strong>www.huckletree.com</strong> <br/><span class="small">www.huckletree.com.h1.webiny.net</span>
+                        <td class="text-center"><span class="circle circle-warning circle-lg" data-toggle="tooltip"
+                                                      data-placement="top" title="Active, but not CNAMEd"></span></td>
+                        <td>
+                            <strong class="sites site-title"><a href="">www.huckletree.com</a></strong>
+                            <br/><span class="small">3500 visitors / 1000 API calls</span>
                         </td>
-                        <td><a href="#">Show</a></td>
+                        <td>
+                            <input type="checkbox" name="my-checkbox" class="switcher">
+                        </td>
+
                         <td>6 weeks ago</td>
                         <td>
                             <div class="dropdown balloon">
@@ -161,10 +178,16 @@
                     </tr>
 
                     <tr>
-                        <td><span class="label label-warning">Active but not CNAMEd</span></td>
-                        <td><strong>www.selecto.com</strong> <br/><span
-                                class="small">www.selecto.com.h1.webiny.net</span></td>
-                        <td><a href="#">Show</a></td>
+                        <td class="text-center"><span class="circle circle-danger circle-lg" data-toggle="tooltip"
+                                                      data-placement="top" title="Inactive"></span></td>
+                        <td>
+                            <strong class="sites site-title"><a href="">www.selecto.com</a></strong>
+                            <br/><span class="small">3500 visitors / 1000 API calls</span>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="my-checkbox" class="switcher">
+                        </td>
+
                         <td>5 hours ago</td>
                         <td>
                             <div class="dropdown balloon">
@@ -222,6 +245,7 @@
             <div class="porlet">
                 <div class="porlet-body text-center">
                     <h2>Sorry, but no site matched your query.</h2>
+
                     <p>Try changing your search parameter.</p>
                 </div>
             </div>
@@ -422,10 +446,12 @@
                     <hr/>
                     <div class="col-md-12">
                         <p>
-                            API Key is used if you wish to make API calls from other websites, or devices, to retrieve content from a particular site.
+                            API Key is used if you wish to make API calls from other websites, or devices, to retrieve
+                            content from a particular site.
                             Only requests that have the matching API key will get a proper response.
                             <br/><br/>
-                            The API key is sent via <span class="label label-default">X-Webiny-Api-Key</span> HTTP request header.
+                            The API key is sent via <span class="label label-default">X-Webiny-Api-Key</span> HTTP
+                            request header.
                             <br/>
                         </p>
                     </div>
@@ -472,11 +498,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+<script src="js/bootstrap-switch.js"></script>
 
 
 <script>
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $(".switcher").bootstrapSwitch();
     })
 </script>
 

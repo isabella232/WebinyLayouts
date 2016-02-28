@@ -75,6 +75,18 @@ body {
 	}
 }
 
+.text-center{
+	padding: 15px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.form-group {
+	min-height: 0;
+}
+
 /** Nav bar - Start **/
 .navbar.navbar-default{
 	margin-top: 15px;
@@ -108,6 +120,14 @@ body {
 }
 /** Nav bar - End **/
 
+/** Sites - Start **/
+.sites.site-title a{
+	font-size: 1.3em;
+	font-weight: 600;
+}
+/** Sites - End **/
+
+
 /** Side navigation - Start **/
 .nav-pills>li,
 .nav-pills>li>a{
@@ -126,3 +146,96 @@ body {
 	background-color: transparent;
 }
 /** Side navigation - End **/
+
+/** Support Module - Start **/
+.nav-pills.support-ticket-list li{
+	border-bottom: 1px solid #ccc;
+}
+
+.nav-pills.support-ticket-list li:last-child{
+	border-bottom: none;
+}
+
+.nav-pills .support-ticket-entry{
+	border-left: 2px solid #ccc;
+	border-radius: 0px;
+	padding: 0 0 0 10px;
+	margin: 20px 0;
+}
+
+.nav-pills .support-ticket-entry:hover{
+	border-left: 2px solid #777;
+}
+
+.nav-pills .support-ticket-entry.active{
+	border-left: 2px solid #F95722;
+}
+
+.support-ticket-entry .support-team-name{
+	float:left;
+	font-size: 0.8em;
+	font-weight: 600;
+}
+.support-ticket-entry .support-date{
+	float:right;
+	font-size: 0.8em;
+	font-weight: 400;
+	color:#777;
+}
+
+.support-ticket-entry .support-title,
+.support-ticket-entry .support-description{
+	font-size: 0.9em;
+	color:#000;
+	display: block;
+	padding: 2px 0;
+	clear: both;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300px;
+}
+
+.support-ticket-entry .support-description{
+	font-size: 0.8em;
+	color:#777;
+}
+
+.porlet .support-ticket-body.porlet-body{
+	padding: 30px;
+	margin: 0;
+}
+
+.support-ticket-body .support-pre-header,
+.support-ticket-body .support-pre-header-date{
+	font-size: 1em;
+	font-weight: 600;
+}
+.support-ticket-body .support-pre-header-date{
+	color:#777;
+}
+.support-ticket-body h3{
+	margin: 25px 0;
+}
+.support-ticket-body p{
+	color:#777;
+	font-size: 1.1em;
+	line-height: 180%;
+}
+
+/** Support Module - End **/
+
+/** What's New list - Start **/
+.notifications-whats-new-list .notifications-whats-new-list-entry{
+	border-bottom: 1px solid #ececec;
+	overflow: hidden;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+.notifications-whats-new-list .notifications-whats-new-list-entry p{
+	color:#777;
+	font-size: 1.1em;
+	line-height: 180%;
+	margin: 25px 0;
+}
+/** What's New list - End **/

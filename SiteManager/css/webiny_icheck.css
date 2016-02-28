@@ -5,7 +5,7 @@
 	height: 21px;
 	cursor: pointer;
 	float: left;
-	margin: 10px 10px 0px 0px;
+	margin: 0px 10px 0px 0px;
 	border: 1px solid #ccc;
 }
 
@@ -26,9 +26,4 @@
 .dropdown-menu li .show-rec {
 	/* used in dropdown with checkboxes */
 	clear: both;
-}
-
-.dropdown-menu li .iradio_minimal,
-.dropdown-menu li .icheckbox_minimal{
-	margin: 0px 10px 0px 0px;
 }
