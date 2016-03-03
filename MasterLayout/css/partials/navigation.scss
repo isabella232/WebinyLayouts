@@ -1,3 +1,5 @@
+@import "variables";
+
 .master-navigation {
   .navbar-header {
     background: url(../img/header_bg.jpg) repeat top left;
@@ -821,7 +823,8 @@ body.opened-mobile-nav .left-menu-submenu {
   .master-content.container-fluid {
     float: left;
     min-width: 90%;
-    background: #fff;
+    width: 100%;
+    background: $masterContentBgColor;
     padding: 65px;
     -webkit-transition: width 0.5s;
     /* Safari */
@@ -1407,12 +1410,8 @@ body.opened-mobile-nav .left-menu-submenu {
     z-index: 1900;
   }
   .master-content.container-fluid {
-    margin-top: 40px;
     /*margin-left: 107px;*/
-    padding: 65px 50px 100px 100px;
-  }
-  .minimized .master-content.container-fluid {
-    margin-top: 40px;
+    padding: 20px 50px 100px 100px;
   }
   .master-navigation .navbar-collapse.collapse {
     position: fixed;

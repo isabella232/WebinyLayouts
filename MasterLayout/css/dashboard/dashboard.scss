@@ -1,9 +1,8 @@
-
+@import '../modules/variables.scss';
 
 .hl-element{
   color: $highlightColor;
 }
-
 
   .master-header {
     text-align: center;
@@ -47,18 +46,7 @@
   }
 
 
-
-
-
-  .master-content.container-fluid.master-dashboard {
-    width: 100%;
-    background-color: $masterContentBgColor;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
   .row-section {
-    margin-top: 15px;
     &::after {
       clear: both;
     }
@@ -180,7 +168,6 @@
   }
 
   .row-section {
-    margin-top: 40px;
     &::after {
       clear: both;
     }
@@ -205,13 +192,13 @@
     clear: left;
     h2 {
       display: inline-block;
-      margin: 30px 0 0 90px;
+      margin: 30px 0 0 0;
     }
 
     .date-picker {
       display: inline-block;
       float: right;
-      margin: 25px 100px 0 0;
+      margin: 25px 0 0 0;
       .form-group {
         min-height: 45px;
         height: 45px;
@@ -250,7 +237,6 @@
 
 
   .row-section {
-    margin-top: 40px;
     &::after {
       clear: both;
     }
@@ -270,13 +256,13 @@
     text-align: left;
     h2 {
       display: inline-block;
-      margin: 30px 0 0 125px;
+      margin: 30px 0 0 0;
     }
 
     .date-picker {
       display: inline-block;
       float: right;
-      margin: 25px 80px 0 0;
+      margin: 25px 0 0 0;
       .form-group {
         min-height: 45px;
         height: 45px;
@@ -315,7 +301,6 @@
   }
 
   .row-section {
-    margin-top: 40px;
     &::after {
       clear: both;
     }

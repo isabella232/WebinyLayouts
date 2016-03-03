@@ -4,7 +4,11 @@
 
 .modal-backdrop {
   z-index: 2000;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.modal-backdrop.in{
+  opacity: 0.8;
 }
 
 .modal-dialog.modal-full-width {
@@ -22,17 +26,17 @@
 .modal-content .modal-header {
   padding: 0;
   height: 65px;
-  border-bottom: 4px solid #FA5723;
   margin-bottom: 15px;
   background: #F0F0F0;
   color: #393939;
+  border: none;
 }
 
 .modal-content .modal-footer {
-  box-shadow: 0 -3px 9px -3px #ccc;
   background: #F0F0F0;
   padding: 15px 20px 20px;
   margin-top: 0;
+  border: none;
 }
 
 .modal-content h4 {

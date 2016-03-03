@@ -1,0 +1,7 @@
+.master-header {
+  padding: 0 90px 0 100px; }
+  @media (min-width: 1200px) {
+    .master-header {
+      height: 92px; } }
+
+/*# sourceMappingURL=header.css.map */

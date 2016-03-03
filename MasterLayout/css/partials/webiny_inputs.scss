@@ -1,3 +1,5 @@
+@import "../modules/variables";
+
 .form-group {
   min-height: 72px;
 }
@@ -20,12 +22,11 @@ label, .form-group label, label.control-label {
 }
 
 .form-control {
-  border: 1px solid #ccc;
-  border-bottom: 3px solid #ccc;
+  border: 1px solid $borderColor;
   width: 100%;
   line-height: 135%;
   padding: 0 8px;
-  background: #F5F5F5;
+  background: $formBgColor;
   color: #333;
   box-shadow: none;
   -webkit-border-radius: 0;

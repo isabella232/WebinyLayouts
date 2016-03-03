@@ -1,5 +1,5 @@
 .master-navigation .navbar-header {
-  background: url(../../img/header_bg.jpg) repeat top left;
+  background: url(../img/header_bg.jpg) repeat top left;
   text-align: center;
   padding: 16px; }
   .master-navigation .navbar-header a.logo {
@@ -453,7 +453,7 @@ body.opened-mobile-nav .left-menu-submenu {
     padding: 0;
     border: 1px solid #E0E0E0; }
     .master-navigation .navbar-header .notification-holder .drop span.top-arr {
-      background: url(../../img/arr.png) no-repeat top left;
+      background: url(../img/arr.png) no-repeat top left;
       width: 18px;
       height: 11px;
       position: absolute;
@@ -496,7 +496,7 @@ body.opened-mobile-nav .left-menu-submenu {
     padding: 0;
     border: none; }
     .master-navigation .navbar-header .profile-holder .drop span.top-arr {
-      background: url(../../img/arr.png) no-repeat top left;
+      background: url(../img/arr.png) no-repeat top left;
       width: 18px;
       height: 11px;
       position: absolute;
@@ -635,7 +635,7 @@ body.opened-mobile-nav .left-menu-submenu {
   .master-content.container-fluid {
     float: left;
     min-width: 90%;
-    background: #fff;
+    background: #F2F2F2;
     padding: 65px;
     -webkit-transition: width 0.5s;
     /* Safari */
@@ -1042,7 +1042,7 @@ body.opened-mobile-nav .left-menu-submenu {
         right: 0;
         margin-top: 11px; }
       .master-navigation .subheader .dropdown.add-new span.top-arr {
-        background: url(../../img/arr.png) no-repeat top left;
+        background: url(../img/arr.png) no-repeat top left;
         width: 18px;
         height: 11px;
         position: absolute;
@@ -1072,7 +1072,7 @@ body.opened-mobile-nav .left-menu-submenu {
       .master-navigation .dropdown.add-new .show-rec .icheckbox_minimal:hover {
         border: 1px solid #666; }
     .master-navigation .dropdown.add-new .show-rec .checked {
-      background: #fff url(../../img/icons.png) no-repeat -74px -51px;
+      background: #fff url(../img/icons.png) no-repeat -74px -51px;
       border: 1px solid #333; }
   .master-navigation .subheader .quicklinks a.add:hover {
     color: #D23804;
@@ -1081,5 +1081,139 @@ body.opened-mobile-nav .left-menu-submenu {
     box-shadow: -1px -1px 3px 0 rgba(50, 50, 50, 0.23); }
   .master-navigation .subheader .quicklinks a.add:active {
     color: #D23804; } }
+@media (min-width: 1200px) {
+  .master-navigation .left-menu-submenu > div {
+    visibility: visible;
+    background-color: #fff; }
+
+  .ps-container .ps-scrollbar-y {
+    display: block; }
+
+  .master-navigation .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1900; }
+
+  .master-content.container-fluid {
+    /*margin-left: 107px;*/
+    padding: 20px 50px 100px 100px; }
+
+  .master-navigation .navbar-collapse.collapse {
+    position: fixed;
+    top: 125px;
+    left: 0;
+    margin-top: 0; }
+
+  .minimized .master-navigation .navbar-collapse.collapse {
+    top: 57px; }
+
+  .master-navigation .subheader {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    z-index: 1700; }
+
+  .minimized .master-navigation .subheader {
+    display: none; }
+
+  .master-navigation .subheader .dropdown.add-new .dropdown-menu {
+    left: 0;
+    right: auto; }
+  .master-navigation .navbar-header .profile {
+    color: #fff; }
+    .master-navigation .navbar-header .profile:hover {
+      color: #fff; }
+    .master-navigation .navbar-header .profile span.user {
+      display: block;
+      float: left; }
+    .master-navigation .navbar-header .profile span.icon-caret-down {
+      display: block; }
+
+  .master-navigation .navbar-collapse.collapse .shield {
+    margin-left: 0; }
+
+  .master-navigation .navbar-collapse.collapse {
+    margin-left: 0;
+    display: block !important; }
+    .master-navigation .navbar-collapse.collapse .shield {
+      display: block; }
+  .master-navigation .navbar-header .domain-picker {
+    width: 350px;
+    margin: auto;
+    float: none; }
+    .master-navigation .navbar-header .domain-picker .dropdown .btn-default {
+      width: 300px; }
+    .master-navigation .navbar-header .domain-picker .dropdown .dropdown-menu {
+      width: 302px; }
+  .master-navigation .navbar-header .profile {
+    float: right;
+    margin-top: 5px; }
+  .master-navigation .navbar-header a.profile span {
+    float: left; }
+    .master-navigation .navbar-header a.profile span.icon-caret-down {
+      float: right;
+      font-size: 12px; }
+
+  .tablet-navigation {
+    display: none; }
+
+  .master-content.container-fluid {
+    /*width: 90%;*/ }
+
+  .master-navigation .left-menu {
+    /*height: 400px;*/
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    position: relative; }
+  .master-navigation .left-menu-submenu {
+    /*height: 400px;*/
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    width: 282px;
+    top: 55px;
+    -webkit-box-shadow: 0 0 18px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 18px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 18px -6px rgba(0, 0, 0, 0.75);
+    left: -200px;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transition: left ease-in-out 0.40s, opacity ease-in-out 0.1s;
+    -moz-transition: left ease-in-out 0.40s, opacity ease-in-out 0.1s;
+    -o-transition: left ease-in-out 0.40s, opacity ease-in-out 0.1s;
+    transition: left ease-in-out 0.40s, opacity ease-in-out 0.1s; }
+  .master-navigation .left-menu.expanded {
+    /*width: 366px;*/ }
+
+  .ps-scrollbar-y-rail {
+    z-index: 501; }
+
+  .ps-scrollbar-x-rail {
+    display: none; }
+
+  .master-navigation .nav {
+    float: left; }
+    .master-navigation .nav > li {
+      clear: both; }
+  .master-navigation .navbar-right {
+    float: none !important; } }
+/*IE*/
+.ie-all .master-navigation .subheader .quicklinks span.icon {
+  margin-top: 1px;
+  writing-mode: bt-rl;
+  filter: flipv fliph; }
+.ie-all .master-navigation .subheader .quicklinks ul {
+  margin-top: -5px;
+  float: left; }
+
+/*Crome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .master-navigation .navbar-nav > li > a span.icon-caret-down {
+    margin-top: -3px; } }
 
 /*# sourceMappingURL=navigation.css.map */

@@ -23,7 +23,8 @@
     <title>WEBINY</title>
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="img/favicon.ico"/>
-    <link rel="stylesheet" href="css/webiny.css">   
+    <link rel="stylesheet" href="css/webiny.css">
+    <link rel="stylesheet" href="css/editor/webiny_editor.css">
 
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
@@ -321,34 +322,41 @@
         </div>
     </div>
 </div>
-<div class="master-content container-fluid">
-<div class="dashboard-content">
-<div class="row">
-    <div class="col-md-6">
-     <div class="form-group">
-        <label class="control-label">Page title</label> <input type="email" placeholder="The 15 Types of Blogger Playing their Trade in ite Blogging World" class="form-control">
-     </div>
-    </div>
-    <div class="col-md-6">
-    	<div class="hidden-sm hidden-xs">
-            <a href="#" class="btn btn-primary btn-lg save" data-toggle="modal" data-target="#modal-11">
-                      <span class="icon left icon-floppy"></span><span>Save page</span>
-            </a>
-            <div class="btn-group preview">
-                <button type="button" class="btn btn-success"><span class="icon left icon-eye"></span>Preview</button>
-                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">DESKTOP</a></li>
-                    <li><a href="#">TABLER</a></li>
-                    <li><a href="#">MOBILE</a></li>
-                </ul>
+    <div class="master-header container-fluid">
+        <div class="row">
+            <div class="page-title-input">
+                 <div class="col-md-6">
+                     <div class="form-group main-input">
+                         <input class="inputMaterial" type="text" required>
+                         <span class="highlight"></span>
+                         <span class="bar"></span>
+                         <label class="dynamic-label">PAGE TITLE</label>
+                     </div>
+                 </div>
+                <div class="col-md-6">
+                    <div class="hidden-sm hidden-xs">
+                        <a href="#" class="btn btn-primary btn-lg save" data-toggle="modal" data-target="#modal-11">
+                            <span class="icon left icon-floppy"></span><span>Save page</span>
+                        </a>
+                        <div class="btn-group preview">
+                            <button type="button" class="btn btn-success"><span class="icon left icon-eye"></span>Preview</button>
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">DESKTOP</a></li>
+                                <li><a href="#">TABLER</a></li>
+                                <li><a href="#">MOBILE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<div class="master-content container-fluid">
+<div class="dashboard-content">
 <div class="editor">
     <div class="row">
             <div class="col-md-4 top-p hidden-sm hidden-xs">
@@ -700,7 +708,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" ><strong>Cancel</strong></button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Change layout</button>
             </div>
         </div>
@@ -715,13 +723,94 @@
             </div>
         	<div class="modal-left">
             		<ul>
-                    	<li><a href="#"><span class="icon left icon-doc-text"></span><span class="txt">General</span></a></li>
-                        <li><a href="#"><span class="icon left icon-gauge-1"></span><span class="txt">Performance</span></a></li>
-                        <li><a href="#"><span class="icon left icon-network"></span><span class="txt">SEO</span></a></li>
-                        <li><a href="#"><span class="icon left icon-users"></span><span class="txt">Social</span></a></li>
+                    	<li class="active"><a href="#"><span class="icon left icon-gauge "></span><span class="txt">General</span></a></li>
+                        <li><a href="#"><span class="icon left  icon-columns"></span><span class="txt">Performance</span></a></li>
+                        <li><a href="#"><span class="icon left icon-browser"></span><span class="txt">SEO</span></a></li>
+                        <li><a href="#"><span class="icon left icon-user"></span><span class="txt">Social</span></a></li>
                     </ul>
             </div>
-            <div class="modal-right"></div>
+            <div class="modal-right">
+                <div class="general-set">
+                    <div class="options-section">
+                        <div class="options-header">
+                            <h5 class="options-title">Layout options</h5>
+                            <div class="form-group search-container">
+                                <label class="control-label">COPY OPTIONS FROM PAGE<span class="mandat">*</span></label>
+                                <select class="selectize" placeholder="placeholder text goes here...">
+                                    <option value="1">www.booking.com</option>
+                                    <option value="2">www.amazon.com</option>
+                                    <option value="3">www.apple.com</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="options-content container-no-padding">
+                            <div class="row">
+                                <form role="form" class="layout-options">
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label class="control-label">SIZE</label> <input type="size" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label class="control-label">BREAKPOINT (PX)</label> <input type="breakpoint" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="form-group">
+                                            <label class="control-label">TOP MARGIN (PX)</label> <input type="top-margin" class="form-control">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="options-section">
+                        <div class="options-header">
+                            <h5 class="options-title">Title and Metadata</h5>
+                            <div class="form-group search-container">
+                                <label class="control-label">COPY DATA FROM PAGE<span class="mandat">*</span></label>
+                                <select class="selectize" placeholder="placeholder text goes here...">
+                                    <option value="1">www.booking.com</option>
+                                    <option value="2">www.amazon.com</option>
+                                    <option value="3">www.apple.com</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="options-content container-no-padding">
+                            <div class="row">
+                                <form role="form" class="data-options">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">PAGE TITLE</label> <input type="size" class="form-control" placeholder="<auto placement the title from editor> and vice-versa.">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">KEYWORDS (separate keywords with comma)</label>
+                                            <div class="keyword-container">
+                                                <div class="keyword-block">
+                                                    <p>key</p>
+                                                </div>
+                                                <label for="keyword_input"></label>
+                                                <input id="keyword_input" type="text" class="keyword-input" placeholder="enter keyword">
+                                                <div class="remove-keyword">
+                                                    <p><i class="icon icon-cancel-circled"></i>remove all</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label">DESCRIPTION (separate keywords with comma)</label> <textarea type="description" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="clearfix"></div>
             <div class="modal-foot">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
