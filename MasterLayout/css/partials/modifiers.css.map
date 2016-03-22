@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,WAAW;EACT,KAAK,EAAE,KAAK",
-"sources": ["modifiers.scss"],
-"names": [],
-"file": "modifiers.css"
-}
