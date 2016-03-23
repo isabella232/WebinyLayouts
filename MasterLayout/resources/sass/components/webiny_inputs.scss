@@ -24,7 +24,7 @@ label, .form-group label, label.control-label {
   width: 100%;
   line-height: 135%;
   padding: 0 8px;
-  background: $formBgColor;
+  background-color: $formBgColor;
   color: #333;
   box-shadow: none;
   -webkit-border-radius: 0;
@@ -35,7 +35,8 @@ label, .form-group label, label.control-label {
     border-color: #333;
   }
   &:disabled {
-    opacity: 0.5;
+    background: $formBgColor;
+    opacity: 0.4;
   }
   &[readonly] {
     color: #393939 !important;
@@ -48,13 +49,13 @@ label, .form-group label, label.control-label {
 }
 
 input.form-control {
-  height: 45px;
+  padding: 21px 15px;
 }
 
 textarea.form-control {
-  height: 145px;
+  min-height: 145px;
   line-height: 135%;
-  padding: 8px 8px;
+  padding: 20px 15px;
 }
 
 .form-group {
@@ -108,7 +109,7 @@ textarea.form-control {
         height: 45px;
         line-height: 135%;
         padding: 0 10px;
-        background: #F5F5F5;
+        background: $formBgColor;
         color: #333;
         border-radius: 0;
       }
@@ -221,29 +222,29 @@ form {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+
 .choose-file {
   position: relative;
+
+  input {
+    background-color: $formBgColor;
+  }
   
   ::placeholder {
     font-style: italic;
   }
 }
+
 .choose-file input {
   display: block;
   width: 100%;
-  height: 39px;
-  padding: 11px 12px;
-  font-size: 13px;
-  line-height: 1.49;
-  color: #555555;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #C1C4C9;
+  border: 1px solid $borderColor;
   border-radius: 2px;
-  -webkit-transition: border-color ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s;
   transition: border-color ease-in-out .15s;
 
+  &:disabled {
+    opacity: 1;
+  }
 }
 .choose-file .fileUpload {
   position: absolute;
@@ -264,7 +265,7 @@ form {
   margin-bottom: 20px;
 }
 .edit-avatar {
-  width: 157px;
+  width: 132px;
   display: inline-block;
   margin-right: 40px;
   text-align: center;
@@ -278,29 +279,24 @@ form {
 }
 .avatar-placeholder {
   display: block;
-  width: 157px;
-  height: 157px;
+  width: 132px;
+  height: 132px;
   margin-bottom: 15px;
   overflow: hidden;
-  
-  color: #dbdee1;
-  font-size: 44px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 328%;
-  
-  background-size: cover;
-  background-image: url(../img/avatars/avatar_placeholder.png);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.avatar-placeholder.default {
-  background: #f2f4f5;
-  width: 157px;
-  height: 157px;
-  border-radius: 50%;
 
-  line-height: 328%;
+  border: 2px dashed $borderColor;
+  border-radius: 50%;
+  
+  color: #777;
+  font-size: 44px;
+  text-align: center;
+  line-height: 275%;
+
+  background-color: $formBgColor;
+}
+
+.avatar-placeholder--no-border {
+  border: none;
 }
 
 .tray-bin {
@@ -312,7 +308,7 @@ form {
     
     text-align: center;
 
-    background: #F6F7F9;
-    border: 1px dashed #CFCFCF;
+    background-color: $formBgColor;
+    border: 2px dashed $borderColor;
     border-radius: 3px;
 }

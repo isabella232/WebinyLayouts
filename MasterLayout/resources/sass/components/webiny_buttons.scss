@@ -35,6 +35,33 @@ button.btn {
   }
 }
 
+.btn-add{
+  width: 187px;
+  height: 40px;
+  border-color: $borderColor;
+  .btn-caption{
+    position: relative;
+    padding-left: 20px;
+    &:before{
+      content: "+";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      color: $highlightColor;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  &:hover{
+    background-color: #fff;
+    border-color: $borderColor;
+    .btn-caption{
+      color: $highlightColor;
+    }
+  }
+}
+
 .btn.btn-lg span, .btn-group.btn-group-lg .btn span {
   float: left;
   margin: 2px 0px;
