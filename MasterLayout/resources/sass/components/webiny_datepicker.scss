@@ -79,10 +79,20 @@ table.ui-datepicker-calendar {
 
 .ui-datepicker-next:before {
   font-family: "fontello";
-  content: '\e81b';
+  content: '\e819';
+}
+
+.ui-datepicker-prev {
 }
 
 .ui-datepicker-prev:before {
   font-family: "fontello";
-  content: '\e805';
+  content: '\e819';
+  display: inline-block;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph; /*IE*/
+  filter: fliph; /*IE*/
 }

@@ -1380,9 +1380,10 @@
     </div>
 
     <footer>
-        <div class="developer-mode">
-            <span>Developer mode</span>
-            <input type="checkbox" name="my-checkbox" class="switcher" checked>
+        <div class="developer-mode switch switch--yes-no switch--inline">
+            <span class="switch-label switch-label--left">Developer mode</span>
+            <input id="exampleSwitch1" type="checkbox" name="exampleSwitch1"  checked>
+            <label for="exampleSwitch1" data-on="On" data-off="Off"></label>
         </div>
         <ul class="links">
             <li><a href="#">Webiny 2.2</a></li>
@@ -1410,8 +1411,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src='js/icheck.js'></script>
-<script type="text/javascript" src='js/selectize.js'></script>
-<script type="text/javascript" src='js/bootstrap-switch.js'></script>
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="vendor/plugins/daterange/daterangepicker.min.js"></script>
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="js/onload.js"></script>
@@ -1428,6 +1433,9 @@
 <script src="js/dashboard/dashboard_charts.js"></script>
 <script src="js/dashboard/dashboard_tweaks.js"></script>
 
+<script type="text/javascript">
+  $('select').select2();
+</script>
 
 </body>
 </html>

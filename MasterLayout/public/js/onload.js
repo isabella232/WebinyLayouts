@@ -93,13 +93,6 @@ function fooHideWizard(wName){
         });
 
 
-        // replace select
-        $('select.selectize').selectize({
-            create: true,
-            dropdownParent: 'body'
-        });
-
-
         // datepicker
         $( ".datepicker" ).datepicker({
             showOn: "button",
@@ -112,9 +105,6 @@ function fooHideWizard(wName){
             return false;
         });
         $(".picker-holder img").remove();
-
-        // checkbox
-        $(".switcher").bootstrapSwitch();
 
         // perfectScrollbar
         $('.left-menu').perfectScrollbar();

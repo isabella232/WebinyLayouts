@@ -24,6 +24,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="img/favicon.ico"/>
 
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/webiny.css">
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
@@ -253,20 +254,20 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
                 <span class="top-arr"></span>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" type="checkbox" value="" id="th">
+                   <div class="checkbox-custom mb5">
+                        <input id="th" type="checkbox">
                         <label for="th">Add new post</label>
                     </div>
                 </li>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" type="checkbox" value="" id="fo">
+                    <div class="checkbox-custom mb5">
+                        <input id="fo" type="checkbox">
                         <label for="fo">Add new tag</label>
                     </div>
                 </li>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" type="checkbox" value="" id="fi">
+                    <div class="checkbox-custom mb5">
+                        <input id="fi" type="checkbox">
                         <label for="fi">Mange users</label>
                     </div>
                 </li>
@@ -448,222 +449,344 @@
     <div class="dashboard-content">
         <div class="row">
             <div class="col-md-6">
-                <form role="form">
-                    <div class="form-group">
-                        <label class="control-label">Email address</label> <input type="email" placeholder="Enter email" class="form-control">
+                <div class="panel">
+                    <div class="panel-header">
+                        Panel header
                     </div>
-                    <div class="form-group error">
-                        <label class="control-label">
-                            Password
-                            <span class="mandat">*</span>
-                        </label>
-                        <span class="info-txt">(Intro text for your article)</span>
-                        <input type="password" placeholder="Password" class="form-control">
-                        <span class="icon icon-bad"></span>
-                    </div>
-                    <div class="form-group success">
-                        <label class="control-label">Email</label>
-                        <input type="email" placeholder="Email" class="form-control">
-                        <span class="icon icon-good"></span>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Disabled</label>
-                        <input type="email" disabled placeholder="Email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Read Only</label>
-                        <input type="email" readonly placeholder="Email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Texarea</label>
-                        <textarea class="form-control"></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label">Upload a document <span class="mandat">*</span></label>
-
-                        <div class="choose-file">
-                            <input id="uploadFile" placeholder="Choose your document" disabled="disabled" class="form-control">
-                            <div class="fileUpload btn btn-transparent">
-                                <span>Upload</span>
-                                <input id="uploadBtn" type="file" class="upload" />
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label class="control-label">Email address</label>
+                                <span class="info-txt">(Intro text for your article)</span>
+                                <input type="email" placeholder="Enter email" class="form-control">
                             </div>
-                        </div>
-                    </div>
+                            <div class="form-group error">
+                                <label class="control-label">
+                                    Password
+                                    <span class="mandat">*</span>
+                                </label>
+                                <span class="info-txt">(Intro text for your article)</span>
+                                <input type="password" placeholder="Password" class="form-control">
+                                <span class="icon icon-bad"></span>
+                            </div>
+                            <div class="form-group success">
+                                <label class="control-label">Email</label>
+                                <span class="info-txt">(Intro text for your article)</span>
+                                <input type="email" placeholder="Email" class="form-control">
+                                <span class="icon icon-good"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Disabled</label>
+                                <span class="info-txt">(Intro text for your article)</span>
+                                <input type="email" disabled placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Read Only</label>
+                                <span class="info-txt">(Intro text for your article)</span>
+                                <input type="email" readonly placeholder="Email" class="form-control">
+                            </div>
 
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                    <button class="btn btn-default">Cancel</button>
+                            <div class="form-group">
+                                <label class="control-label">Select<span class="mandat">*</span></label>
+                                <select class="dropdown" placeholder="placeholder text goes here...">
+                                    <option value="1">Select item 1 with some long line lorem ipsum dolor</option>
+                                    <option value="2">Select item 1 with some longem ipsum dolor</option>
+                                    <option value="3">Select item 1 with some </option>
+                                    <option value="4">Select item 1 with some loorem ipsum dolor</option>
+                                    <option value="5">Select item 1 with somem dolor</option>
+                                    <option value="6">Select item 1 with somlorem ipsum dolor</option>
+                                    <option value="7">Select item 1 with some long line lorem ipsum dolor</option>
+                                </select>
+                            </div>
 
-                    <hr>
+                            <div class="form-group">
+                                <label class="control-label">Multiple select<span class="mandat">*</span></label>
+                                <div class="dropdown sel multiple">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown">
+                                        <span class="dropdown-value">www.badabing.com.hr</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
+                                        <li role="presentation">
+                                           <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
+                                            </div>
+                                        </li>
+                                        <li role="presentation">
+                                            <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
+                                            </div>
+                                        </li>
+                                        <li role="presentation">
+                                            <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                    <div class="avatars">
-                        <div class="edit-avatar">
-                            <span class="avatar-placeholder">s</span>
+                            <div class="form-group">
+                                <label class="control-label">Texarea</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                        <div class="picker-holder">
+                                            <input type="text" class="form-control datepicker"/>
+                                            <span class="icon-calendar icon_c"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                        <div class="picker-holder">
+                                            <input type="text" class="form-control datepicker"/>
+                                            <span class="icon-calendar icon_c"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="switch switch--yes-no">
+                                        <input id="exampleSwitch7" type="checkbox" name="exampleSwitch7">
+                                        <label for="exampleSwitch7" data-on="Yes" data-off="No"></label>
+                                        <span class="switch-label switch-label--right">Label right</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="radio-custom mb5">
+                                        <input id="radioExample3" name="radioExample" type="radio">
+                                        <label for="radioExample3">Yes</label>
+                                    </div>
+                                    <div class="radio-custom mb5 radio-disabled">
+                                        <input id="radioExample3" name="radioExample" type="radio">
+                                        <label for="radioExample3">No</label>
+                                    </div>
+                                    <div class="radio-custom mb5 radio-disabled">
+                                        <input id="radioExample3" name="radioExample" type="radio">
+                                        <label for="radioExample3">I don't know</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Switches -->
+                                <div class="col-md-3">
+                                    <div class="switch switch--inline">
+                                        <span class="switch-label switch-label--left">Label</span>
+                                        <input id="exampleSwitch1" type="checkbox" name="exampleSwitch1" checked>
+                                        <label for="exampleSwitch1"></label>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="switch switch--inline">
+                                        <span class="switch-label switch-label--left">Label</span>
+                                        <input id="exampleSwitch2" type="checkbox" name="exampleSwitch2">
+                                        <label for="exampleSwitch2"></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="switch switch--inline">
+                                        <input id="exampleSwitch3" type="checkbox" name="exampleSwitch3" checked>
+                                        <label for="exampleSwitch3"></label>
+                                        <span class="switch-label switch-label--right">Label right</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="switch switch--inline">
+                                        <input id="exampleSwitch4" type="checkbox" name="exampleSwitch4">
+                                        <label for="exampleSwitch4"></label>
+                                        <span class="switch-label switch-label--right">Label right</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="switch switch--yes-no switch--inline">
+                                        <span class="switch-label switch-label--left">Label</span>
+                                        <input id="exampleSwitch5" type="checkbox" name="exampleSwitch5" checked>
+                                        <label for="exampleSwitch5" data-on="Yes" data-off="No"></label>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="switch switch--yes-no switch--inline">
+                                        <span class="switch-label switch-label--left">Label</span>
+                                        <input id="exampleSwitch6" type="checkbox" name="exampleSwitch6">
+                                        <label for="exampleSwitch6" data-on="Yes" data-off="No"></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="switch switch--yes-no">
+                                        <input id="exampleSwitch7" type="checkbox" name="exampleSwitch7">
+                                        <label for="exampleSwitch7" data-on="Yes" data-off="No"></label>
+                                        <span class="switch-label switch-label--right">Label right</span>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="switch switch--yes-no">
+                                        <input id="exampleSwitch8" type="checkbox" name="exampleSwitch8" checked>
+                                        <label for="exampleSwitch8" data-on="Yes" data-off="No"></label>
+                                        <span class="switch-label switch-label--right">Label right</span>
+                                    </div>
+                                </div>
+                                <!-- /Switches -->
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Upload a document <span class="mandat">*</span></label>
+
+                                <div class="choose-file">
+                                    <input id="uploadFile" placeholder="Choose your document" disabled="disabled" class="form-control">
+                                    <div class="fileUpload btn btn-transparent">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            <button class="btn btn-default">Cancel</button>
+
+                            <hr>
+
+                            <div class="avatars">
+                                <div class="edit-avatar">
+                                    <span class="avatar-placeholder">s</span>
+                                    <button type="button" class="btn btn-primary btn-block upload">Upload</button>
+                                    <span class="small-txt">max 250 KB</span>
+                                </div>
+
+                                <div class="edit-avatar">
+                                    <span class="avatar-placeholder avatar-placeholder--no-border"><img src="img/avatars/placeholder.png" alt="sven avatar" class="avatar img-responsive" height="157" width="157"></span>
+                                    <button type="button" class="btn btn-primary btn-block upload">Upload</button>
+                                    <span class="small-txt">max 250 KB</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="tray-bin">
+
+                                <form action="/file-upload" class="dropzone dropzone-sm dz-clickable" id="dropZone">
+                                    <div class="dz-default dz-message">
+                                        <span class="main-text">DRAG FILES HERE</span>
+                                        <i class="demo-icon icon-upload-icon"></i>
+                                    </div>
+                                    <div class="txt_b">
+                                        <span>Dragging not convinient?</span>
+                                        <a href="#">SELECT FILES HERE</a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                            <div class="tray-bin step-3">
+                                <form action="/file-upload" class="dropzone dropzone-sm dz-clickable" id="dropZone">
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-1.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-2.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-3.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-1.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-2.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-1.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-2.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-3.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-1.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+
+                                    <div class="file">
+                                        <img class="file-preview" src="img/img-2.jpg" alt="">
+                                        <a href="#" class="file-edit"></a>
+                                        <a href="#" class="file-remove"></a>
+                                        <span class="file-name">File name.pdf</span>
+                                        <span class="file-size">245 kb</span>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <button type="button" class="btn emp btn-default">Browse files</button>
                             <button type="button" class="btn btn-primary btn-block upload">Upload</button>
-                            <span class="small-txt">max 250 KB</span>
-                        </div>
-
-                        <div class="edit-avatar">
-                            <span class="avatar-placeholder avatar-placeholder--no-border"><img src="img/avatars/placeholder.png" alt="sven avatar" class="avatar img-responsive" height="157" width="157"></span>
-                            <button type="button" class="btn btn-primary btn-block upload">Upload</button>
-                            <span class="small-txt">max 250 KB</span>
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="tray-bin">
-
-                        <form action="/file-upload" class="dropzone dropzone-sm dz-clickable" id="dropZone">
-                            <div class="dz-default dz-message">
-                                <span class="main-text">DRAG FILES HERE</span>
-                                <i class="demo-icon icon-upload-icon"></i>
-                            </div>
-                            <div class="txt_b">
-                                <span>Dragging not convinient?</span>
-                                <a href="#">SELECT FILES HERE</a>
-                            </div>
 
                         </form>
-    
                     </div>
+                </div>
 
-                    <div class="tray-bin step-3">
-                        <form action="/file-upload" class="dropzone dropzone-sm dz-clickable" id="dropZone">
-                            <div class="file-name">
-                                <img src="http://lorempixel.com/132/132/people/1" alt="">
-                                <a href="#" class="icon-link"><i class="icon icon-edit"></i></a>
-                                <a href="#" class="icon-link"><i class="icon icon-bad"></i></a>
-                                <span>File name.pdf</span>
-                                <span>245 kb</span>
-                            </div>
-
-                            <div class="file-name">
-                                <img src="http://lorempixel.com/132/132/people/2" alt="">
-                                <a href="#" class="icon-link"><i class="icon icon-edit"></i></a>
-                                <a href="#" class="icon-link"><i class="icon icon-bad"></i></a>
-                                <span>File name.pdf</span>
-                                <span>245 kb</span>
-                            </div>
-
-                            <div class="file-name">
-                                <img src="http://lorempixel.com/132/132/nature/1" alt="">
-                                <a href="#" class="icon-link"><i class="icon icon-edit"></i></a>
-                                <a href="#" class="icon-link"><i class="icon icon-bad"></i></a>
-                                <span>File name.pdf</span>
-                                <span>245 kb</span>
-                            </div>
-
-                            <div class="file-name">
-                                <img src="http://lorempixel.com/132/132/sports/1" alt="">
-                                <a href="#" class="icon-link"><i class="icon icon-edit"></i></a>
-                                <a href="#" class="icon-link"><i class="icon icon-bad"></i></a>
-                                <span>File name.pdf</span>
-                                <span>245 kb</span>
-                            </div>
-
-                            <div class="file-name">
-                                <img src="http://lorempixel.com/132/132/people/3" alt="">
-                                <a href="#" class="icon-link"><i class="icon icon-edit"></i></a>
-                                <a href="#" class="icon-link"><i class="icon icon-bad"></i></a>
-                                <span>File name.pdf</span>
-                                <span>245 kb</span>
-                            </div>
-                        </form>
-                    </div>
-
-                    <button type="button" class="btn emp btn-default">Browse files</button>
-                    <button type="button" class="btn emp btn-primary btn-blue"><i class="icon icon-out"></i>Upload</button>
-                    
-                </form>
             </div>
-            <div class="col-md-6">
-                <form role="form">
-                    <div class="form-group">
-                        <label class="control-label">Do you like marbles?</label>
-                        <div class="clear"></div>
-                        <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Do you like marbles?</label>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input name="n" type="radio" class="checkbox" value="1" id="n_1"><label class="cb-label" for="n_1">Yes</label>
-                            </div>
-                            <div class="col-md-2">
-                                <input name="n" type="radio" class="checkbox" value="1" id="n_2"><label class="cb-label" for="n_2">Yes</label>
-                            </div>
-                            <div class="col-md-2">
-                                <input name="n" type="radio" class="checkbox" value="1" id="n_3"><label class="cb-label" for="n_3">Yes</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Do you like marbles?</label>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input name="n" type="checkbox" class="radio" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                            </div>
-                            <div class="col-md-2">
-                                <input name="n" type="checkbox" class="radio" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                            </div>
-                            <div class="col-md-2">
-                                <input name="n" type="checkbox" class="radio" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Select<span class="mandat">*</span></label>
-                        <select class="selectize" placeholder="placeholder text goes here...">
-                            <option value="1">www.booking.com</option>
-                            <option value="2">www.amazon.com</option>
-                            <option value="3">www.apple.com</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Multiple select<span class="mandat">*</span></label>
-                        <div class="dropdown sel multiple">
-                            <button class="dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown">
-                                <span class="dropdown-value">www.badabing.com.hr</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
-                                <li role="presentation">
-                                    <div class="show-rec">
-                                        <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                        <label for="th2">Show recent</label>
-                                    </div>
-                                </li>
-                                <li role="presentation">
-                                    <div class="show-rec">
-                                        <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                        <label for="th3">Show recent</label>
-                                    </div>
-                                </li>
-                                <li role="presentation">
-                                    <div class="show-rec">
-                                        <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                        <label for="th4">Show recent</label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Date picker<span class="mandat">*</span></label>
-                        <div class="picker-holder">
-                            <input type="text" class="form-control datepicker"/>
-                            <span class="icon-calendar icon_c"></span>
-                        </div>
-                    </div>
 
-
-
-                </form>
-            </div>
-        </div>
-        <br/>
-        <div class="row">
             <div class="col-md-6">
                 <div class="panel">
                     <div class="panel-header">
@@ -702,11 +825,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="panel-footer text-right">
-                        <button class="btn btn-default">Cancel</button>
-                        <button class="btn btn-success">Explode</button>
-                        <button class="btn btn-primary" type="submit">Submit</button>
-                    </div>
+
                 </div>
             </div>
 
@@ -716,43 +835,65 @@
                         Panel header
                     </div>
                     <div class="panel-body">
+
                         <form role="form">
                             <div class="form-group">
                                 <label class="control-label">Do you like marbles?</label>
-                                <div class="clear"></div>
-                                <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Do you like marbles?</label>
                                 <div class="row">
-                                    <div class="col-md-2">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_1"><label class="cb-label" for="n_1">Yes</label>
+
+                                    <div class="col-md-3">
+                                        <div class="checkbox-custom mb5">
+                                            <input checked="" id="checkboxDefault3" type="checkbox">
+                                            <label for="checkboxDefault3">Yes</label>
+                                        </div>
+                                        <div class="checkbox-custom checkbox-disabled mb10">
+                                            <input checked="" disabled="" id="checkboxYes1" type="checkbox">
+                                            <label for="checkboxYes1">Yes</label>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_2"><label class="cb-label" for="n_2">Yes</label>
+                                    <div class="col-md-3">
+                                        <div class="radio-custom mb5">
+                                            <input id="radioExample3" name="radioExample" type="radio">
+                                            <label for="radioExample3">Yes</label>
+                                        </div>
+                                        <div class="radio-custom mb5 radio-disabled">
+                                            <input id="radioExample3" name="radioExample" type="radio">
+                                            <label for="radioExample3">Yes</label>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_3"><label class="cb-label" for="n_3">Yes</label>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">Do you like marbles?</label>
                                 <div class="row">
-                                    <div class="col-md-2">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
+
+                                    <div class="col-md-3">
+                                        <div class="checkbox-custom mb5">
+                                            <input checked="" id="checkboxDefault3" type="checkbox">
+                                            <label for="checkboxDefault3">Yes</label>
+                                        </div>
+                                        <div class="checkbox-custom checkbox-disabled mb10">
+                                            <input checked="" disabled="" id="checkboxYes1" type="checkbox">
+                                            <label for="checkboxYes1">Yes</label>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
+                                    <div class="col-md-3">
+                                        <div class="radio-custom mb5">
+                                            <input id="radioExample3" name="radioExample" type="radio">
+                                            <label for="radioExample3">Yes</label>
+                                        </div>
+                                        <div class="radio-custom mb5 radio-disabled">
+                                            <input id="radioExample3" name="radioExample" type="radio">
+                                            <label for="radioExample3">Yes</label>
+                                        </div>
                                     </div>
-                                    <div class="col-md-2">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label">Select<span class="mandat">*</span></label>
-                                <select class="selectize" placeholder="placeholder text goes here...">
+                                <select class="dropdown" placeholder="placeholder text goes here...">
                                     <option value="1">www.booking.com</option>
                                     <option value="2">www.amazon.com</option>
                                     <option value="3">www.apple.com</option>
@@ -767,21 +908,21 @@
                                     </button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
                                         <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                                <label for="th2">Show recent</label>
+                                           <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
                                             </div>
                                         </li>
                                         <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                                <label for="th3">Show recent</label>
+                                            <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
                                             </div>
                                         </li>
                                         <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                                <label for="th4">Show recent</label>
+                                            <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Show recent</label>
                                             </div>
                                         </li>
                                     </ul>
@@ -804,10 +945,12 @@
             </div>
         </div>
 
+        <br/>
+
         <div class="row">
             <div class="col-md-6">
-                <div class="panel">
-                    <div class="panel-header">
+                <div class="panel panel--boxed">
+                    <div class="panel-header panel-header--gray-bg">
                         Panel header (.form-sm)
                     </div>
                     <div class="panel-body">
@@ -847,40 +990,61 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Do you like marbles?</label>
-                                        <div class="clear"></div>
-                                        <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label">Do you like marbles?</label>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <input name="n" type="radio" class="radio" value="1" id="n_1"><label class="cb-label" for="n_1">Yes</label>
+
+                                            <div class="col-md-3">
+                                                <div class="checkbox-custom mb5">
+                                                    <input checked="" id="checkboxDefault7" type="checkbox">
+                                                    <label for="checkboxDefault7">Yes</label>
+                                                </div>
+                                                <div class="checkbox-custom checkbox-disabled mb10">
+                                                    <input checked="" disabled="" id="checkboxYes10" type="checkbox">
+                                                    <label for="checkboxYes10">Yes</label>
+                                                </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <input name="n" type="radio" class="radio" value="1" id="n_2"><label class="cb-label" for="n_2">Yes</label>
+                                            <div class="col-md-3">
+                                                <div class="radio-custom mb5">
+                                                    <input id="radioExample3" name="radioExample" type="radio">
+                                                    <label for="radioExample3">Yes</label>
+                                                </div>
+                                                <div class="radio-custom mb5 radio-disabled">
+                                                    <input id="radioExample4" name="radioExample" type="radio">
+                                                    <label for="radioExample4">Yes</label>
+                                                </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <input name="n" type="radio" class="radio" value="1" id="n_3"><label class="cb-label" for="n_3">Yes</label>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Do you like marbles?</label>
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
+
+                                            <div class="col-md-3">
+                                                <div class="checkbox-custom mb5">
+                                                    <input checked="" id="checkboxDefault3" type="checkbox">
+                                                    <label for="checkboxDefault3">Yes</label>
+                                                </div>
+                                                <div class="checkbox-custom checkbox-disabled mb10">
+                                                    <input checked="" disabled="" id="checkboxYes1" type="checkbox">
+                                                    <label for="checkboxYes1">Yes</label>
+                                                </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
+                                            <div class="col-md-3">
+                                                <div class="radio-custom mb5">
+                                                    <input id="radioExample3" name="radioExample" type="radio">
+                                                    <label for="radioExample3">Yes</label>
+                                                </div>
+                                                <div class="radio-custom mb5 radio-disabled">
+                                                    <input id="radioExample3" name="radioExample" type="radio">
+                                                    <label for="radioExample3">Yes</label>
+                                                </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Select<span class="mandat">*</span></label>
-                                        <select class="selectize" placeholder="placeholder text goes here...">
+                                        <select class="dropdown" placeholder="placeholder text goes here...">
                                             <option value="1">www.booking.com</option>
                                             <option value="2">www.amazon.com</option>
                                             <option value="3">www.apple.com</option>
@@ -937,9 +1101,9 @@
             </div>
 
             <div class="col-md-6">
-                <div class="panel">
+                <div class="panel panel--horizontal">
                     <div class="panel-header">
-                        Panel header (.form-horizontal)
+                        <span>Panel header (.form-horizontal)</span>
                     </div>
                     <div class="panel-body">
                         <form role="form" class="form-sm form-horizontal">
@@ -957,26 +1121,28 @@
                                             <textarea class="form-control"></textarea>
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-2">Do you like it?</label>
-                                        <div class="col-md-10">
-                                            <input type="checkbox" name="my-checkbox" class="switcher" checked />
-                                        </div>
-                                    </div>
 
                                     <div class="form-group">
                                         <label class="control-label col-md-2">Do you like marbles?</label>
-                                        <div class="col-md-10">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4" class="cb-label">Yes</label>
-                                                </div>
+
+                                        <div class="col-md-3">
+                                            <div class="checkbox-custom mb5">
+                                                <input checked="" id="checkboxDefault3" type="checkbox">
+                                                <label for="checkboxDefault3">Yes</label>
+                                            </div>
+                                            <div class="checkbox-custom checkbox-disabled mb10">
+                                                <input checked="" disabled="" id="checkboxYes1" type="checkbox">
+                                                <label for="checkboxYes1">Yes</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="radio-custom mb5">
+                                                <input id="radioExample3" name="radioExample" type="radio">
+                                                <label for="radioExample3">Yes</label>
+                                            </div>
+                                            <div class="radio-custom mb5 radio-disabled">
+                                                <input id="radioExample3" name="radioExample" type="radio">
+                                                <label for="radioExample3">Yes</label>
                                             </div>
                                         </div>
                                     </div>
@@ -984,7 +1150,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-2">Select<span class="mandat">*</span></label>
                                         <div class="col-md-10">
-                                            <select class="selectize" placeholder="placeholder text goes here...">
+                                            <select class="dropdown" placeholder="placeholder text goes here...">
                                                 <option value="1">www.booking.com</option>
                                                 <option value="2">www.amazon.com</option>
                                                 <option value="3">www.apple.com</option>
@@ -1002,21 +1168,21 @@
                                                 </button>
                                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
                                                     <li role="presentation">
-                                                        <div class="show-rec">
-                                                            <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                                            <label for="th2">Show recent</label>
+                                                       <div class="checkbox-custom mb5">
+                                                            <input checked="" id="checkboxDefault3" type="checkbox">
+                                                            <label for="checkboxDefault3">Show recent</label>
                                                         </div>
                                                     </li>
                                                     <li role="presentation">
-                                                        <div class="show-rec">
-                                                            <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                                            <label for="th3">Show recent</label>
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked="" id="checkboxDefault3" type="checkbox">
+                                                            <label for="checkboxDefault3">Show recent</label>
                                                         </div>
                                                     </li>
                                                     <li role="presentation">
-                                                        <div class="show-rec">
-                                                            <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                                            <label for="th4">Show recent</label>
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked="" id="checkboxDefault3" type="checkbox">
+                                                            <label for="checkboxDefault3">Show recent</label>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -1028,7 +1194,7 @@
                                         <label class="control-label col-md-2">Date picker<span class="mandat">*</span></label>
                                         <div class="col-md-10">
                                             <div class="picker-holder">
-                                                <input type="text" class="form-control datepicker hasDatepicker">
+                                                <input type="text" class="form-control datepicker"/>
                                                 <span class="icon-calendar icon_c"></span>
                                             </div>
                                         </div>
@@ -1038,10 +1204,6 @@
                             </div>
                         </form>
                     </div>
-                    <div class="panel-footer text-right">
-                        <button class="btn btn-lg btn-default"><span>Cancel</span></button>
-                        <button class="btn btn-lg btn-primary" type="submit"><span>Submit</span> <span class="icon right icon-next"></span></button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1049,9 +1211,10 @@
     </div>
 </div>
 <footer>
-    <div class="developer-mode">
-        <span>Developer mode</span>
-        <input type="checkbox" name="my-checkbox" class="switcher" checked>
+    <div class="developer-mode switch switch--yes-no switch--inline">
+        <span class="switch-label switch-label--left">Developer mode</span>
+        <input id="exampleSwitch1" type="checkbox" name="exampleSwitch1"  checked>
+        <label for="exampleSwitch1" data-on="On" data-off="Off"></label>
     </div>
     <ul class="links">
         <li><a href="#">Webiny 2.2</a></li>
@@ -1078,11 +1241,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src='js/icheck.js'></script>
-<script type="text/javascript" src='js/selectize.js'></script>
-<script type="text/javascript" src='js/bootstrap-switch.js'></script>
+
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="vendor/plugins/daterange/daterangepicker.min.js"></script>
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="js/onload.js"></script>
+
+<script type="text/javascript">
+  $('select').select2();
+</script>
 
 </body>
 </html>

@@ -1,11 +1,15 @@
 .btn {
-  padding: 8px 10px 8px 10px;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 14px 20px;
+  vertical-align: top;
+
   text-align: center;
   font-size: 12px;
+  line-height: 1;
   text-transform: uppercase;
-  border-radius: 50px;
-  margin-right: 8px;
-  display: inline-block;
+
+  border-radius: 60px;
 }
 
 button.btn {
@@ -183,6 +187,32 @@ button.btn {
       width: 4px;
       height: 4px;
       background-color: #FA5A28;
+    }
+  }
+}
+
+.btn {
+  &.upload {
+    display: inline-block;
+    width: auto;
+    padding: 14px 12px;
+    margin-bottom: 10px;
+    position: relative;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    &:before {
+      content: "\e83c";
+      margin-right: 5px;
+
+      color: #fff;
+      font-family: 'fontello';
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1em;
     }
   }
 }
