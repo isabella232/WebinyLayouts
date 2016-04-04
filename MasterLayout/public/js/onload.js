@@ -26,14 +26,6 @@ function fooHideWizard(wName){
         // tooltip
 		$('.sign-in-holder a, a[data-toggle="tooltip"], span[data-toggle="tooltip"], button[data-toggle="tooltip"]').tooltip();
 
-
-        // input
-        $('.checkbox, .radio').iCheck({
-            checkboxClass: 'icheckbox_minimal',
-            radioClass: 'iradio_minimal',
-            increaseArea: '20%' // optional
-        });
-        
         // .tablet_nav
         $("a.tablet-navigation").bind('click', function(){
             $("body").toggleClass('opened-tablet-nav');
@@ -86,28 +78,11 @@ function fooHideWizard(wName){
                return false;
 
             }
-
-
-
-
         });
-
-
-        // datepicker
-        $( ".datepicker" ).datepicker({
-            showOn: "button",
-            showOn: "both",
-            buttonImageOnly: true
-        });
-        $(".picker-holder span.icon_c").bind('click', function(){
-            var this_c = $(this).closest('.picker-holder');
-            $(".datepicker" , this_c).datepicker("show");
-            return false;
-        });
-        $(".picker-holder img").remove();
+        
+        $('select').select2();
 
         // perfectScrollbar
         $('.left-menu').perfectScrollbar();
         // $('.scrl_wrapper_submenu').perfectScrollbar();
-
 	});

@@ -24,6 +24,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="img/favicon.ico"/>
 
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
     <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/webiny.css">
 
@@ -538,18 +539,22 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Date picker<span class="mandat">*</span></label>
-                                        <div class="picker-holder">
-                                            <input type="text" class="form-control datepicker"/>
-                                            <span class="icon-calendar icon_c"></span>
+                                        <div class="input-group date" id="datetimepicker1">
+                                            <input class="form-control" type="text">
+                                            <span class="input-group-addon cursor">
+                                                <i class="icon-calendar icon_c"></i>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label">Date picker<span class="mandat">*</span></label>
-                                        <div class="picker-holder">
-                                            <input type="text" class="form-control datepicker"/>
-                                            <span class="icon-calendar icon_c"></span>
+                                        <div class="input-group date" id="datetimepicker2">
+                                            <input class="form-control" type="text">
+                                            <span class="input-group-addon cursor">
+                                                <i class="icon-calendar icon_c"></i>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -929,10 +934,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label">Date picker<span class="mandat">*</span></label>
-                                <div class="picker-holder">
-                                    <input type="text" class="form-control datepicker"/>
-                                    <span class="icon-calendar icon_c"></span>
+                                <div class="form-group">
+                                    <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                    <div class="input-group date" id="datetimepicker3">
+                                        <input class="form-control" type="text">
+                                        <span class="input-group-addon cursor">
+                                            <i class="icon-calendar icon_c"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -1080,10 +1089,14 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Date picker<span class="mandat">*</span></label>
-                                        <div class="picker-holder">
-                                            <input type="text" class="form-control datepicker"/>
-                                            <span class="icon-calendar icon_c"></span>
+                                        <div class="form-group">
+                                            <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                            <div class="input-group date" id="datetimepicker4">
+                                                <input class="form-control" type="text">
+                                                <span class="input-group-addon cursor">
+                                                    <i class="icon-calendar icon_c"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1191,11 +1204,13 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-2">Date picker<span class="mandat">*</span></label>
-                                        <div class="col-md-10">
-                                            <div class="picker-holder">
-                                                <input type="text" class="form-control datepicker"/>
-                                                <span class="icon-calendar icon_c"></span>
+                                        <div class="form-group">
+                                            <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                            <div class="input-group date" id="datetimepicker5">
+                                                <input class="form-control" type="text">
+                                                <span class="input-group-addon cursor">
+                                                    <i class="icon-calendar icon_c"></i>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1240,12 +1255,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="vendor/moment/moment.min.js"></script>
 <script type="text/javascript" src='js/icheck.js'></script>
 
 <!-- DateRange Plugin -->
-<script type="text/javascript" src="vendor/plugins/daterange/daterangepicker.min.js"></script>
+<script type="text/javascript" src="vendor/daterange/daterangepicker.min.js"></script>
 <!-- DateTime Plugin -->
-<script type="text/javascript" src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
 <!-- Select2 Plugin Plugin -->
 <script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
 
@@ -1253,8 +1269,46 @@
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="js/onload.js"></script>
 
-<script type="text/javascript">
-  $('select').select2();
+<script type="text/javascript">  
+    // Init DateTimepicker - fields
+    $('#datetimepicker1').datetimepicker({
+        useCurrent: false,
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-nextconverte22222"
+        }
+    });
+    $('#datetimepicker2').datetimepicker({
+        useCurrent: false, //Important! See issue #1075
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-nextconverte22222"
+        }
+    });
+    $("#datetimepicker1").on("dp.change", function (e) {
+        $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+    });
+    $("#datetimepicker2").on("dp.change", function (e) {
+        $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+    });
+    $('#datetimepicker3').datetimepicker({
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-nextconverte22222"
+        }
+    });
+    $('#datetimepicker4').datetimepicker({
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-nextconverte22222"
+        }
+    });
+    $('#datetimepicker5').datetimepicker({
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-nextconverte22222"
+        }
+    });
 </script>
 
 </body>
