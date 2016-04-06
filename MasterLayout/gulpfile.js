@@ -35,7 +35,7 @@ gulp.task('serve', ['sass'], function(){
 });
 
 gulp.task('sass', function() {
-    return gulp.src(['resources/sass/webiny.scss', 'resources/sass/dashboard.scss'])
+    return gulp.src(['resources/sass/webiny.scss', 'resources/sass/pages/dashboard/dashboard.scss', 'resources/sass/pages/editor/webiny_editor.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .on('error', errorLog)
