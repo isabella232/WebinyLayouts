@@ -26,8 +26,7 @@
 
     <link rel="stylesheet" href="css/webiny.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
-          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/fontello.css">
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
@@ -37,7 +36,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="">
+<body>
 <div class="master minimized">
 <div class="master-navigation">
 
@@ -447,141 +446,141 @@
         </div>
     </div>
 </div>
-<div class="master-content container-fluid">
-    <div class="master-content__header">
-        <div class="row">
+<div class="master-content">
+    <div class="container-fluid">
+        <div class="master-content__header">
             <h2>Tabs and Accordion</h2>
         </div>
-    </div>
-    <div class="dashboard-content">
-
-        <!--
-        ################
-        HORIZONTAL TABS
-        ###############
-        -->
-        <div class="row">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs col-md-12" role="tablist">
-                <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                <li><a href="#profile" role="tab" data-toggle="tab"><i class="icon icon-user"></i></a></li>
-                <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-                <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="home">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                    </p>
-                </div>
-                <div class="tab-pane" id="profile"></div>
-                <div class="tab-pane" id="messages"></div>
-                <div class="tab-pane" id="settings"></div>
-            </div>
-        </div>
-        <!--
-        ################
-        HORIZONTAL TABS END
-        ###############
-        -->
-
-        <br/>
-
-        <!--
-        ################
-        VERTICAL TABS
-        ###############
-        -->
-        <div class="row">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs nav-stacked col-md-1" role="tablist">
-                <li class="active"><a href="#homev" role="tab" data-toggle="tab">Home</a></li>
-                <li><a href="#profilev" role="tab" data-toggle="tab">Profile <i class="icon icon-user"></i></a></li>
-                <li><a href="#messagesv" role="tab" data-toggle="tab"><i class="icon icon-user"></i> Messages</a></li>
-                <li><a href="#settingsv" role="tab" data-toggle="tab">Settings <button class="close closeTab" type="button" >×</button></a></li>
-            </ul>
+        <div class="dashboard-content">
+        
+            <!--
+            ################
+            HORIZONTAL TABS
+            ###############
+            -->
+            <div class="row">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs col-md-12" role="tablist">
+                    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile" role="tab" data-toggle="tab"><i class="icon icon-user"></i></a></li>
+                    <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+                </ul>
+        
                 <!-- Tab panes -->
-            <div class="tab-content col-md-11">
-                <div class="tab-pane active" id="homev">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                    </p>
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                    </p>
-                </div>
-                <div class="tab-pane" id="profilev"></div>
-                <div class="tab-pane" id="messagesv"></div>
-                <div class="tab-pane" id="settingsv"></div>
-            </div>
-        </div>
-        <!--
-        ################
-        VERTICAL TABS END
-        ###############
-        -->
-
-        <br/>
-
-        <!--
-        ################
-        COLLAPSIBLE
-        ###############
-        -->
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            Collapsible Group Item #1
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
                         </p>
                     </div>
+                    <div class="tab-pane" id="profile"></div>
+                    <div class="tab-pane" id="messages"></div>
+                    <div class="tab-pane" id="settings"></div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            Collapsible Group Item #2
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <!--
+            ################
+            HORIZONTAL TABS END
+            ###############
+            -->
+        
+            <br/>
+        
+            <!--
+            ################
+            VERTICAL TABS
+            ###############
+            -->
+            <div class="row">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-stacked col-md-1" role="tablist">
+                    <li class="active"><a href="#homev" role="tab" data-toggle="tab">Home</a></li>
+                    <li><a href="#profilev" role="tab" data-toggle="tab">Profile <i class="icon icon-user"></i></a></li>
+                    <li><a href="#messagesv" role="tab" data-toggle="tab"><i class="icon icon-user"></i> Messages</a></li>
+                    <li><a href="#settingsv" role="tab" data-toggle="tab">Settings <button class="close closeTab" type="button" >×</button></a></li>
+                </ul>
+                    <!-- Tab panes -->
+                <div class="tab-content col-md-11">
+                    <div class="tab-pane active" id="homev">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                        </p>
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
                         </p>
                     </div>
+                    <div class="tab-pane" id="profilev"></div>
+                    <div class="tab-pane" id="messagesv"></div>
+                    <div class="tab-pane" id="settingsv"></div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            Collapsible Group Item #3
-                        </a>
-                    </h4>
+            <!--
+            ################
+            VERTICAL TABS END
+            ###############
+            -->
+        
+            <br/>
+        
+            <!--
+            ################
+            COLLAPSIBLE
+            ###############
+            -->
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Collapsible Group Item #1
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Collapsible Group Item #2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                Collapsible Group Item #3
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--
+            ################
+            COLLAPSIBLE END
+            ###############
+            -->
+        
+        
         </div>
-        <!--
-        ################
-        COLLAPSIBLE END
-        ###############
-        -->
-
-
     </div>
 </div>
 <footer>

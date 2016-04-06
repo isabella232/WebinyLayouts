@@ -26,10 +26,9 @@
 
     <link rel="stylesheet" href="css/webiny.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet'
-          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
-<body class="">
+<body>
 <div class="master minimized">
 <div class="master-navigation">
 <div class="navbar navbar-inverse" role="navigation">
@@ -252,21 +251,21 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
                 <span class="top-arr"></span>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" class="checkbox" type="checkbox" value="" id="th">
-                        <label for="th">Add new post</label>
+                    <div class="checkbox-custom mb5">
+                        <input checked="" id="checkboxDefault1" type="checkbox">
+                        <label for="checkboxDefault1">Add new post</label>
                     </div>
                 </li>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" class="checkbox" type="checkbox" value="" id="fo">
-                        <label for="fo">Add new tag</label>
+                    <div class="checkbox-custom mb5">
+                        <input checked="" id="checkboxDefault2" type="checkbox">
+                        <label for="checkboxDefault2">Add new tag</label>
                     </div>
                 </li>
                 <li role="presentation">
-                    <div class="show-rec">
-                        <input name="" class="checkbox" type="checkbox" value="" id="fi">
-                        <label for="fi">Mange users</label>
+                    <div class="checkbox-custom mb5">
+                        <input checked="" id="checkboxDefault3" type="checkbox">
+                        <label for="checkboxDefault3">Manage users</label>
                     </div>
                 </li>
             </ul>
@@ -438,665 +437,680 @@
         </div>
     </div>
 </div>
-<div class="master-content container-fluid">
-    <div class="master-content__header">
-        <div class="row">
+<div class="master-content master-content--no-background">
+    <div class="container-fluid">
+        <div class="master-content__header">
             <h2>Tables</h2>
         </div>
-    </div>
-<div class="dashboard-content">
-
-<div class="row">
-<div class="col-md-12">
-
-<h1>Table standard</h1>
-
-<!-- Table filters -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-            <form class="form-sm navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button"
-                            onclick="$('#complexFilters').toggle(); $(this).parent().toggleClass('open');">
-                        Filter results
-                        <span class="caret"></span>
-                    </button>
-                </li>
-                <li class="dropdown right">
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                        <span class="icon icon-columns"></span>
-                        Show columns
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                <label for="th2">Show recent</label>
-                            </div>
-                        </li>
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                <label for="th3">Show recent</label>
-                            </div>
-                        </li>
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                <label for="th4">Show recent</label>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- /Table filters -->
-
-<!-- Complex filters dropdown -->
-<div class="row table-filters" id="complexFilters" style="display: none">
-    <form class="form-sm row" role="search">
-        <div class="col-md-3">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <select class="selectize" placeholder="placeholder text goes here...">
-                    <option value="1">www.booking.com</option>
-                    <option value="2">www.amazon.com</option>
-                    <option value="3">www.apple.com</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <div class="dropdown sel multiple">
-                    <button class="dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown">
-                        <span class="dropdown-value">www.badabing.com.hr</span>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                <label for="th2">Show recent</label>
-                            </div>
-                        </li>
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                <label for="th3">Show recent</label>
-                            </div>
-                        </li>
-                        <li role="presentation">
-                            <div class="show-rec">
-                                <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                <label for="th4">Show recent</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-4">
-                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4"
-                                                                                                   class="cb-label">Yes</label>
-                    </div>
-                    <div class="col-md-4">
-                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4"
-                                                                                                   class="cb-label">Yes</label>
-                    </div>
-                    <div class="col-md-4">
-                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label for="n_4"
-                                                                                                   class="cb-label">Yes</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="clearfix"><br/></div>
-        <!-- nakon svaka 4 filter treba ubaciti ovaj div -->
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <label class="control-label col-md-4">Pick one?</label>
-
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <input name="n" type="radio" class="radio" value="1" id="n_1"><label class="cb-label"
-                                                                                                 for="n_1">Yes</label>
-                        </div>
-                        <div class="col-md-4">
-                            <input name="n" type="radio" class="radio" value="1" id="n_2"><label class="cb-label"
-                                                                                                 for="n_2">Yes</label>
-                        </div>
-                        <div class="col-md-4">
-                            <input name="n" type="radio" class="radio" value="1" id="n_3"><label class="cb-label"
-                                                                                                 for="n_3">Yes</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <label class="control-label col-md-7">Do you like marbles?</label>
-
-                <div class="col-md-5">
-                    <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="form-group">
-                <label class="control-label col-md-4">Date picker<span class="mandat">*</span></label>
-
-                <div class="col-md-8">
-                    <div class="picker-holder">
-                        <input type="text" class="form-control datepicker"/>
-                        <span class="icon-calendar icon_c"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </form>
-    <hr/>
-    <div class="row">
+        <div class="dashboard-content">
+        
+        <div class="row">
         <div class="col-md-12">
-            <div class="btn-group pull-right">
-                <button type="button" class="btn btn-success">Apply filter</button>
-                <button type="button" class="btn btn-success dropdown-toggle"
-                        onclick="$('#testMenut21').parent().toggleClass('open');">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" role="menu" id="testMenut21">
-                    <li><a href="#">Save filter</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Saved Filters</li>
-                    <li>
-                        <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
-                        <a href="#" class="del">x</a>
+        
+        <h1>Table standard</h1>
+        
+        <!-- Table filters -->
+        <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <form class="form-sm navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button"
+                                onclick="$('#complexFilters').toggle(); $(this).parent().toggleClass('open');">
+                            Filter results
+                            <span class="caret"></span>
+                        </button>
                     </li>
-                    <li>
-                        <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
-                        <a href="#" class="del">x</a>
-                    </li>
-                    <li>
-                        <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
-                        <a href="#" class="del">x</a>
+                    <li class="dropdown right">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="icon icon-columns"></span>
+                            Show columns
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th2" type="checkbox" value="">
+                                    <label for="th2">Show recent</label>
+                                </div>
+                            </li>
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th3" type="checkbox" value="">
+                                    <label for="th3">Show recent</label>
+                                </div>
+                            </li>
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th4" type="checkbox" value="">
+                                    <label for="th4">Show recent</label>
+                                </div>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
-</div>
-<!-- /Complex filters dropdown -->
-
-<!-- Applied filters -->
-<div class="applied-filters clearfix">
-    <span>Applied filters: </span>
-    <ul>
-        <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
-        <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
-        <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
-    </ul>
-    <a href="#" class="clear-all">Clear all filters<span>x</span></a>
-
-</div>
-<!-- /Applied filters -->
-
-<!-- Table -->
-<div class="table-responsive">
-<table class="table table-striped">
-<thead>
-<tr>
-    <th>Sel</th>
-    <th class="text-left" style="width: 80%">Item description</th>
-    <th class="sorted">
-        <div class="dropdown balloon right">
-            <button class="btn btn-default dropdown-toggle" type="button"
-                    data-toggle="dropdown">
-                Column 1
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation" class="dropdown-header">Sort</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
-                </li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                    action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                    here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                    link</a></li>
-            </ul>
-        </div>
-    </th>
-    <th>
-        <a href="#">
-            <span>Column 2</span>
-        </a>
-    </th>
-    <th>
-        <a href="#">
-            <span>Column 2</span>
-        </a>
-    </th>
-    <th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td><input name="" type="checkbox" class="checkbox" value=""></td>
-    <td class="left" data-title="Item description:">Item section number one</td>
-    <td class="sorted" data-title="Column 1:">71,566,000</td>
-    <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-    <td data-title="Column 3:">7,566,000</td>
-    <td data-title="Sel:"></td>
-</tr>
-<tr class="active">
-    <td></td>
-    <td class="left" data-title="Item description:">
-        Item section number one Item section number one Item section number one Item section number one Item section number one
-        Item section number one Item section number one Item section number one Item section number one Item section number one
-        Item section number one Item section number one Item section number one Item section number one Item section number one
-    </td>
-    <td class="sorted" data-title="Column 1:">7,566,000</td>
-    <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-    <td data-title="Column 3:">7,566,000</td>
-    <td class="right" data-title="Sel:">
-        <div class="dropdown right">
-            <button class="btn btn-default dropdown-toggle" type="button"
-                    data-toggle="dropdown">
-                Action
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation" class="dropdown-header">Dropdown header</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
-                </li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                    action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                    here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                    link</a></li>
-            </ul>
-        </div>
-    </td>
-</tr>
-<tr>
-    <td></td>
-    <td class="left" data-title="Item description:">
-        <a href="#" class="expand" onclick="$('#table-hidden-row').toggle(); $(this).toggleClass('close');"></a>
-        Item section number one
-    </td>
-    <td class="sorted" data-title="Column 1:">7,566,000</td>
-    <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-    <td data-title="Column 3:">7,566,000</td>
-    <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
-</tr>
-<tr class="hidden-row" id="table-hidden-row">
-    <td colspan="6">
-        <div class="row">
-            <div class="col-md-4">
-                <dl class="dl-horizontal">
-                    <dt>Name</dt>
-                    <dd>Jack</dd>
-
-                    <dt>Surname</dt>
-                    <dd>Jackson</dd>
-
-                    <dt>Email</dt>
-                    <dd>jack@home.com</dd>
-
-                    <dt>Sex</dt>
-                    <dd>Male</dd>
-                </dl>
+        </nav>
+        <!-- /Table filters -->
+        
+        <!-- Complex filters dropdown -->
+        <div class="row table-filters" id="complexFilters" style="display: none">
+        <form class="form-sm row" role="search">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
             </div>
-            <div class="col-md-4">
-                <dl class="dl-horizontal">
-                    <dt>Name</dt>
-                    <dd>Jack</dd>
-
-                    <dt>Surname</dt>
-                    <dd>Jackson</dd>
-
-                    <dt>Email</dt>
-                    <dd>jack@home.com</dd>
-
-                    <dt>Sex</dt>
-                    <dd>Male</dd>
-                </dl>
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <select class="dropdown" placeholder="placeholder text goes here...">
+                        <option value="1">www.booking.com</option>
+                        <option value="2">www.amazon.com</option>
+                        <option value="3">www.apple.com</option>
+                    </select>
+                </div>
             </div>
-        </div>
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="dropdown sel multiple">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu21" data-toggle="dropdown">
+                            <span class="dropdown-value">www.badabing.com.hr</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th5" type="checkbox" value="">
+                                    <label for="th3">Show recent</label>
+                                </div>
+                            </li>
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th6" type="checkbox" value="">
+                                    <label for="th3">Show recent</label>
+                                </div>
+                            </li>
+                            <li role="presentation">
+                                <div class="checkbox-custom mb5">
+                                    <input name="" class="checkbox" id="th7" type="checkbox" value="">
+                                    <label for="th3">Show recent</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="checkbox-custom mb5">
+                                <input name="n" class="checkbox" id="n_1" type="checkbox" value="1">
+                                <label for="n_1" class="cb-label">Yes</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="checkbox-custom mb5">
+                                <input name="n" class="checkbox" id="n_2" type="checkbox" value="1">
+                                <label for="n_2" class="cb-label">Yes</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="checkbox-custom mb5">
+                                <input name="n" class="checkbox" id="n_3" type="checkbox" value="1">
+                                <label for="n_3" class="cb-label">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="clearfix"><br/></div>
+            <!-- nakon svaka 4 filter treba ubaciti ovaj div -->
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label col-md-4">Pick one?</label>
+        
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="radio-custom mb5">
+                                    <input id="radioExample1" name="radioExample" type="radio">
+                                    <label for="radioExample1">Yes</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="radio-custom mb5">
+                                    <input id="radioExample2" name="radioExample" type="radio">
+                                    <label for="radioExample2">Yes</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="radio-custom mb5">
+                                    <input id="radioExample3" name="radioExample" type="radio">
+                                    <label for="radioExample3">Yes</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <span class="control-label col-md-7">Do you like marbles?</span>
+        
+                    <div class="col-md-5">
+                        <div class="switch switch--yes-no">
+                            <input id="exampleSwitch1" type="checkbox" name="exampleSwitch1">
+                            <label for="exampleSwitch1" data-on="Yes" data-off="No"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label col-md-4">Date picker<span class="mandat">*</span></label>
+        
+                    <div class="col-md-8">
+                        <div class="picker-holder">
+                            <input type="text" class="form-control datepicker"/>
+                            <span class="icon-calendar icon_c"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </form>
         <hr/>
         <div class="row">
             <div class="col-md-12">
-                <form role="form" class="form-sm">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Email address</label> <input type="email"
-                                                                                          placeholder="Enter email"
-                                                                                          class="form-control">
-                            </div>
-                            <div class="form-group error">
-                                <label class="control-label">
-                                    Password
-                                    <span class="mandat">*</span>
-                                </label>
-                                <span class="info-txt">(Intro text for your article)</span>
-                                <input type="password" placeholder="Password" class="form-control">
-                                <span class="icon icon-bad"></span>
-                            </div>
-                            <div class="form-group success">
-                                <label class="control-label">Email</label>
-                                <input type="email" placeholder="Email" class="form-control">
-                                <span class="icon icon-good"></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Disabled</label>
-                                <input type="email" disabled placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Read Only</label>
-                                <input type="email" readonly placeholder="Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Texarea</label>
-                                <textarea class="form-control"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="control-label">Do you like marbles?</label>
-
-                                <div class="clear"></div>
-                                <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Do you like marbles?</label>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_1"><label
-                                            class="cb-label" for="n_1">Yes</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_2"><label
-                                            class="cb-label" for="n_2">Yes</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input name="n" type="radio" class="radio" value="1" id="n_3"><label
-                                            class="cb-label" for="n_3">Yes</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Do you like marbles?</label>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                            for="n_4" class="cb-label">Yes</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                            for="n_4" class="cb-label">Yes</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                            for="n_4" class="cb-label">Yes</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Select<span class="mandat">*</span></label>
-                                <select class="selectize" placeholder="placeholder text goes here...">
-                                    <option value="1">www.booking.com</option>
-                                    <option value="2">www.amazon.com</option>
-                                    <option value="3">www.apple.com</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Multiple select<span class="mandat">*</span></label>
-
-                                <div class="dropdown sel multiple">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenu21"
-                                            data-toggle="dropdown">
-                                        <span class="dropdown-value">www.badabing.com.hr</span>
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
-                                        <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                                <label for="th2">Show recent</label>
-                                            </div>
-                                        </li>
-                                        <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                                <label for="th3">Show recent</label>
-                                            </div>
-                                        </li>
-                                        <li role="presentation">
-                                            <div class="show-rec">
-                                                <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                                <label for="th4">Show recent</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Date picker<span class="mandat">*</span></label>
-
-                                <div class="picker-holder">
-                                    <input type="text" class="form-control datepicker"/>
-                                    <span class="icon-calendar icon_c"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </form>
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-success">Apply filter</button>
+                    <button type="button" class="btn btn-success dropdown-toggle"
+                            onclick="$('#testMenut21').parent().toggleClass('open');">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" id="testMenut21">
+                        <li><a href="#">Save filter</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Saved Filters</li>
+                        <li>
+                            <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
+                            <a href="#" class="del">x</a>
+                        </li>
+                        <li>
+                            <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
+                            <a href="#" class="del">x</a>
+                        </li>
+                        <li>
+                            <a class="filter" role="menuitem" tabindex="-1" href="#">Filter name 1</a>
+                            <a href="#" class="del">x</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </td>
-</tr>
-<tr>
-    <td></td>
-    <td class="left" data-title="Item description:">
-        <img src="img/table_img.jpg" width="48" height="48">
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
         </div>
-    </td>
-    <td class="sorted" data-title="Column 1:">7,566,000</td>
-    <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-    <td data-title="Column 3:">7,566,000</td>
-    <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-    <td></td>
-    <td class="text-left" data-title="">Total</td>
-    <td data-title="Column 1:">233,546</td>
-    <td data-title="Column 2:">233,546</td>
-    <td data-title="Column 3:">233,546</td>
-    <td class="text-right"></td>
-</tr>
-</tfoot>
-</table>
-<div class="row">
-    <div class="col-md-8">
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                With Selected
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation" class="dropdown-header">Dropdown header</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        <!-- /Complex filters dropdown -->
+        
+        <!-- Applied filters -->
+        <div class="applied-filters clearfix">
+        <span>Applied filters: </span>
+        <ul>
+            <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
+            <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
+            <li><a href="#">Filter opt 1 </a><a href="#" class="del">x</a></li>
+        </ul>
+        <a href="#" class="clear-all">Clear all filters<span>x</span></a>
+        
+        </div>
+        <!-- /Applied filters -->
+        
+        <!-- Table -->
+        <div class="table-responsive">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+        <th>Sel</th>
+        <th class="text-left" style="width: 80%">Item description</th>
+        <th class="sorted">
+            <div class="dropdown balloon right">
+                <button class="btn btn-default dropdown-toggle" type="button"
+                        data-toggle="dropdown">
+                    Column 1
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="dropdown-header">Sort</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
+                        action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
+                        here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
+                        link</a></li>
+                </ul>
+            </div>
+        </th>
+        <th>
+            <a href="#">
+                <span>Column 2</span>
+            </a>
+        </th>
+        <th>
+            <a href="#">
+                <span>Column 2</span>
+            </a>
+        </th>
+        <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><input name="" type="checkbox" class="checkbox" value=""></td>
+        <td class="left" data-title="Item description:">Item section number one</td>
+        <td class="sorted" data-title="Column 1:">71,566,000</td>
+        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+        <td data-title="Column 3:">7,566,000</td>
+        <td data-title="Sel:"></td>
+        </tr>
+        <tr class="active">
+        <td></td>
+        <td class="left" data-title="Item description:">
+            Item section number one Item section number one Item section number one Item section number one Item section number one
+            Item section number one Item section number one Item section number one Item section number one Item section number one
+            Item section number one Item section number one Item section number one Item section number one Item section number one
+        </td>
+        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+        <td data-title="Column 3:">7,566,000</td>
+        <td class="right" data-title="Sel:">
+            <div class="dropdown right">
+                <button class="btn btn-default dropdown-toggle" type="button"
+                        data-toggle="dropdown">
+                    Action
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
+                        action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
+                        here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
+                        link</a></li>
+                </ul>
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <td></td>
+        <td class="left" data-title="Item description:">
+            <a href="#" class="expand" onclick="$('#table-hidden-row').toggle(); $(this).toggleClass('close');"></a>
+            Item section number one
+        </td>
+        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+        <td data-title="Column 3:">7,566,000</td>
+        <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
+        </tr>
+        <tr class="hidden-row" id="table-hidden-row">
+        <td colspan="6">
+            <div class="row">
+                <div class="col-md-4">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>Jack</dd>
+        
+                        <dt>Surname</dt>
+                        <dd>Jackson</dd>
+        
+                        <dt>Email</dt>
+                        <dd>jack@home.com</dd>
+        
+                        <dt>Sex</dt>
+                        <dd>Male</dd>
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>Jack</dd>
+        
+                        <dt>Surname</dt>
+                        <dd>Jackson</dd>
+        
+                        <dt>Email</dt>
+                        <dd>jack@home.com</dd>
+        
+                        <dt>Sex</dt>
+                        <dd>Male</dd>
+                    </dl>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-12">
+                    <form role="form" class="form-sm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Email address</label> <input type="email"
+                                                                                              placeholder="Enter email"
+                                                                                              class="form-control">
+                                </div>
+                                <div class="form-group error">
+                                    <label class="control-label">
+                                        Password
+                                        <span class="mandat">*</span>
+                                    </label>
+                                    <span class="info-txt">(Intro text for your article)</span>
+                                    <input type="password" placeholder="Password" class="form-control">
+                                    <span class="icon icon-bad"></span>
+                                </div>
+                                <div class="form-group success">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" placeholder="Email" class="form-control">
+                                    <span class="icon icon-good"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Disabled</label>
+                                    <input type="email" disabled placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Read Only</label>
+                                    <input type="email" readonly placeholder="Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Texarea</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label">Do you like marbles?</label>
+        
+                                    <div class="clear"></div>
+                                    <input type="checkbox" name="my-checkbox" class="switcher" checked>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Do you like marbles?</label>
+        
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input name="n" type="radio" class="radio" value="1" id="n_1"><label
+                                                class="cb-label" for="n_1">Yes</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="n" type="radio" class="radio" value="1" id="n_2"><label
+                                                class="cb-label" for="n_2">Yes</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="n" type="radio" class="radio" value="1" id="n_3"><label
+                                                class="cb-label" for="n_3">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Do you like marbles?</label>
+        
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                for="n_4" class="cb-label">Yes</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                for="n_4" class="cb-label">Yes</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                for="n_4" class="cb-label">Yes</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Select<span class="mandat">*</span></label>
+                                    <select class="selectize" placeholder="placeholder text goes here...">
+                                        <option value="1">www.booking.com</option>
+                                        <option value="2">www.amazon.com</option>
+                                        <option value="3">www.apple.com</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Multiple select<span class="mandat">*</span></label>
+        
+                                    <div class="dropdown sel multiple">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenu21"
+                                                data-toggle="dropdown">
+                                            <span class="dropdown-value">www.badabing.com.hr</span>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
+                                            <li role="presentation">
+                                                <div class="show-rec">
+                                                    <input name="" type="checkbox" class="checkbox" value="" id="th2">
+                                                    <label for="th2">Show recent</label>
+                                                </div>
+                                            </li>
+                                            <li role="presentation">
+                                                <div class="show-rec">
+                                                    <input name="" type="checkbox" class="checkbox" value="" id="th3">
+                                                    <label for="th3">Show recent</label>
+                                                </div>
+                                            </li>
+                                            <li role="presentation">
+                                                <div class="show-rec">
+                                                    <input name="" type="checkbox" class="checkbox" value="" id="th4">
+                                                    <label for="th4">Show recent</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Date picker<span class="mandat">*</span></label>
+        
+                                    <div class="picker-holder">
+                                        <input type="text" class="form-control datepicker"/>
+                                        <span class="icon-calendar icon_c"></span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+        </td>
+        </tr>
+        <tr>
+        <td></td>
+        <td class="left" data-title="Item description:">
+            <img src="img/table_img.jpg" width="48" height="48">
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+            </div>
+        </td>
+        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+        <td data-title="Column 3:">7,566,000</td>
+        <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+        <td></td>
+        <td class="text-left" data-title="">Total</td>
+        <td data-title="Column 1:">233,546</td>
+        <td data-title="Column 2:">233,546</td>
+        <td data-title="Column 3:">233,546</td>
+        <td class="text-right"></td>
+        </tr>
+        </tfoot>
+        </table>
+        <div class="row">
+        <div class="col-md-8">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    With Selected
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-success">Select all</button>
+            <button type="button" class="btn btn-default">Select none</button>
+        </div>
+        <div class="col-md-4 text-right">
+            <ul class="pagination">
+                <li class="previous">
+                    <a href="#">
+                        <span class="icon icon-caret-down"></span>
+                        <span>PREVIOUS</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="disabled"><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next">
+                    <a href="#">
+                        <span>NEXT</span>
+                        <span class="icon icon-caret-down"></span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <button type="button" class="btn btn-success">Select all</button>
-        <button type="button" class="btn btn-default">Select none</button>
-    </div>
-    <div class="col-md-4 text-right">
-        <ul class="pagination">
-            <li class="previous">
-                <a href="#">
-                    <span class="icon icon-caret-down"></span>
-                    <span>PREVIOUS</span>
-                </a>
-            </li>
-            <li><a href="#">1</a></li>
-            <li class="active"><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li class="disabled"><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li class="next">
-                <a href="#">
-                    <span>NEXT</span>
-                    <span class="icon icon-caret-down"></span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-<!-- /Table -->
-
-<hr/>
-
-<h1>Minimal table</h1>
-<!-- Minimal table -->
-<div class="row">
-    <div class="col-md-6">
-        <div class="table-responsive">
-            <table class="table table-simple">
-                <thead>
-                <tr>
-                    <th class="text-left" style="width: 80%">Item description</th>
-                    <th class="sorted">
-                        <div class="dropdown balloon right">
-                            <button class="btn btn-default dropdown-toggle" type="button"
-                                    data-toggle="dropdown">
-                                Column 1
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                <li role="presentation" class="dropdown-header">Sort</li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
-                                </li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                                    action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                                    here</a></li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                                    link</a></li>
-                            </ul>
-                        </div>
-                    </th>
-                    <th>
-                        <a href="#">
-                            <span>Column 2</span>
-                        </a>
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-
-                    <td class="left" data-title="Item description:">Item section number one</td>
-                    <td class="sorted" data-title="Column 1:">71,566,000</td>
-
-                    <td data-title="Column 3:">7,566,000</td>
-                </tr>
-                <tr class="active">
-
-                    <td class="left" data-title="Item description:">Item section number one</td>
-                    <td class="sorted" data-title="Column 1:">7,566,000</td>
-
-                    <td data-title="Column 3:">7,566,000</td>
-
-                </tr>
-                <tr>
-
-                    <td class="left" data-title="Item description:">
-                        Item section number one
-                    </td>
-                    <td class="sorted" data-title="Column 1:">7,566,000</td>
-
-                    <td data-title="Column 3:">7,566,000</td>
-
-                </tr>
-                <tr>
-
-                    <td class="left" data-title="Item description:">Item section number one</td>
-                    <td class="sorted" data-title="Column 1:">7,566,000</td>
-
-                    <td data-title="Column 3:">7,566,000</td>
-
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-
-                    <td class="text-left" data-title="">Total</td>
-                    <td data-title="Column 1:">233,546</td>
-                    <td data-title="Column 3:">233,546</td>
-
-                </tr>
-                </tfoot>
-            </table>
+        </div>
+        </div>
+        <!-- /Table -->
+        
+        <hr/>
+        
+        <h1>Minimal table</h1>
+        <!-- Minimal table -->
+        <div class="row">
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-simple">
+                    <thead>
+                    <tr>
+                        <th class="text-left" style="width: 80%">Item description</th>
+                        <th class="sorted">
+                            <div class="dropdown balloon right">
+                                <button class="btn btn-default dropdown-toggle" type="button"
+                                        data-toggle="dropdown">
+                                    Column 1
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation" class="dropdown-header">Sort</li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
+                                        action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
+                                        here</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
+                                        link</a></li>
+                                </ul>
+                            </div>
+                        </th>
+                        <th>
+                            <a href="#">
+                                <span>Column 2</span>
+                            </a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+        
+                        <td class="left" data-title="Item description:">Item section number one</td>
+                        <td class="sorted" data-title="Column 1:">71,566,000</td>
+        
+                        <td data-title="Column 3:">7,566,000</td>
+                    </tr>
+                    <tr class="active">
+        
+                        <td class="left" data-title="Item description:">Item section number one</td>
+                        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        
+                        <td data-title="Column 3:">7,566,000</td>
+        
+                    </tr>
+                    <tr>
+        
+                        <td class="left" data-title="Item description:">
+                            Item section number one
+                        </td>
+                        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        
+                        <td data-title="Column 3:">7,566,000</td>
+        
+                    </tr>
+                    <tr>
+        
+                        <td class="left" data-title="Item description:">Item section number one</td>
+                        <td class="sorted" data-title="Column 1:">7,566,000</td>
+        
+                        <td data-title="Column 3:">7,566,000</td>
+        
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+        
+                        <td class="text-left" data-title="">Total</td>
+                        <td data-title="Column 1:">233,546</td>
+                        <td data-title="Column 3:">233,546</td>
+        
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        </div>
+        <!-- /Minimal table -->
+        
+        
+        </div>
+        
+        </div>
+        
         </div>
     </div>
-</div>
-<!-- /Minimal table -->
-
-
-</div>
-
-</div>
-
-</div>
 </div>
 <footer>
     <div class="developer-mode switch switch--yes-no switch--inline">
@@ -1128,9 +1142,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src='js/icheck.js'></script>
-<script type="text/javascript" src='js/selectize.js'></script>
-<script type="text/javascript" src='js/bootstrap-switch.js'></script>
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="vendor/daterange/daterangepicker.min.js"></script>
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="js/onload.js"></script>

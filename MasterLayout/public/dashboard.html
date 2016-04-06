@@ -35,9 +35,9 @@
     <link href="vendor/c3/c3.css" rel="stylesheet" type="text/css">
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
-
 </head>
-<body class="">
+
+<body>
 <div class="master minimized">
     <div class="master-navigation">
         <div class="navbar navbar-inverse" role="navigation">
@@ -446,929 +446,929 @@
             </div>
         </div>
     </div>
-    <div class="master-header container-fluid">
-        <div class="row">
-            <h2>Dashboard</h2>
-            <div class="date-picker">
-                <form role="form">
-                    <div class="form-group">
-                        <label class="control-label">CHOOSE PERIOD</label>
-                        <div class="picker-holder">
-                            <input type="text" id="config-demo" class="form-control" data-toggle="dropdown">
-                            <span class="icon-calendar icon_c"></span>
+    </div>
+    <div class="master-content master-dashboard">
+        <div class="container-fluid">
+            <div class="master-content__header">
+                <h2>Dashboard</h2>
+                <div class="date-picker">
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="control-label">CHOOSE PERIOD</label>
+                            <div class="picker-holder">
+                                <input type="text" id="config-demo" class="form-control" data-toggle="dropdown">
+                                <span class="icon-calendar icon_c"></span>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <div class="master-content container-fluid master-dashboard">
-        <div class="dashboard-content">
-            <div class="row">
-                <div class="row-section">
-                    <div class="col-lg-3 col-md-4">
-                        <div class="block counter-block visitors-counter">
-                            <div class="counter-block-element dash-counter">
-                                <div class="counter-group-md counter-main">
-                                    <p class="counter-num">34.876</p>
+            <div class="dashboard-content">
+                <div class="row">
+                    <div class="row-section">
+                        <div class="col-lg-3 col-md-4">
+                            <div class="block counter-block visitors-counter">
+                                <div class="counter-block-element dash-counter">
+                                    <div class="counter-group-md counter-main">
+                                        <p class="counter-num">34.876</p>
+                                    </div>
+                                    <div class="counter-group-sm">
+                                        <p class="counter-label">PREVIOUS PERIOD</p>
+                                        <p class="counter-num">24,468</p>
+                                    </div>
+                                    <div class="counter-group-sm">
+                                        <p class="counter-label">INCREASE</p>
+                                        <p class="counter-num hl-element">+21,67%</p>
+                                    </div>
                                 </div>
-                                <div class="counter-group-sm">
-                                    <p class="counter-label">PREVIOUS PERIOD</p>
-                                    <p class="counter-num">24,468</p>
-                                </div>
-                                <div class="counter-group-sm">
-                                    <p class="counter-label">INCREASE</p>
-                                    <p class="counter-num hl-element">+21,67%</p>
-                                </div>
-                            </div>
-                            <div class="counter-block-element dash-counter">
-                                <div class="counter-group-md counter-main">
-                                    <p class="counter-num">784.876</p>
-                                </div>
-                                <div class="counter-group-sm">
-                                    <p class="counter-label">PREVIOUS PERIOD</p>
-                                    <p class="counter-num">24,468</p>
-                                </div>
-                                <div class="counter-group-sm">
-                                    <p class="counter-label">INCREASE</p>
-                                    <p class="counter-num hl-element">+21,67%</p>
+                                <div class="counter-block-element dash-counter">
+                                    <div class="counter-group-md counter-main">
+                                        <p class="counter-num">784.876</p>
+                                    </div>
+                                    <div class="counter-group-sm">
+                                        <p class="counter-label">PREVIOUS PERIOD</p>
+                                        <p class="counter-num">24,468</p>
+                                    </div>
+                                    <div class="counter-group-sm">
+                                        <p class="counter-label">INCREASE</p>
+                                        <p class="counter-num hl-element">+21,67%</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-9 col-md-8">
-                        <div class="block chart-block">
-                            <div class="block-header">
-                                <h4 class="block-title">VISITORS</h4>
-                                <p class="block-period block-title-light">LAST 30 DAYS</p>
-                            </div>
-                            <div class="chart-container">
-                                <div id="chart" class="line-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">TOP COUNTRIES</h4>
-                                <p class="block-title-light block-period">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
-                                <div class="scrollable dash-table">
-                                    <table class="stats-table">
-                                        <tbody>
-                                            <tr>
-                                                <td class="item-name">United states</td>
-                                                <td class="item-value">38%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Canada</td>
-                                                <td class="item-value">18%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Croatia</td>
-                                                <td class="item-value">18%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Mexico</td>
-                                                <td class="item-value">9%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Bolivia</td>
-                                                <td class="item-value">4%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Rwanda</td>
-                                                <td class="item-value">3%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Sweden</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Russia</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Denmark</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Bolivia</td>
-                                                <td class="item-value">4%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Rwanda</td>
-                                                <td class="item-value">3%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Sweden</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Russia</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">Denmark</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="col-lg-9 col-md-8">
+                            <div class="block chart-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">VISITORS</h4>
+                                    <p class="block-period block-title-light">LAST 30 DAYS</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">REFERRER DOMAINS</h4>
-                                <p class="block-title-light block-period">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
-                                <div class="scrollable dash-table">
-                                    <table class="stats-table">
-                                        <tbody>
-                                            <tr>
-                                                <td class="item-name">netflix.com</td>
-                                                <td class="item-value">38%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">kisha.com</td>
-                                                <td class="item-value">18%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">badabing.com.hr</td>
-                                                <td class="item-value">18%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">kudos.hr</td>
-                                                <td class="item-value">9%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">mashable.hr</td>
-                                                <td class="item-value">4%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">wired.com</td>
-                                                <td class="item-value">3%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">gizmodo.com</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">bbc.com</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="item-name">somesite.com</td>
-                                                <td class="item-value">1%</td>
-                                                <td class="item-value">4.586</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">REFERRER SOURCES</h4>
-                                <p class="block-title-light block-period">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
                                 <div class="chart-container">
-                                    <div id="chart_sources" class="donut-chart"></div>
+                                    <div id="chart" class="line-chart"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">TOP BROWSERS</h4>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">TOP COUNTRIES</h4>
+                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                </div>
+                                <div class="block-content">
+                                    <div class="scrollable dash-table">
+                                        <table class="stats-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="item-name">United states</td>
+                                                    <td class="item-value">38%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Canada</td>
+                                                    <td class="item-value">18%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Croatia</td>
+                                                    <td class="item-value">18%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Mexico</td>
+                                                    <td class="item-value">9%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Bolivia</td>
+                                                    <td class="item-value">4%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Rwanda</td>
+                                                    <td class="item-value">3%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Sweden</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Russia</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Denmark</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Bolivia</td>
+                                                    <td class="item-value">4%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Rwanda</td>
+                                                    <td class="item-value">3%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Sweden</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Russia</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">Denmark</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">REFERRER DOMAINS</h4>
+                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                </div>
+                                <div class="block-content">
+                                    <div class="scrollable dash-table">
+                                        <table class="stats-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="item-name">netflix.com</td>
+                                                    <td class="item-value">38%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">kisha.com</td>
+                                                    <td class="item-value">18%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">badabing.com.hr</td>
+                                                    <td class="item-value">18%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">kudos.hr</td>
+                                                    <td class="item-value">9%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">mashable.hr</td>
+                                                    <td class="item-value">4%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">wired.com</td>
+                                                    <td class="item-value">3%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">gizmodo.com</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">bbc.com</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="item-name">somesite.com</td>
+                                                    <td class="item-value">1%</td>
+                                                    <td class="item-value">4.586</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">REFERRER SOURCES</h4>
+                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                </div>
+                                <div class="block-content">
+                                    <div class="chart-container">
+                                        <div id="chart_sources" class="donut-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">TOP BROWSERS</h4>
+                                        <div class="view-switch">
+                                            <i class="icon icon-chart-line switch-graph"></i>
+                                            <i class=" icon icon-menu switch-list active"></i>
+                                        </div>
+                                        <p class="block-title-light">LAST 30 DAYS</p>
+                                </div>
+                                <div class="block-content">
+                                    <div class="scrollable dash-table table-data">
+                                        <table class="stats-table">
+                                            <tbody>
+                                            <tr>
+                                                <td class="item-name">Chrome</td>
+                                                <td class="item-value">38%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Mobile Safari</td>
+                                                <td class="item-value">18%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Chrome Mobile</td>
+                                                <td class="item-value">18%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Firefox</td>
+                                                <td class="item-value">9%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Safari</td>
+                                                <td class="item-value">4%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">IE 10</td>
+                                                <td class="item-value">3%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">IE 9</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Edge</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Other</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Safari</td>
+                                                <td class="item-value">4%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">IE 10</td>
+                                                <td class="item-value">3%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">IE 9</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Edge</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Other</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="chart-container">
+                                        <div id="chart_browsers" class="chart-data donut-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">OPERATING SYSTEM</h4>
                                     <div class="view-switch">
                                         <i class="icon icon-chart-line switch-graph"></i>
-                                        <i class=" icon icon-menu switch-list active"></i>
+                                        <i class="icon icon-menu switch-list active"></i>
                                     </div>
                                     <p class="block-title-light">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
-                                <div class="scrollable dash-table table-data">
-                                    <table class="stats-table">
-                                        <tbody>
-                                        <tr>
-                                            <td class="item-name">Chrome</td>
-                                            <td class="item-value">38%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Mobile Safari</td>
-                                            <td class="item-value">18%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Chrome Mobile</td>
-                                            <td class="item-value">18%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Firefox</td>
-                                            <td class="item-value">9%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Safari</td>
-                                            <td class="item-value">4%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">IE 10</td>
-                                            <td class="item-value">3%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">IE 9</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Edge</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Other</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Safari</td>
-                                            <td class="item-value">4%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">IE 10</td>
-                                            <td class="item-value">3%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">IE 9</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Edge</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Other</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
-                                <div class="chart-container">
-                                    <div id="chart_browsers" class="chart-data donut-chart"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">OPERATING SYSTEM</h4>
-                                <div class="view-switch">
-                                    <i class="icon icon-chart-line switch-graph"></i>
-                                    <i class="icon icon-menu switch-list active"></i>
-                                </div>
-                                <p class="block-title-light">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
-                                <div class="scrollable dash-table table-data" id="ps">
-                                    <table class="stats-table">
-                                        <tbody>
-                                        <tr>
-                                            <td class="item-name">Android</td>
-                                            <td class="item-value">38%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Windows</td>
-                                            <td class="item-value">18%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">iOS</td>
-                                            <td class="item-value">18%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Windows phone</td>
-                                            <td class="item-value">9%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">osX</td>
-                                            <td class="item-value">4%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Linux</td>
-                                            <td class="item-value">3%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Blackberry</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Samsung</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Symbian</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Windows phone</td>
-                                            <td class="item-value">9%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">osX</td>
-                                            <td class="item-value">4%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Linux</td>
-                                            <td class="item-value">3%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Blackberry</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Samsung</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="item-name">Symbian</td>
-                                            <td class="item-value">1%</td>
-                                            <td class="item-value">4.586</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="chart-container">
-                                    <div id="chart_os" class="chart-data donut-chart"></div>
+                                <div class="block-content">
+                                    <div class="scrollable dash-table table-data" id="ps">
+                                        <table class="stats-table">
+                                            <tbody>
+                                            <tr>
+                                                <td class="item-name">Android</td>
+                                                <td class="item-value">38%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Windows</td>
+                                                <td class="item-value">18%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">iOS</td>
+                                                <td class="item-value">18%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Windows phone</td>
+                                                <td class="item-value">9%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">osX</td>
+                                                <td class="item-value">4%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Linux</td>
+                                                <td class="item-value">3%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Blackberry</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Samsung</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Symbian</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Windows phone</td>
+                                                <td class="item-value">9%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">osX</td>
+                                                <td class="item-value">4%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Linux</td>
+                                                <td class="item-value">3%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Blackberry</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Samsung</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="item-name">Symbian</td>
+                                                <td class="item-value">1%</td>
+                                                <td class="item-value">4.586</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="chart-container">
+                                        <div id="chart_os" class="chart-data donut-chart"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block info-block">
-                            <div class="block-header">
-                                <h4 class="block-title">REFERRER SOURCES</h4>
-                                <p class="block-title-light">LAST 30 DAYS</p>
-                            </div>
-                            <div class="block-content">
-                                <div class="chart-container">
-                                    <div id="chart_sources_2" class="chart-data donut-chart"></div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block info-block">
+                                <div class="block-header">
+                                    <h4 class="block-title">REFERRER SOURCES</h4>
+                                    <p class="block-title-light">LAST 30 DAYS</p>
+                                </div>
+                                <div class="block-content">
+                                    <div class="chart-container">
+                                        <div id="chart_sources_2" class="chart-data donut-chart"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="block new-page-block">
-                            <div class="block-header block-header-outer">
-                                <h4 class="block-title">PAGE STATUS</h4>
-                            </div>
-                            <div class="block-content">
-                                <div id="chart_sources_3" class="chart-data donut-chart"></div>
-                            </div>
-                            <div class="block-footer btn-holder">
-                                <button type="button" class="btn btn-default btn-add"><span class="btn-caption">Create New Page</span></button>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="block new-page-block">
+                                <div class="block-header block-header-outer">
+                                    <h4 class="block-title">PAGE STATUS</h4>
+                                </div>
+                                <div class="block-content">
+                                    <div id="chart_sources_3" class="chart-data donut-chart"></div>
+                                </div>
+                                <div class="block-footer btn-holder">
+                                    <button type="button" class="btn btn-default btn-add"><span class="btn-caption">Create New Page</span></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12">
-                        <div class="block list-block">
-                            <div class="block-header block-header-outer">
-                                <h4 class="block-title">PAGE OVERVIEW</h4>
-                            </div>
-                            <div class="block-content no-padding">
-                                <div class="list-header">
-                                    <ul class="list-nav" id="list_switch">
-                                        <li data-list-id="#list_1" class="list-link list-nav-item"><a class="active">THIS WEEK</a></li>
-                                        <li data-list-id="#list_2" class="list-link list-nav-item"><a>LAST WEEK</a></li>
-                                        <li data-list-id="#list_3" class="list-link list-nav-item"><a>THIS MONTH</a></li>
-                                        <li data-list-id="#list_4" class="list-link list-nav-item"><a>LAST MONTH</a></li>
-                                        <li data-list-id="#list_5" class="list-link list-nav-item"><a>THIS YEAR</a></li>
-                                        <li data-list-id="#list_6" class="list-link list-nav-item"><a>EVER</a></li>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="block list-block">
+                                <div class="block-header block-header-outer">
+                                    <h4 class="block-title">PAGE OVERVIEW</h4>
+                                </div>
+                                <div class="block-content no-padding">
+                                    <div class="list-header">
+                                        <ul class="list-nav" id="list_switch">
+                                            <li data-list-id="#list_1" class="list-link list-nav-item"><a class="active">THIS WEEK</a></li>
+                                            <li data-list-id="#list_2" class="list-link list-nav-item"><a>LAST WEEK</a></li>
+                                            <li data-list-id="#list_3" class="list-link list-nav-item"><a>THIS MONTH</a></li>
+                                            <li data-list-id="#list_4" class="list-link list-nav-item"><a>LAST MONTH</a></li>
+                                            <li data-list-id="#list_5" class="list-link list-nav-item"><a>THIS YEAR</a></li>
+                                            <li data-list-id="#list_6" class="list-link list-nav-item"><a>EVER</a></li>
+                                        </ul>
+                                        <div class="dropdown list-switch-drop" id="list_switch2">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <span class="caret"></span>THIS WEEK
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li data-list-id="#list_1" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS WEEK</a></li>
+                                                <li data-list-id="#list_2" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >LAST WEEK</a></li>
+                                                <li data-list-id="#list_3" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS MONTH</a></li>
+                                                <li data-list-id="#list_4" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >LAST MONTH</a></li>
+                                                <li data-list-id="#list_5" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS YEAR</a></li>
+                                                <li data-list-id="#list_6" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >EVER</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="date-picker">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label class="control-label"></label>
+                                                    <div class="picker-holder">
+                                                        <input type="text" class="form-control datepicker" placeholder="Last 30 days(27.3. - 27.4.2016)"/>
+                                                        <span class="icon-calendar icon_c"></span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="list-content scrollable" id="lists_container">
+                                        <ul class="item-list" id="list_1">
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">1.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">2.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">3.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">4.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">5.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="item-list" id="list_2">
+                                        <li>
+                                            <div class="list-item-container">
+                                                <p class="list-number">1.</p>
+                                                <p class="list-text">The night of the headless horsemen PART II</p>
+                                                <div class="list-item-timestamp">
+                                                    <p>CREATED: 28.7.2015.</p>
+                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-item-container">
+                                                <p class="list-number">2.</p>
+                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                <div class="list-item-timestamp">
+                                                    <p>CREATED: 28.7.2015.</p>
+                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-item-container">
+                                                <p class="list-number">3.</p>
+                                                <p class="list-text">The night of the headless horsemen PART II</p>
+                                                <div class="list-item-timestamp">
+                                                    <p>CREATED: 28.7.2015.</p>
+                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-item-container">
+                                                <p class="list-number">4.</p>
+                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                <div class="list-item-timestamp">
+                                                    <p>CREATED: 28.7.2015.</p>
+                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="list-item-container">
+                                                <p class="list-number">5.</p>
+                                                <p class="list-text">The night of the headless horsemen PART II</p>
+                                                <div class="list-item-timestamp">
+                                                    <p>CREATED: 28.7.2015.</p>
+                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
-                                    <div class="dropdown list-switch-drop" id="list_switch2">
-                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            <span class="caret"></span>THIS WEEK
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                            <li data-list-id="#list_1" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS WEEK</a></li>
-                                            <li data-list-id="#list_2" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >LAST WEEK</a></li>
-                                            <li data-list-id="#list_3" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS MONTH</a></li>
-                                            <li data-list-id="#list_4" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >LAST MONTH</a></li>
-                                            <li data-list-id="#list_5" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >THIS YEAR</a></li>
-                                            <li data-list-id="#list_6" class="list-link" role="presentation"><a role="menuitem" tabindex="-1" >EVER</a></li>
+                                        <ul class="item-list" id="list_3">
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">1.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">2.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">3.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">4.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">5.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="item-list" id="list_4">
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">1.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">2.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">3.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">4.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">5.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="item-list" id="list_5">
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">1.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">2.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">3.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">4.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">5.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="item-list" id="list_6">
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">1.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">2.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">3.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">4.</p>
+                                                    <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list-item-container">
+                                                    <p class="list-number">5.</p>
+                                                    <p class="list-text">The night of the headless horsemen PART II</p>
+                                                    <div class="list-item-timestamp">
+                                                        <p>CREATED: 28.7.2015.</p>
+                                                        <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <div class="date-picker">
-                                        <form role="form">
-                                            <div class="form-group">
-                                                <label class="control-label"></label>
-                                                <div class="picker-holder">
-                                                    <input type="text" class="form-control datepicker" placeholder="Last 30 days(27.3. - 27.4.2016)"/>
-                                                    <span class="icon-calendar icon_c"></span>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="list-content scrollable" id="lists_container">
-                                    <ul class="item-list" id="list_1">
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">1.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">2.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">3.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">4.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">5.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="item-list" id="list_2">
-                                    <li>
-                                        <div class="list-item-container">
-                                            <p class="list-number">1.</p>
-                                            <p class="list-text">The night of the headless horsemen PART II</p>
-                                            <div class="list-item-timestamp">
-                                                <p>CREATED: 28.7.2015.</p>
-                                                <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-container">
-                                            <p class="list-number">2.</p>
-                                            <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                            <div class="list-item-timestamp">
-                                                <p>CREATED: 28.7.2015.</p>
-                                                <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-container">
-                                            <p class="list-number">3.</p>
-                                            <p class="list-text">The night of the headless horsemen PART II</p>
-                                            <div class="list-item-timestamp">
-                                                <p>CREATED: 28.7.2015.</p>
-                                                <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-container">
-                                            <p class="list-number">4.</p>
-                                            <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                            <div class="list-item-timestamp">
-                                                <p>CREATED: 28.7.2015.</p>
-                                                <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-container">
-                                            <p class="list-number">5.</p>
-                                            <p class="list-text">The night of the headless horsemen PART II</p>
-                                            <div class="list-item-timestamp">
-                                                <p>CREATED: 28.7.2015.</p>
-                                                <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                    <ul class="item-list" id="list_3">
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">1.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">2.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">3.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">4.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">5.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="item-list" id="list_4">
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">1.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">2.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">3.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">4.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">5.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="item-list" id="list_5">
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">1.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">2.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">3.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">4.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">5.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <ul class="item-list" id="list_6">
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">1.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">2.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">3.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">4.</p>
-                                                <p class="list-text">Psychological and Biological Approach to Users and interfaces.</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="list-item-container">
-                                                <p class="list-number">5.</p>
-                                                <p class="list-text">The night of the headless horsemen PART II</p>
-                                                <div class="list-item-timestamp">
-                                                    <p>CREATED: 28.7.2015.</p>
-                                                    <p><span class="icon icon-chart-line"></span>2458 VIEWS</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="block notifications-block">
-                            <div class="block-header block-header-outer">
-                                <h4 class="block-title">NOTIFICATIONS</h4>
-                                <div class="header-options">
-                                    <div class="show-all toggle-options">
-
-                                        <a><i class="icon icon-menu"></i>SHOW ALL</a>
-                                    </div>
-                                    <div class="mark-as-read toggle-options">
-                                        <a>
-                                            <i class="icon icon-check-1"></i>
-                                            MARK ALL AS READ
-                                        </a>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="block notifications-block">
+                                <div class="block-header block-header-outer">
+                                    <h4 class="block-title">NOTIFICATIONS</h4>
+                                    <div class="header-options">
+                                        <div class="show-all toggle-options">
+            
+                                            <a><i class="icon icon-menu"></i>SHOW ALL</a>
+                                        </div>
+                                        <div class="mark-as-read toggle-options">
+                                            <a>
+                                                <i class="icon icon-check-1"></i>
+                                                MARK ALL AS READ
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="block-content">
-                                <div class="notifications-list scrollable">
-                                    <ul>
-                                        <li class="unread-notification">
-                                            <i class="icon icon-cup icon-lg"></i>
-                                            <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p>You have <strong>2 articles</strong> unfinished for over a month</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p><strong>6 articles</strong> are waiting for a review</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p><strong>Highest share count</strong> on article “The night of the headless horseman</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p>You have <strong>2 articles</strong> unfinished for over a month</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p>You have <strong>2 articles</strong> unfinished for over a month</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info list-icon"></i>
-                                            <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
-                                        </li>
-                                        <li>
-                                            <i class="icon icon-info"></i>
-                                            <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
-                                        </li>
-                                    </ul>
+                                <div class="block-content">
+                                    <div class="notifications-list scrollable">
+                                        <ul>
+                                            <li class="unread-notification">
+                                                <i class="icon icon-cup icon-lg"></i>
+                                                <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p><strong>6 articles</strong> are waiting for a review</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p><strong>Highest share count</strong> on article “The night of the headless horseman</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info list-icon"></i>
+                                                <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-info"></i>
+                                                <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="block todo-block">
-                            <div class="block-header block-header-outer">
-                                <h4 class="block-title">TO DO's</h4>
-                                <div class="add-task">
-                                    <button type="button" class="btn btn-default btn-add btn-add-task"><span class="btn-caption">Add Task</span></button>
-                                </div>
-                                <div class="header-options">
-                                    <div class="show-all toggle-options">
-
-                                        <a><i class="icon icon-menu"></i>SHOW ALL</a>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="block todo-block">
+                                <div class="block-header block-header-outer">
+                                    <h4 class="block-title">TO DO's</h4>
+                                    <div class="add-task">
+                                        <button type="button" class="btn btn-default btn-add btn-add-task"><span class="btn-caption">Add Task</span></button>
                                     </div>
-                                    <div class="mark-as-read toggle-options">
-                                        <a>
-                                            <i class="icon icon-check-1"></i>
-                                            MARK ALL AS READ
-                                        </a>
+                                    <div class="header-options">
+                                        <div class="show-all toggle-options">
+            
+                                            <a><i class="icon icon-menu"></i>SHOW ALL</a>
+                                        </div>
+                                        <div class="mark-as-read toggle-options">
+                                            <a>
+                                                <i class="icon icon-check-1"></i>
+                                                MARK ALL AS READ
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="info-block">
-                                <div class="block-content no-padding scrollable">
-                                    <ul>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check-done"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-                                        <li>
-                                            <i class="list-icon icon-pin"></i>
-                                            <p>Proofread latest article</p>
-                                            <i class="icon-check-1 icon-right task-check"></i>
-                                        </li>
-
-                                    </ul>
+                                <div class="info-block">
+                                    <div class="block-content no-padding scrollable">
+                                        <ul>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check-done"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+                                            <li>
+                                                <i class="list-icon icon-pin"></i>
+                                                <p>Proofread latest article</p>
+                                                <i class="icon-check-1 icon-right task-check"></i>
+                                            </li>
+            
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
