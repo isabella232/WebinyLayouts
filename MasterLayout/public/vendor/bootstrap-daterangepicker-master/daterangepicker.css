@@ -255,11 +255,11 @@
 
 .calendar-table .prev i:before{
   font-family: 'fontello';
-  content: ' \e805';
+  content: ' \e83E';
 }
 .calendar-table .next i:before{
   font-family: 'fontello';
-  content: '\e81b';
+  content: '\e819';
 }
 
 
