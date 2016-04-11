@@ -80,7 +80,9 @@ function fooHideWizard(wName){
             }
         });
         
-        $('select').select2();
+        $('select').select2({
+          allowClear: true
+        });
 
         // perfectScrollbar
         $('.left-menu').perfectScrollbar();
