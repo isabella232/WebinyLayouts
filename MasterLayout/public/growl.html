@@ -312,27 +312,22 @@
         </div>
     </div>
     <div class="master-content">
-        <div class="container-fluid">
-            <div class="master-content__header">
-                <h2>Growl</h2>
-            </div>
-            <div class="dashboard-content">
-            
-            
-            
-                <script type="text/javascript">
-                    (function($){
-                        $(function(){
-                            $.jGrowl("Hello world!", {sticky: true, header: 'Info'});
-                            $.jGrowl("Hello world!", {sticky: true, header: 'Success', group: 'success'});
-                            $.jGrowl("Hello world!", {sticky: true, header: 'Warning', group: 'warning'});
-                            $.jGrowl("Hello world!", {sticky: true, header: 'Danger', group: 'danger'});
-                        });
-                    })(jQuery);
-                </script>
-            
-            
-            </div>
+        <div class="master-content__header master-content__header--with-bg">
+            <h2>Growl</h2>
+        </div>
+        <div class="dashboard-content">
+        
+            <script type="text/javascript">
+                (function($){
+                    $(function(){
+                        $.jGrowl("Hello world!", {sticky: true, header: 'Info'});
+                        $.jGrowl("Hello world!", {sticky: true, header: 'Success', group: 'success'});
+                        $.jGrowl("Hello world!", {sticky: true, header: 'Warning', group: 'warning'});
+                        $.jGrowl("Hello world!", {sticky: true, header: 'Danger', group: 'danger'});
+                    });
+                })(jQuery);
+            </script>
+        
         </div>
     </div>
     <footer>
