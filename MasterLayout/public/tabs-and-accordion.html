@@ -24,10 +24,13 @@
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="img/favicon.ico"/>
 
-    <link rel="stylesheet" href="css/webiny.css">
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/fontello.css">
+
+    <link rel="stylesheet" href="css/webiny.css">
     <!--[if IE 7]>
     <link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -452,79 +455,333 @@
     </div>
     <div class="dashboard-content">
         <div class="container-fluid">
-        
-            <!--
-            ################
-            HORIZONTAL TABS
-            ###############
-            -->
+
             <div class="row">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs col-md-12" role="tablist">
-                    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-                    <li><a href="#profile" role="tab" data-toggle="tab"><i class="icon icon-user"></i></a></li>
-                    <li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
-                    <li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-                </ul>
-        
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">
-                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                        </p>
-                    </div>
-                    <div class="tab-pane" id="profile"></div>
-                    <div class="tab-pane" id="messages"></div>
-                    <div class="tab-pane" id="settings"></div>
+                <div class="col-md-6">
+                    <div class="tabs tabs--navigation-top">
+
+                        <div class="tabs__header">
+                            <h4 class="tabs__title">PAGE PROPERTIES</h4>
+                        </div><!-- /.tab__header -->
+
+                        <div class="tabs__body">
+                            <!-- Nav tabs -->
+                            <ul class="tabs__navigation nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-gauge "></span><span class="txt">General</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                                        <span class="icon left  icon-columns"></span><span class="txt">Performance</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-browser"></span><span class="txt">SEO</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-4" aria-controls="tab-4" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-user"></span><span class="txt">Social</span>
+                                    </a>
+                                </li>
+                            </ul><!-- /.tab__navigation -->
+
+                            <div class="tabs__panes">
+                                
+                                <div id="tab-1" role="tabpanel" class="tab-pane active">
+                                    <div class="general-set">
+                                        <div class="options-section">
+                                            <div class="options-header">
+                                                <h5 class="options-title">Layout options</h5>
+                                                <div class="form-group form-group--inline-label search-container">
+                                                    <label class="control-label">COPY OPTIONS FROM PAGE<span class="mandat">*</span></label>
+                                                    <select class="dropdown" placeholder="placeholder text goes here...">
+                                                        <option value="1">www.booking.com</option>
+                                                        <option value="2">www.amazon.com</option>
+                                                        <option value="3">www.apple.com</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="options-content container-no-padding">
+                                                <div class="row">
+                                                    <form role="form" class="layout-options">
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">SIZE</label> <input type="size" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">BREAKPOINT (PX)</label> <input type="breakpoint" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">TOP MARGIN (PX)</label> <input type="top-margin" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="options-section">
+                                            <div class="options-header">
+                                                <h5 class="options-title">Title and Metadata</h5>
+                                                <div class="form-group form-group--inline-label search-container">
+                                                    <label class="control-label">COPY DATA FROM PAGE<span class="mandat">*</span></label>
+                                                    <select class="dropdown" placeholder="placeholder text goes here...">
+                                                        <option value="1">www.booking.com</option>
+                                                        <option value="2">www.amazon.com</option>
+                                                        <option value="3">www.apple.com</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="options-content container-no-padding">
+                                                <div class="row">
+                                                    <form role="form" class="data-options">
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">PAGE TITLE</label>
+                                                                <input type="size" class="form-control" placeholder="<auto placement the title from editor> and vice-versa.">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">KEYWORDS (separate keywords with comma)</label>
+                                                                <div class="keyword-container">
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.1</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.2</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.3</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <label for="keyword_input"></label>
+                                                                    <input id="keyword_input" type="text" class="keyword-input" placeholder="enter keyword">
+                                                                    <div class="remove-keyword">
+                                                                        <p><i class="icon icon-cancel"></i>remove all</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">DESCRIPTION (separate keywords with comma)</label> <textarea type="description" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="general-set__footer">
+                                            <button class="btn btn-default">Reset All Data</button>
+                                            <button class="btn btn-default">Cancel</button>
+                                            <button class="btn btn-primary">Save Properties</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-2" role="tabpanel" class="tab-pane">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+                                </div>
+                                <div id="tab-3" role="tabpanel" class="tab-pane">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
+                                </div>
+                                <div id="tab-4" role="tabpanel" class="tab-pane">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet beatae, consectetur quasi placeat modi, labore alias eos tempora non ipsum tempore at? Perferendis ab, quisquam soluta veritatis tempora animi dolorem, inventore eligendi iure accusantium necessitatibus deleniti fuga voluptatem, dicta aut labore asperiores dignissimos. Nobis ullam quae dolores soluta consequuntur, neque asperiores. Perspiciatis itaque, totam dignissimos quia dolore vel nostrum mollitia? Eveniet quis eum voluptates similique perferendis voluptatum dolorem quaerat.
+                                </div>
+
+                            </div><!-- /.tabs__content -->
+
+                        </div><!-- /.tabs__body -->
+                    </div><!-- /.tabs -->
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tabs tabs--navigation-left">
+
+                        <div class="tabs__header">
+                            <h4 class="tabs__title">PAGE PROPERTIES</h4>
+                        </div><!-- /.tab__header -->
+
+                        <div class="tabs__body">
+                            <!-- Nav tabs -->
+                            <ul class="tabs__navigation nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#tab-5" aria-controls="tab-5" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-gauge "></span><span class="txt">General</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-6" aria-controls="tab-6" role="tab" data-toggle="tab">
+                                        <span class="icon left  icon-columns"></span><span class="txt">Performance</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-7" aria-controls="tab-7" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-browser"></span><span class="txt">SEO</span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#tab-8" aria-controls="tab-8" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-user"></span><span class="txt">Social</span>
+                                    </a>
+                                </li>
+                            </ul><!-- /.tab__navigation -->
+
+                            <div class="tabs__panes">
+                                
+                                <div class="tab-pane active" id="tab-5">
+                                    <div class="general-set">
+                                        <div class="options-section">
+                                            <div class="options-header">
+                                                <h5 class="options-title">Layout options</h5>
+                                                <div class="form-group form-group--inline-label search-container">
+                                                    <label class="control-label">COPY OPTIONS FROM PAGE<span class="mandat">*</span></label>
+                                                    <select class="dropdown" placeholder="placeholder text goes here...">
+                                                        <option value="1">www.booking.com</option>
+                                                        <option value="2">www.amazon.com</option>
+                                                        <option value="3">www.apple.com</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="options-content container-no-padding">
+                                                <div class="row">
+                                                    <form role="form" class="layout-options">
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">SIZE</label> <input type="size" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">BREAKPOINT (PX)</label> <input type="breakpoint" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <div class="form-group">
+                                                                <label class="control-label">TOP MARGIN (PX)</label> <input type="top-margin" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="options-section">
+                                            <div class="options-header">
+                                                <h5 class="options-title">Title and Metadata</h5>
+                                                <div class="form-group form-group--inline-label search-container">
+                                                    <label class="control-label">COPY DATA FROM PAGE<span class="mandat">*</span></label>
+                                                    <select class="dropdown" placeholder="placeholder text goes here...">
+                                                        <option value="1">www.booking.com</option>
+                                                        <option value="2">www.amazon.com</option>
+                                                        <option value="3">www.apple.com</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="options-content container-no-padding">
+                                                <div class="row">
+                                                    <form role="form" class="data-options">
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">PAGE TITLE</label>
+                                                                <input type="size" class="form-control" placeholder="<auto placement the title from editor> and vice-versa.">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group form-group--keywords">
+                                                                <label class="control-label">KEYWORDS (separate keywords with comma)</label>
+                                                                <div class="fileUpload btn btn-transparent">
+                                                                    <span>Insert XLS</span>
+                                                                    <input id="uploadBtn" type="file" class="upload">
+                                                                </div>
+                                                                <div class="keyword-container">
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.1</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.2</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.3</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.1</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.2</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.3</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.1</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.2</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <div class="keyword-block">
+                                                                        <p>Keyword No.3</p>
+                                                                        <i class="icon icon-cancel"></i>
+                                                                    </div>
+                                                                    <label for="keyword_input"></label>
+                                                                    <input id="keyword_input" type="text" class="keyword-input" placeholder="enter keyword">
+                                                                    <div class="remove-keyword">
+                                                                        <p><i class="icon icon-cancel"></i>remove all</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">DESCRIPTION (separate keywords with comma)</label> <textarea type="description" class="form-control"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="general-set__footer">
+                                            <button class="btn btn-default">Reset All Data</button>
+                                            <button class="btn btn-default">Cancel</button>
+                                            <button class="btn btn-primary">Save Properties</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+                                </div>
+                                <div class="tab-pane" id="tab-7">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
+                                </div>
+                                <div class="tab-pane" id="tab-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet beatae, consectetur quasi placeat modi, labore alias eos tempora non ipsum tempore at? Perferendis ab, quisquam soluta veritatis tempora animi dolorem, inventore eligendi iure accusantium necessitatibus deleniti fuga voluptatem, dicta aut labore asperiores dignissimos. Nobis ullam quae dolores soluta consequuntur, neque asperiores. Perspiciatis itaque, totam dignissimos quia dolore vel nostrum mollitia? Eveniet quis eum voluptates similique perferendis voluptatum dolorem quaerat.
+                                </div>
+
+                            </div><!-- /.tab__panes -->
+
+                        </div><!-- /.tab__body -->
+                    </div><!-- /.tabs -->
                 </div>
             </div>
-            <!--
-            ################
-            HORIZONTAL TABS END
-            ###############
-            -->
-        
-            <br/>
-        
-            <!--
-            ################
-            VERTICAL TABS
-            ###############
-            -->
-            <div class="row">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-stacked col-md-1" role="tablist">
-                    <li class="active"><a href="#homev" role="tab" data-toggle="tab">Home</a></li>
-                    <li><a href="#profilev" role="tab" data-toggle="tab">Profile <i class="icon icon-user"></i></a></li>
-                    <li><a href="#messagesv" role="tab" data-toggle="tab"><i class="icon icon-user"></i> Messages</a></li>
-                    <li><a href="#settingsv" role="tab" data-toggle="tab">Settings <button class="close closeTab" type="button" >×</button></a></li>
-                </ul>
-                    <!-- Tab panes -->
-                <div class="tab-content col-md-11">
-                    <div class="tab-pane active" id="homev">
-                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                        </p>
-                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                        </p>
-                    </div>
-                    <div class="tab-pane" id="profilev"></div>
-                    <div class="tab-pane" id="messagesv"></div>
-                    <div class="tab-pane" id="settingsv"></div>
-                </div>
-            </div>
-            <!--
-            ################
-            VERTICAL TABS END
-            ###############
-            -->
-        
-            <br/>
-        
-            <!--
-            ################
-            COLLAPSIBLE
-            ###############
-            -->
+
+            <br>
+
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -573,12 +830,113 @@
                     </div>
                 </div>
             </div>
-            <!--
-            ################
-            COLLAPSIBLE END
-            ###############
-            -->
-        
+
+             <div class="modal settings-modal" id="modal-10" tabindex="-1" role="dialog" aria-hidden="false">
+                <div class="modal-dialog alert-modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>PAGE PROPERTIES</h4>
+                            <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-left">
+                            <ul>
+                                <li class="active"><a href="#"><span class="icon left icon-gauge "></span><span class="txt">General</span></a></li>
+                                <li><a href="#"><span class="icon left  icon-columns"></span><span class="txt">Performance</span></a></li>
+                                <li><a href="#"><span class="icon left icon-browser"></span><span class="txt">SEO</span></a></li>
+                                <li><a href="#"><span class="icon left icon-user"></span><span class="txt">Social</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="modal-right">
+                            <div class="general-set">
+                                <div class="options-section">
+                                    <div class="options-header">
+                                        <h5 class="options-title">Layout options</h5>
+                                        <div class="form-group form-group--inline-label search-container">
+                                            <label class="control-label">COPY OPTIONS FROM PAGE<span class="mandat">*</span></label>
+                                            <select class="dropdown" placeholder="placeholder text goes here...">
+                                                <option value="1">www.booking.com</option>
+                                                <option value="2">www.amazon.com</option>
+                                                <option value="3">www.apple.com</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="options-content container-no-padding">
+                                        <div class="row">
+                                            <form role="form" class="layout-options">
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">SIZE</label> <input type="size" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">BREAKPOINT (PX)</label> <input type="breakpoint" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">TOP MARGIN (PX)</label> <input type="top-margin" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="options-section">
+                                    <div class="options-header">
+                                        <h5 class="options-title">Title and Metadata</h5>
+                                        <div class="form-group form-group--inline-label search-container">
+                                            <label class="control-label">COPY DATA FROM PAGE<span class="mandat">*</span></label>
+                                            <select class="dropdown" placeholder="placeholder text goes here...">
+                                                <option value="1">www.booking.com</option>
+                                                <option value="2">www.amazon.com</option>
+                                                <option value="3">www.apple.com</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="options-content container-no-padding">
+                                        <div class="row">
+                                            <form role="form" class="data-options">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">PAGE TITLE</label>
+                                                        <input type="size" class="form-control" placeholder="<auto placement the title from editor> and vice-versa.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">KEYWORDS (separate keywords with comma)</label>
+                                                        <div class="keyword-container">
+                                                            <div class="keyword-block">
+                                                                <p>key</p>
+                                                            </div>
+                                                            <label for="keyword_input"></label>
+                                                            <input id="keyword_input" type="text" class="keyword-input" placeholder="enter keyword">
+                                                            <div class="remove-keyword">
+                                                                <p><i class="icon icon-cancel-circled"></i>remove all</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">DESCRIPTION (separate keywords with comma)</label> <textarea type="description" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="modal-foot">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save Properties </button>
+                        </div>
+                    </div>
+                </div>
+            </div>       
         
         </div>
     </div>
@@ -612,8 +970,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src='js/icheck.js'></script>
-<script type="text/javascript" src='js/selectize.js'></script>
+<script src="vendor/moment/moment.min.js"></script>
+
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="vendor/daterange/daterangepicker.min.js"></script>
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
 <script type="text/javascript" src='js/bootstrap-switch.js'></script>
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
