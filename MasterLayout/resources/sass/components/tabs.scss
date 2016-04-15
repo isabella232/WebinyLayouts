@@ -83,11 +83,11 @@
 .tabs__panes {
 	.tab-pane {
 		display: none;
-	}
-
-	.active {
-		display: block;
-		height: 100%;
+		
+		&.active {
+			display: block;
+			height: 100%;
+		}
 	}
 }
 

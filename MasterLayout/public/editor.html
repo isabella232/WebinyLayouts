@@ -879,7 +879,15 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab-6">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+                                <div class="form-group">
+                                    <label class="control-label">Date picker<span class="mandat">*</span></label>
+                                    <div class="input-group date" id="datetimepicker1">
+                                        <input class="form-control" type="text">
+                                        <span class="input-group-addon cursor">
+                                            <i class="icon-calendar icon_c"></i>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="tab-7">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
@@ -1072,6 +1080,16 @@
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
 <script type="text/javascript" src="js/onload.js"></script>
+
+<script>
+    $('#datetimepicker1').datetimepicker({
+        useCurrent: false,
+        icons: {
+            previous: "icon-prev-circle",
+            next: "icon-next"
+        }
+    });
+</script>
 
 </body>
 </html>
