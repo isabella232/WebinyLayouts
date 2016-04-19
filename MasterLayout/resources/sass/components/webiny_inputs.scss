@@ -190,6 +190,15 @@ textarea.form-control {
   }
 }
 
+.input-group {
+  position: relative;
+  width: 100%;
+
+  .icon {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+}
 
 form {
   &.form-sm {
