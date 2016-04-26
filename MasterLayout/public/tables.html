@@ -24,6 +24,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="shortcut icon" href="img/favicon.ico"/>
 
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/webiny.css">
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -515,7 +516,7 @@
                                         <option value="3">www.apple.com</option>
                                     </select>
                                 </div>
-                            </div>
+                             </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -725,7 +726,22 @@
                                             <td class="sorted" data-title="Column 1:">71,566,000</td>
                                             <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
                                             <td data-title="Column 3:">7,566,000</td>
-                                            <td data-title="Sel:"></td>
+                                            <td data-title="Sel:">
+                                                <div class="dropdown right">
+                                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        Action
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation" class="dropdown-header">Dropdown header</li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                        <li role="presentation" class="divider"></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr class="active">
                                             <td></td>
@@ -745,238 +761,6 @@
                                                     </button>
                                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                                         <li role="presentation" class="dropdown-header">Dropdown header</li>
-                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
-                                                        </li>
-                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                                                            action</a></li>
-                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                                                                here</a></li>
-                                                                <li role="presentation" class="divider"></li>
-                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                                                                    link</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td class="left" data-title="Item description:">
-                                                            <a href="#" class="expand" onclick="$('#table-hidden-row').toggle(); $(this).toggleClass('close');"></a>
-                                                            Item section number one
-                                                        </td>
-                                                        <td class="sorted" data-title="Column 1:">7,566,000</td>
-                                                        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-                                                        <td data-title="Column 3:">7,566,000</td>
-                                                        <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
-                                                    </tr>
-                                                    <tr class="hidden-row" id="table-hidden-row">
-                                                        <td colspan="6">
-                                                            <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <dl class="dl-horizontal">
-                                                                        <dt>Name</dt>
-                                                                        <dd>Jack</dd>
-
-                                                                        <dt>Surname</dt>
-                                                                        <dd>Jackson</dd>
-
-                                                                        <dt>Email</dt>
-                                                                        <dd>jack@home.com</dd>
-
-                                                                        <dt>Sex</dt>
-                                                                        <dd>Male</dd>
-                                                                    </dl>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <dl class="dl-horizontal">
-                                                                        <dt>Name</dt>
-                                                                        <dd>Jack</dd>
-
-                                                                        <dt>Surname</dt>
-                                                                        <dd>Jackson</dd>
-
-                                                                        <dt>Email</dt>
-                                                                        <dd>jack@home.com</dd>
-
-                                                                        <dt>Sex</dt>
-                                                                        <dd>Male</dd>
-                                                                    </dl>
-                                                                </div>
-                                                            </div>
-                                                            <hr/>
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <form role="form" class="form-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Email address</label> <input type="email"
-                                                                                    placeholder="Enter email"
-                                                                                    class="form-control">
-                                                                                </div>
-                                                                                <div class="form-group error">
-                                                                                    <label class="control-label">
-                                                                                        Password
-                                                                                        <span class="mandat">*</span>
-                                                                                    </label>
-                                                                                    <span class="info-txt">(Intro text for your article)</span>
-                                                                                    <input type="password" placeholder="Password" class="form-control">
-                                                                                    <span class="icon icon-bad"></span>
-                                                                                </div>
-                                                                                <div class="form-group success">
-                                                                                    <label class="control-label">Email</label>
-                                                                                    <input type="email" placeholder="Email" class="form-control">
-                                                                                    <span class="icon icon-good"></span>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Disabled</label>
-                                                                                    <input type="email" disabled placeholder="Email" class="form-control">
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Read Only</label>
-                                                                                    <input type="email" readonly placeholder="Email" class="form-control">
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Texarea</label>
-                                                                                    <textarea class="form-control"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-6">
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Do you like marbles?</label>
-
-                                                                                    <div class="clear"></div>
-                                                                                    <input type="checkbox" name="my-checkbox" class="switcher" checked>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Do you like marbles?</label>
-
-                                                                                    <div class="row">
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="radio" class="radio" value="1" id="n_1"><label
-                                                                                            class="cb-label" for="n_1">Yes</label>
-                                                                                        </div>
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="radio" class="radio" value="1" id="n_2"><label
-                                                                                            class="cb-label" for="n_2">Yes</label>
-                                                                                        </div>
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="radio" class="radio" value="1" id="n_3"><label
-                                                                                            class="cb-label" for="n_3">Yes</label>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Do you like marbles?</label>
-
-                                                                                    <div class="row">
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                                                                            for="n_4" class="cb-label">Yes</label>
-                                                                                        </div>
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                                                                            for="n_4" class="cb-label">Yes</label>
-                                                                                        </div>
-                                                                                        <div class="col-md-4">
-                                                                                            <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
-                                                                                            for="n_4" class="cb-label">Yes</label>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Select<span class="mandat">*</span></label>
-                                                                                    <select class="selectize" placeholder="placeholder text goes here...">
-                                                                                        <option value="1">www.booking.com</option>
-                                                                                        <option value="2">www.amazon.com</option>
-                                                                                        <option value="3">www.apple.com</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                                <div class="form-group">
-                                                                                    <label class="control-label">Multiple select<span class="mandat">*</span></label>
-
-                                                                                    <div class="dropdown sel multiple">
-                                                                                        <button class="dropdown-toggle" type="button" id="dropdownMenu21"
-                                                                                        data-toggle="dropdown">
-                                                                                        <span class="dropdown-value">www.badabing.com.hr</span>
-                                                                                        <span class="caret"></span>
-                                                                                    </button>
-                                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
-                                                                                        <li role="presentation">
-                                                                                            <div class="show-rec">
-                                                                                                <input name="" type="checkbox" class="checkbox" value="" id="th2">
-                                                                                                <label for="th2">Show recent</label>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                        <li role="presentation">
-                                                                                            <div class="show-rec">
-                                                                                                <input name="" type="checkbox" class="checkbox" value="" id="th3">
-                                                                                                <label for="th3">Show recent</label>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                        <li role="presentation">
-                                                                                            <div class="show-rec">
-                                                                                                <input name="" type="checkbox" class="checkbox" value="" id="th4">
-                                                                                                <label for="th4">Show recent</label>
-                                                                                            </div>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="control-label">Date picker<span class="mandat">*</span></label>
-
-                                                                                <div class="picker-holder">
-                                                                                    <input type="text" class="form-control datepicker"/>
-                                                                                    <span class="icon-calendar icon_c"></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="left" data-title="Item description:">
-                                                        <img src="img/table_img.jpg" width="48" height="48">
-                                                        <div class="list-group">
-                                                            <a href="#" class="list-group-item">
-                                                                <h4 class="list-group-item-heading">List group item heading</h4>
-                                                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                    <td class="sorted" data-title="Column 1:">7,566,000</td>
-                                                    <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
-                                                    <td data-title="Column 3:">7,566,000</td>
-                                                    <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="text-left" data-title="">Total</td>
-                                                    <td data-title="Column 1:">233,546</td>
-                                                    <td data-title="Column 2:">233,546</td>
-                                                    <td data-title="Column 3:">233,546</td>
-                                                    <td class="text-right"></td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="dropdown">
-                                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                        With Selected
-                                                        <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                        <li role="presentation" class="dropdown-header">Dropdown header</li>
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
@@ -984,130 +768,358 @@
                                                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
                                                     </ul>
                                                 </div>
-                                                <button type="button" class="btn btn-success">Select all</button>
-                                                <button type="button" class="btn btn-default">Select none</button>
-                                            </div>
-                                            <div class="col-md-4 text-right">
-                                                <ul class="pagination">
-                                                    <li class="previous">
-                                                        <a href="#">
-                                                            <span class="icon icon-caret-down"></span>
-                                                            <span>PREVIOUS</span>
-                                                        </a>
-                                                    </li>
-                                                    <li><a href="#">1</a></li>
-                                                    <li class="active"><a href="#">2</a></li>
-                                                    <li><a href="#">3</a></li>
-                                                    <li class="disabled"><a href="#">4</a></li>
-                                                    <li><a href="#">5</a></li>
-                                                    <li class="next">
-                                                        <a href="#">
-                                                            <span>NEXT</span>
-                                                            <span class="icon icon-caret-down"></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Table -->
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="left" data-title="Item description:">
+                                                <a href="#" class="expand" onclick="$('#table-hidden-row').toggle(); $(this).toggleClass('close');"></a>
+                                                Item section number one
+                                            </td>
+                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                            <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+                                            <td data-title="Column 3:">7,566,000</td>
+                                            <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
+                                        </tr>
+                                        <tr class="hidden-row" id="table-hidden-row">
+                                            <td colspan="6">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <dl class="dl-horizontal">
+                                                            <dt>Name</dt>
+                                                            <dd>Jack</dd>
 
-                                    <hr/>
+                                                            <dt>Surname</dt>
+                                                            <dd>Jackson</dd>
 
-                                    <h1>Minimal table</h1>
-                                    <!-- Minimal table -->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="table-responsive">
-                                                <table class="table table-simple">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="text-left" style="width: 80%">Item description</th>
-                                                            <th class="sorted">
-                                                                <div class="dropdown balloon right">
-                                                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                                        Column 1
-                                                                        <span class="caret"></span>
-                                                                    </button>
-                                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                                        <li role="presentation" class="dropdown-header">Sort</li>
-                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
-                                                                        </li>
-                                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                                                                            action</a></li>
-                                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                                                                                here</a></li>
-                                                                                <li role="presentation" class="divider"></li>
-                                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                                                                                    link</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </th>
-                                                                        <th>
-                                                                            <a href="#">
-                                                                                <span>Column 2</span>
-                                                                            </a>
-                                                                        </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
+                                                            <dt>Email</dt>
+                                                            <dd>jack@home.com</dd>
 
-                                                                        <td class="left" data-title="Item description:">Item section number one</td>
-                                                                        <td class="sorted" data-title="Column 1:">71,566,000</td>
+                                                            <dt>Sex</dt>
+                                                            <dd>Male</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <dl class="dl-horizontal">
+                                                            <dt>Name</dt>
+                                                            <dd>Jack</dd>
 
-                                                                        <td data-title="Column 3:">7,566,000</td>
-                                                                    </tr>
-                                                                    <tr class="active">
+                                                            <dt>Surname</dt>
+                                                            <dd>Jackson</dd>
 
-                                                                        <td class="left" data-title="Item description:">Item section number one</td>
-                                                                        <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                                            <dt>Email</dt>
+                                                            <dd>jack@home.com</dd>
 
-                                                                        <td data-title="Column 3:">7,566,000</td>
-
-                                                                    </tr>
-                                                                    <tr>
-
-                                                                        <td class="left" data-title="Item description:">
-                                                                            Item section number one
-                                                                        </td>
-                                                                        <td class="sorted" data-title="Column 1:">7,566,000</td>
-
-                                                                        <td data-title="Column 3:">7,566,000</td>
-
-                                                                    </tr>
-                                                                    <tr>
-
-                                                                        <td class="left" data-title="Item description:">Item section number one</td>
-                                                                        <td class="sorted" data-title="Column 1:">7,566,000</td>
-
-                                                                        <td data-title="Column 3:">7,566,000</td>
-
-                                                                    </tr>
-                                                                </tbody>
-                                                                <tfoot>
-                                                                    <tr>
-
-                                                                        <td class="text-left" data-title="">Total</td>
-                                                                        <td data-title="Column 1:">233,546</td>
-                                                                        <td data-title="Column 3:">233,546</td>
-
-                                                                    </tr>
-                                                                </tfoot>
-                                                            </table>
-                                                        </div>
+                                                            <dt>Sex</dt>
+                                                            <dd>Male</dd>
+                                                        </dl>
                                                     </div>
                                                 </div>
-                                                <!-- /Minimal table -->
+                                                <hr/>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form role="form" class="form-sm">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Email address</label> <input type="email"
+                                                                        placeholder="Enter email"
+                                                                        class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group error">
+                                                                        <label class="control-label">
+                                                                            Password
+                                                                            <span class="mandat">*</span>
+                                                                        </label>
+                                                                        <span class="info-txt">(Intro text for your article)</span>
+                                                                        <input type="password" placeholder="Password" class="form-control">
+                                                                        <span class="icon icon-bad"></span>
+                                                                    </div>
+                                                                    <div class="form-group success">
+                                                                        <label class="control-label">Email</label>
+                                                                        <input type="email" placeholder="Email" class="form-control">
+                                                                        <span class="icon icon-good"></span>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Disabled</label>
+                                                                        <input type="email" disabled placeholder="Email" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Read Only</label>
+                                                                        <input type="email" readonly placeholder="Email" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Texarea</label>
+                                                                        <textarea class="form-control"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Do you like marbles?</label>
 
+                                                                        <div class="clear"></div>
+                                                                        <input type="checkbox" name="my-checkbox" class="switcher" checked>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Do you like marbles?</label>
 
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="radio" class="radio" value="1" id="n_1"><label
+                                                                                class="cb-label" for="n_1">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="radio" class="radio" value="1" id="n_2"><label
+                                                                                class="cb-label" for="n_2">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="radio" class="radio" value="1" id="n_3"><label
+                                                                                class="cb-label" for="n_3">Yes</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Do you like marbles?</label>
+
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                                                for="n_4" class="cb-label">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                                                for="n_4" class="cb-label">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <input name="n" type="checkbox" class="checkbox" value="1" id="n_4"><label
+                                                                                for="n_4" class="cb-label">Yes</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Select<span class="mandat">*</span></label>
+                                                                        <select class="selectize" placeholder="placeholder text goes here...">
+                                                                            <option value="1">www.booking.com</option>
+                                                                            <option value="2">www.amazon.com</option>
+                                                                            <option value="3">www.apple.com</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">Multiple select<span class="mandat">*</span></label>
+
+                                                                        <div class="dropdown sel multiple">
+                                                                            <button class="dropdown-toggle" type="button" id="dropdownMenu21"
+                                                                            data-toggle="dropdown">
+                                                                            <span class="dropdown-value">www.badabing.com.hr</span>
+                                                                            <span class="caret"></span>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu21">
+                                                                            <li role="presentation">
+                                                                                <div class="show-rec">
+                                                                                    <input name="" type="checkbox" class="checkbox" value="" id="th2">
+                                                                                    <label for="th2">Show recent</label>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li role="presentation">
+                                                                                <div class="show-rec">
+                                                                                    <input name="" type="checkbox" class="checkbox" value="" id="th3">
+                                                                                    <label for="th3">Show recent</label>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li role="presentation">
+                                                                                <div class="show-rec">
+                                                                                    <input name="" type="checkbox" class="checkbox" value="" id="th4">
+                                                                                    <label for="th4">Show recent</label>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="control-label">Date picker<span class="mandat">*</span></label>
+
+                                                                    <div class="picker-holder">
+                                                                        <input type="text" class="form-control datepicker"/>
+                                                                        <span class="icon-calendar icon_c"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </form>
+                                                </div>
                                             </div>
-
-                                        </div>
-
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="left" data-title="Item description:">
+                                            <img src="img/table_img.jpg" width="48" height="48">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">
+                                                    <h4 class="list-group-item-heading">List group item heading</h4>
+                                                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                        <td data-title="Column 2:"><a class="btn btn-default" href="#">Activate</a></td>
+                                        <td data-title="Column 3:">7,566,000</td>
+                                        <td class="right" data-title="Sel:"><input name="" type="checkbox" value=""></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td class="text-left" data-title="">Total</td>
+                                        <td data-title="Column 1:">233,546</td>
+                                        <td data-title="Column 2:">233,546</td>
+                                        <td data-title="Column 3:">233,546</td>
+                                        <td class="text-right"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                            With Selected
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation" class="dropdown-header">Dropdown header</li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                            <li role="presentation" class="divider"></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                        </ul>
                                     </div>
+                                    <button type="button" class="btn btn-success">Select all</button>
+                                    <button type="button" class="btn btn-default">Select none</button>
                                 </div>
-</div>
+                                <div class="col-md-4 text-right">
+                                    <ul class="pagination">
+                                        <li class="previous">
+                                            <a href="#">
+                                                <span class="icon icon-caret-down"></span>
+                                                <span>PREVIOUS</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li class="active"><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li class="disabled"><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li class="next">
+                                            <a href="#">
+                                                <span>NEXT</span>
+                                                <span class="icon icon-caret-down"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Table -->
+
+                        <hr/>
+
+                        <h1>Minimal table</h1>
+                        <!-- Minimal table -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-simple">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-left" style="width: 80%">Item description</th>
+                                                <th class="sorted">
+                                                    <div class="dropdown balloon right">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            Column 1
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation" class="dropdown-header">Sort</li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                                                            </li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
+                                                                action</a></li>
+                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
+                                                                    here</a></li>
+                                                                    <li role="presentation" class="divider"></li>
+                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
+                                                                        link</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <a href="#">
+                                                                    <span>Column 2</span>
+                                                                </a>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+                                                            <td class="left" data-title="Item description:">Item section number one</td>
+                                                            <td class="sorted" data-title="Column 1:">71,566,000</td>
+
+                                                            <td data-title="Column 3:">7,566,000</td>
+                                                        </tr>
+                                                        <tr class="active">
+
+                                                            <td class="left" data-title="Item description:">Item section number one</td>
+                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                            <td data-title="Column 3:">7,566,000</td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td class="left" data-title="Item description:">
+                                                                Item section number one
+                                                            </td>
+                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                            <td data-title="Column 3:">7,566,000</td>
+
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td class="left" data-title="Item description:">Item section number one</td>
+                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                            <td data-title="Column 3:">7,566,000</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+
+                                                            <td class="text-left" data-title="">Total</td>
+                                                            <td data-title="Column 1:">233,546</td>
+                                                            <td data-title="Column 3:">233,546</td>
+
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Minimal table -->
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 <footer>
     <div class="developer-mode switch switch--yes-no switch--inline">
         <span class="switch-label switch-label--left">Developer mode</span>
