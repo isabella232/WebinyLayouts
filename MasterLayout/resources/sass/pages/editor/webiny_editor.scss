@@ -557,6 +557,11 @@
       float: right;
       margin: 15px 0 0 0;
       min-height: 35px;
+
+      .search {
+        display: inline-block;
+      }
+      
       label{
         font-size: 14px;
         vertical-align: middle;
