@@ -46,10 +46,10 @@
 	}
 
 	.autosuggest {
-		width: 457px;
 		position: absolute;
 		top: 47px;
-		left: 3px;
+		left: 0;
+		right: 0;
 		background: #fff;
 		z-index: 5000;
 		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.176);
@@ -73,9 +73,8 @@
 					list-style: none;
 					padding-left: 0;
 					span.icon.icon-caret-down {
+						display: inline-block;
 						fill: #666;
-						float: left;
-						margin: 0 0 0 0;
 						transform: rotate(-90deg);
 						font-size: 9px;
 					}
@@ -121,6 +120,11 @@
 						margin-right: 5px;
 						color: #E3E3E3;
 						font-size: 25px;
+						
+						&:before {
+							margin-left: 0;
+							width: auto;
+						}
 					}
 					a {
 						float: left;
