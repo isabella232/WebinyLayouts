@@ -87,4 +87,27 @@ function fooHideWizard(wName){
         // perfectScrollbar
         $('.left-menu').perfectScrollbar();
         // $('.scrl_wrapper_submenu').perfectScrollbar();
+
+        $('.ftree__folder--has-subfolder').bind('click', function() {
+          if ($(this).hasClass('ftree__folder--expanded')) {
+            $(this).removeClass('ftree__folder--expanded');
+          } else {
+            $(this).addClass('ftree__folder--expanded');
+          }
+        });
+
+        $('.Browser__header-actions a[data-viewtype]').bind('click', function() {
+          var browser_view = $(this).attr('data-viewtype');
+          var this_browser = $(this).parents('.Browser');
+          var this_browser_content = this_browser.find('.Browser__content');
+
+          this_browser.find('a[data-viewtype]').removeClass('active');
+          
+          this_browser_content.removeClass('Browser__content--list');
+          this_browser_content.removeClass('Browser__content--grid');
+          this_browser_content.addClass('Browser__content--'+browser_view);
+
+          $(this).addClass('active');
+        });
+        
 	});
