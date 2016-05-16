@@ -449,6 +449,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <button class="btn btn-primary" data-toggle="modal" data-target="#modal-file-manager" >File manager</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-file-manager-upload" >File manager upload</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-file-manager-uploading" >File manager uploading</button>
                 </div>
             </div>
         </div>
@@ -465,6 +467,2227 @@
                     <a href="#" class="btn btn-success btn-lg btn-upload">
                         <span class="icon left icon-plus-circled"></span>
                         <span>Upload a file</span>
+                    </a>
+                    <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+
+                <div class="modal-header__bottom">
+                    <div class="fm-uploader">
+                        <form action="" class="fm-uploader__form" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <div class="choose-file">
+                                    <input id="uploadFile" placeholder="Choose your document" disabled="disabled" class="form-control">
+                                    <div class="fileUpload btn btn-transparent">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="dropdown" placeholder="placeholder text goes here...">
+                                    <option value="1">Images / Kudos / Dawson</option>
+                                    <option value="2">My / Upload / Folder</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="preloading btn btn-disabled"><span class="icon left icon-gauge"></span> Uploading files...</button>
+                            </div>
+                        </form>
+
+                        <div class="fm-uploader__progress--total">
+                            <div class="Progress Progress--total">
+                                <span class="Progress__title">Total progress</span>
+                                <div class="Progress__bar">
+                                    <div class="Progress__bar-inner" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                                    </div>
+                                </div>
+                                <span class="Progress__percentage">78%</span>
+                                <span class="Progress__files">(5 of 40 files)</span>
+                            </div>
+                        </div>
+
+                        <div class="fm-uploader__progress--files">
+                            <div class="Progress">
+                                <span class="Progress__title">stage_5_active.jpg</span>
+                                <div class="Progress__bar">
+                                    <div class="Progress__bar-inner" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+                                    </div>
+                                </div>
+                                <span class="Progress__percentage">33%</span>
+                            </div>
+
+                            <div class="Progress">
+                                <span class="Progress__title">stage_5_fin.jpg</span>
+                                <div class="Progress__bar">
+                                    <div class="Progress__bar-inner" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" style="width: 29%">
+                                    </div>
+                                </div>
+                                <span class="Progress__percentage">29%</span>
+                            </div>
+
+                            <div class="Progress">
+                                <span class="Progress__title">stage_5_temp.jpg</span>
+                                <div class="Progress__bar">
+                                    <div class="Progress__bar-inner" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%">
+                                    </div>
+                                </div>
+                                <span class="Progress__percentage">14%</span>
+                            </div>
+
+                            <div class="Progress">
+                                <span class="Progress__title">stage_5.jpg</span>
+                                <div class="Progress__bar">
+                                    <div class="Progress__bar-inner" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%">
+                                    </div>
+                                </div>
+                                <span class="Progress__percentage">7%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="tabs tabs--navigation-left">
+                    <div class="tabs__body">
+
+                        <div class="tabs__navigation-wrapper">
+                            <ul class="tabs__navigation nav nav-tabs" role="tablist">
+                                <li role="presentation" class="tabs__navigation-item active">
+
+                                    <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-picture-1"></span>
+                                        <span class="txt">Images</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+
+                                    <ul class="ftree">
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Selecto
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Huckletree
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Webiny
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder ftree__folder--has-subfolder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Kudos
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+
+                                            <ul class="ftree__dropdown">
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Selecto
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Huckletree
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder ftree__folder--active">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Dawson
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                            </ul><!-- /.ftree__dropdown -->
+
+                                        </li><!-- /.ftree__folder -->
+
+                                    </ul><!-- /.ftree -->
+
+                                </li><!-- /.tabs__navigation-item -->
+
+                                <li role="presentation" class="tabs__navigation-item">
+                                    <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-documents"></span>
+                                        <span class="txt">Documents</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+
+                                    <ul class="ftree">
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Selecto
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Huckletree
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Webiny
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder ftree__folder--has-subfolder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Kudos
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+
+                                            <ul class="ftree__dropdown">
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Selecto
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Huckletree
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder ftree__folder--active">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Dawson
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                            </ul><!-- /.ftree__dropdown -->
+
+                                        </li><!-- /.ftree__folder -->
+
+                                    </ul><!-- /.ftree -->
+                                </li><!-- /.tabs__navigation-item -->
+
+                                <li role="presentation" class="tabs__navigation-item">
+                                    <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-edit-1"></span>
+                                        <span class="txt">Other</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+                                </li><!-- /.tabs__navigation-item -->
+
+                            </ul><!-- /.tab__navigation -->
+
+                            <div class="tabs__details">
+                                <div class="Progress Progress--free-space">
+                                    <span class="Progress__title">Free space</span>
+                                    <div class="Progress__bar">
+                                        <div class="Progress__bar-inner" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        </div>
+                                    </div>
+                                    <span class="Progress__percentage">7GB (of 10GB)</span>
+                                    <span class="Progress__files">(2.176 files)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs__panes tabs__panes--with-border">
+
+                            <div class="tab-pane active" id="tab-1">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list active" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_1">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox" checked>
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="file-stage.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tab-2">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_2">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="Stage_2.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_2">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="homepage.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.tab__panes -->
+
+                    </div><!-- /.tab__body -->
+                </div><!-- /.tabs -->
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Files</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--file-manager" id="modal-file-manager-upload" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header--upload">
+
+                <div class="modal-header__top">
+                    <h4 class="modal-title">File manager</h4>
+                    <a href="#" class="btn btn-default btn-upload">
+                        <span class="icon left icon-cancel left"></span>
+                        <span>Close uploader</span>
+                    </a>
+                    <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+
+                <div class="modal-header__bottom">
+                    <div class="fm-uploader">
+                        <form action="" class="fm-uploader__form" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <div class="choose-file">
+                                    <input id="uploadFile" placeholder="Choose your document" disabled="disabled" class="form-control">
+                                    <div class="fileUpload btn btn-transparent">
+                                        <span>Upload</span>
+                                        <input id="uploadBtn" type="file" class="upload">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="dropdown" placeholder="placeholder text goes here...">
+                                    <option value="1">Images / Kudos / Dawson</option>
+                                    <option value="2">My / Upload / Folder</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success"><span class="icon left icon-upload"></span> Upload a file</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="tabs tabs--navigation-left">
+                    <div class="tabs__body">
+
+                        <div class="tabs__navigation-wrapper">
+                            <ul class="tabs__navigation nav nav-tabs" role="tablist">
+                                <li role="presentation" class="tabs__navigation-item active">
+
+                                    <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-picture-1"></span>
+                                        <span class="txt">Images</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+
+                                    <ul class="ftree">
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Selecto
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Huckletree
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Webiny
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder ftree__folder--has-subfolder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Kudos
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+
+                                            <ul class="ftree__dropdown">
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Selecto
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Huckletree
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder ftree__folder--active">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Dawson
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                            </ul><!-- /.ftree__dropdown -->
+
+                                        </li><!-- /.ftree__folder -->
+
+                                    </ul><!-- /.ftree -->
+
+                                </li><!-- /.tabs__navigation-item -->
+
+                                <li role="presentation" class="tabs__navigation-item">
+                                    <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-documents"></span>
+                                        <span class="txt">Documents</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+
+                                    <ul class="ftree">
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Selecto
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Huckletree
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Webiny
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+                                        </li><!-- /.ftree__folder -->
+
+                                        <li class="ftree__folder ftree__folder--has-subfolder">
+                                            <a href="#">
+                                                <span class="icon left icon-folder"></span>
+                                                Kudos
+                                                <span class="icon icon-cog"></span>
+                                                <span class="icon icon-trash"></span>
+                                            </a>
+
+                                            <ul class="ftree__dropdown">
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Selecto
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Huckletree
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                                <li class="ftree__folder ftree__folder--active">
+                                                    <a href="#">
+                                                        <span class="icon left icon-folder"></span>
+                                                        Dawson
+                                                        <span class="icon icon-cog"></span>
+                                                        <span class="icon icon-trash"></span>
+                                                    </a>
+                                                </li><!-- /.ftree__folder -->
+
+                                            </ul><!-- /.ftree__dropdown -->
+
+                                        </li><!-- /.ftree__folder -->
+
+                                    </ul><!-- /.ftree -->
+                                </li><!-- /.tabs__navigation-item -->
+
+                                <li role="presentation" class="tabs__navigation-item">
+                                    <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                        <span class="icon left icon-edit-1"></span>
+                                        <span class="txt">Other</span>
+                                        <button class="tabs__navigation-item-options"><span class="icon left icon-cog"></span></button>
+                                    </a>
+                                </li><!-- /.tabs__navigation-item -->
+
+                            </ul><!-- /.tab__navigation -->
+
+                            <div class="tabs__details">
+                                <div class="Progress Progress--free-space">
+                                    <span class="Progress__title">Free space</span>
+                                    <div class="Progress__bar">
+                                        <div class="Progress__bar-inner" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        </div>
+                                    </div>
+                                    <span class="Progress__percentage">7GB (of 10GB)</span>
+                                    <span class="Progress__files">(2.176 files)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tabs__panes tabs__panes--with-border">
+
+                            <div class="tab-pane active" id="tab-1">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list active" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_1">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox" checked>
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="file-stage.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tab-2">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_2">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="Stage_2.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div class="Browser">
+
+                                    <div class="Browser__header">
+                                        <ol class="breadcrumb">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li class="active">Data</li>
+                                        </ol>
+
+                                        <div class="Browser__header-tools">
+                                            <div class="Browser__header-actions">
+                                                <a class="Browser__header-add-folder" href="#"><span class="icon icon-folder-add"></span></a>
+                                                <a class="Browser__header-search" href="#"><span class="icon icon-search"></span></a>
+                                                <a class="Browser__header-view-list" href="#" data-viewtype="list"><span class="icon icon-th-list"></span></a>
+                                                <a class="Browser__header-view-grid" href="#" data-viewtype="grid"><span class="icon icon-th"></span></a>
+                                            </div>
+
+                                            <div class="Browser__header-options dropdown">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    Folder options
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Move</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rename</a></li>
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Browser__content Browser__content--list scrollable" id="lists_container">
+
+                                        <div class="Browser__sorter" id="list_2">
+                                            <div class="Browser__sorter-file">
+                                                <a class="Browser__sorter-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="checkboxDefault1" type="checkbox">
+                                                        <label for="checkboxDefault1">Yes</label>
+                                                    </div>
+                                                </a>
+                                                <a class="Browser__sorter-sortable Browser__sorter-name">Filename</a>
+                                            </div>
+                                            <a class="Browser__sorter-sortable Browser__sorter-date">Uploaded</a>
+                                            <a class="Browser__sorter-sortable Browser__sorter-size">Filesize</a>
+                                            <a class="Browser__sorter-options"><span class="icon left icon-cog"></span></a>
+                                        </div>
+
+                                        <ul class="Browser__box" id="list_1">
+
+                                            <li class="Browser__box-item Browser__box-item--folder">
+                                                <div class="Browser__box-item-checkbox">
+                                                    <div class="checkbox-custom mb5">
+                                                        <input id="fileCheckbox1" type="checkbox">
+                                                        <label for="fileCheckbox1">Yes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="Browser__box-item-image"></div>
+                                                <div class="Browser__box-item-name"><span class="icon icon-folder"></span>Front cover</div>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox2" type="checkbox">
+                                                            <label for="fileCheckbox2">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>homepage.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item Browser__box-item--selected">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input checked id="fileCheckbox3" type="checkbox">
+                                                            <label for="fileCheckbox3">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                            <li class="Browser__box-item">
+                                                <div class="Browser__box-item-file">
+                                                    <div class="Browser__box-item-checkbox">
+                                                        <div class="checkbox-custom mb5">
+                                                            <input id="fileCheckbox4" type="checkbox">
+                                                            <label for="fileCheckbox4">Yes</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="Browser__box-item-image"></div>
+                                                    <div class="Browser__box-item-name"><span class="icon icon-file-jpg"></span>file-sd fds stage_1.jpg</div>
+                                                </div>
+                                                <div class="Browser__box-item-date">23.04.2016.</div>
+                                                <div class="Browser__box-item-size">0.3mb</div>
+                                                <a href="#" class="Browser__box-item-options"><span class="icon left icon-cog"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="Browser__details">
+                                        <div class="File-details">
+                                            <form action="file_manager_submit" method="get" accept-charset="utf-8">
+                                                <div class="File-details__filename">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File name</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="homepage.jpg" class="form-control" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <a class="File-details__preview" href="#">
+                                                    <span class="icon icon-search"></span>
+                                                </a>
+                                                <div class="File-details__actions">
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-rename"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-trash"></span></a>
+                                                    <a href="#" class="btn btn-success"><span class="icon icon-resize"></span></a>
+
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            300*250
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">300*250</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">600*500</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1200*1000</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="File-details__info">
+                                                    <div class="form-group">
+                                                        <label class="control-label">File size</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="2.0 MB" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Date uploaded</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="21. Jun. 2016" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Location</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" value="images/kudos/dawson/" class="form-control" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Url</label>
+                                                        <span class="info-txt"></span>
+                                                        <div class="input-group">
+                                                            <input type="text" value="webiny.com/nesto/nest..." class="form-control" readonly>
+                                                            <a href="#" class="btn btn-default">copy</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="File-details__meta">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Image Caption</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Alt Text</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label">Author</label>
+                                                        <span class="info-txt"></span>
+                                                        <input type="text" placeholder="" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /.tab__panes -->
+
+                    </div><!-- /.tab__body -->
+                </div><!-- /.tabs -->
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Files</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal--file-manager" id="modal-file-manager-uploading" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header--uploading">
+
+                <div class="modal-header__top">
+                    <h4 class="modal-title">File manager</h4>
+                    <a href="#" class="btn btn-default btn-upload">
+                        <span class="icon left icon-cancel left"></span>
+                        <span>Close uploader</span>
                     </a>
                     <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>

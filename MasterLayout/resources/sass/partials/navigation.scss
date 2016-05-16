@@ -21,7 +21,7 @@
   .navbar-collapse {
     background: #373737;
     width: 271px;
-    z-index: 50000;
+    z-index: 5000;
     position: absolute;
     top: 0;
     -webkit-transition: left 0.5s;
@@ -43,7 +43,7 @@ body.opened-mobile-nav .master-navigation .navbar-collapse {
   z-index: 2;
   .domain-picker-mobile {
     position: relative;
-    z-index: 50000;
+    z-index: 5000;
     margin: 0 -15px 0 -15px;
     width: 100%;
     .btn-default {
@@ -800,7 +800,7 @@ body.opened-mobile-nav .left-menu-submenu {
       width: 110px;
       display: none;
       margin-top: 123px;
-      z-index: 6000;
+      z-index: 1700;
       .shield {
         height: 100%;
         position: fixed;
@@ -851,7 +851,7 @@ body.opened-mobile-nav .left-menu-submenu {
   .master-navigation {
     .navbar {
       margin-bottom: 0;
-      z-index: 19000;
+      z-index: 1900;
     }
     .navbar-header {
       .domain-picker {
@@ -1099,6 +1099,20 @@ body.opened-mobile-nav .left-menu-submenu {
       height: 55px;
       position: relative;
       z-index: 1700;
+
+      .search {
+        width: 289px;
+        float: left;
+        padding: 6px 0 0 3px;
+        margin-right: 10px;
+        position: relative;
+        border: none;
+        background-color: transparent;
+
+        input {
+          background-color: #fff;
+        }
+      }
       
       .quicklinks {
         padding: 19px 0 0 0;
@@ -1246,7 +1260,7 @@ body.opened-mobile-nav .left-menu-submenu {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 19000;
+    z-index: 1900;
   }
   .master-content {
     /*margin-left: 107px;*/
