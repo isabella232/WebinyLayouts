@@ -150,6 +150,11 @@
 	}
 }
 
+.fm-uploader__progress {
+	.Progress {
+		padding: 5px 25px;
+	}
+}
 
 .fm-uploader__progress--total {
 	padding: 0 15px 20px;
