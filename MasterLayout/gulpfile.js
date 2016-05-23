@@ -18,17 +18,18 @@ function errorLog (error) {
 }
 
 var bs_config = {
-    proxy: "master-layout.webiny.dev"
+    proxy: "master-layout.webiny.dev",
+    online: false,
+    notify: false
 }
 
 gulp.task('serve', ['sass'], function(){
-    browserSync(bs_config)
+    browserSync(bs_config);
 
     gulp.watch('resources/sass/**/*.scss', ['sass']);
     gulp.watch('resources/js/**/*.js', ['scripts']).on('change', reload);
     gulp.watch('resources/fonts/*', ['fonts']).on('change', reload);
     gulp.watch('resources/img/*', ['imagemin']).on('change', reload);
-    gulp.watch(public_folder +'/**/*.css').on('change', reload);
     gulp.watch(public_folder +'/**/*.js').on('change', reload);
     gulp.watch(public_folder +'/**/*.html').on('change', reload);
     gulp.watch(public_folder +'/**/*.php').on('change', reload);
@@ -37,14 +38,18 @@ gulp.task('serve', ['sass'], function(){
 gulp.task('sass', function() {
     return gulp.src(['resources/sass/webiny.scss', 'resources/sass/pages/dashboard/dashboard.scss', 'resources/sass/pages/editor/webiny_editor.scss'])
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'expanded'}))
         .on('error', errorLog)
         .pipe(prefix({
             browsers: ['last 10 versions']
         }))
         // .pipe(cssnano())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(public_folder + '/css'));
+        .pipe(sourcemaps.write('maps', {
+            identityMap: true,
+            debug: true
+        }))
+        .pipe(gulp.dest(public_folder + '/css'))
+        .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('scripts', function() {
