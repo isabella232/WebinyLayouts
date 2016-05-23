@@ -516,7 +516,7 @@
                                         <option value="3">www.apple.com</option>
                                     </select>
                                 </div>
-                             </div>
+                            </div>
 
                             <div class="col-md-3">
                                 <div class="form-group">
@@ -1026,10 +1026,10 @@
 
                         <hr/>
 
-                        <h1>Minimal table</h1>
-                        <!-- Minimal table -->
                         <div class="row">
                             <div class="col-md-6">
+                                <h1>Minimal table</h1>
+                                <!-- Minimal table -->
                                 <div class="table-responsive">
                                     <table class="table table-simple">
                                         <thead>
@@ -1045,81 +1045,165 @@
                                                             <li role="presentation" class="dropdown-header">Sort</li>
                                                             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
                                                             </li>
-                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
-                                                                action</a></li>
-                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
-                                                                    here</a></li>
-                                                                    <li role="presentation" class="divider"></li>
-                                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
-                                                                        link</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </th>
-                                                            <th>
-                                                                <a href="#">
-                                                                    <span>Column 2</span>
-                                                                </a>
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                            <li role="presentation" class="divider"></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </th>
+                                                <th>
+                                                    <a href="#">
+                                                        <span>Column 2</span>
+                                                    </a>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
 
-                                                            <td class="left" data-title="Item description:">Item section number one</td>
-                                                            <td class="sorted" data-title="Column 1:">71,566,000</td>
+                                                <td class="left" data-title="Item description:">Item section number one</td>
+                                                <td class="sorted" data-title="Column 1:">71,566,000</td>
 
-                                                            <td data-title="Column 3:">7,566,000</td>
-                                                        </tr>
-                                                        <tr class="active">
+                                                <td data-title="Column 3:">7,566,000</td>
+                                            </tr>
+                                            <tr class="active">
 
-                                                            <td class="left" data-title="Item description:">Item section number one</td>
-                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                                <td class="left" data-title="Item description:">Item section number one</td>
+                                                <td class="sorted" data-title="Column 1:">7,566,000</td>
 
-                                                            <td data-title="Column 3:">7,566,000</td>
+                                                <td data-title="Column 3:">7,566,000</td>
 
-                                                        </tr>
-                                                        <tr>
+                                            </tr>
+                                            <tr>
 
-                                                            <td class="left" data-title="Item description:">
-                                                                Item section number one
-                                                            </td>
-                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                                <td class="left" data-title="Item description:">
+                                                    Item section number one
+                                                </td>
+                                                <td class="sorted" data-title="Column 1:">7,566,000</td>
 
-                                                            <td data-title="Column 3:">7,566,000</td>
+                                                <td data-title="Column 3:">7,566,000</td>
 
-                                                        </tr>
-                                                        <tr>
+                                            </tr>
+                                            <tr>
 
-                                                            <td class="left" data-title="Item description:">Item section number one</td>
-                                                            <td class="sorted" data-title="Column 1:">7,566,000</td>
+                                                <td class="left" data-title="Item description:">Item section number one</td>
+                                                <td class="sorted" data-title="Column 1:">7,566,000</td>
 
-                                                            <td data-title="Column 3:">7,566,000</td>
+                                                <td data-title="Column 3:">7,566,000</td>
 
-                                                        </tr>
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
 
-                                                            <td class="text-left" data-title="">Total</td>
-                                                            <td data-title="Column 1:">233,546</td>
-                                                            <td data-title="Column 3:">233,546</td>
+                                                <td class="text-left" data-title="">Total</td>
+                                                <td data-title="Column 1:">233,546</td>
+                                                <td data-title="Column 3:">233,546</td>
 
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /Minimal table -->
-
-
+                                            </tr>
+                                        </tfoot>
+                                    </table>
                                 </div>
-
+                                <!-- /Minimal table -->
                             </div>
 
+                            <div class="col-md-6">
+                                <h1>Minimal table with loading overlay</h1>
+                                <!-- Minimal table with loading overlay -->
+                                <div class="table-responsive">
+                                    <div class="loading-overlay">
+                                        <table class="table table-simple">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-left" style="width: 80%">Item description</th>
+                                                    <th class="sorted">
+                                                        <div class="dropdown balloon right">
+                                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                Column 1
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                <li role="presentation" class="dropdown-header">Sort</li>
+                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                                                                </li>
+                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                                                <li role="presentation" class="divider"></li>
+                                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <a href="#">
+                                                            <span>Column 2</span>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td class="left" data-title="Item description:">Item section number one</td>
+                                                    <td class="sorted" data-title="Column 1:">71,566,000</td>
+
+                                                    <td data-title="Column 3:">7,566,000</td>
+                                                </tr>
+                                                <tr class="active">
+
+                                                    <td class="left" data-title="Item description:">Item section number one</td>
+                                                    <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                    <td data-title="Column 3:">7,566,000</td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="left" data-title="Item description:">
+                                                        Item section number one
+                                                    </td>
+                                                    <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                    <td data-title="Column 3:">7,566,000</td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="left" data-title="Item description:">Item section number one</td>
+                                                    <td class="sorted" data-title="Column 1:">7,566,000</td>
+
+                                                    <td data-title="Column 3:">7,566,000</td>
+
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+
+                                                    <td class="text-left" data-title="">Total</td>
+                                                    <td data-title="Column 1:">233,546</td>
+                                                    <td data-title="Column 3:">233,546</td>
+
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="loading-overlay__icon-wrapper">
+                                        <div class="loading-overlay__icon"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- /Minimal table with loading overlay -->
+
+
                     </div>
+
                 </div>
+
+            </div>
+        </div>
+    </div>
 <footer>
     <div class="developer-mode switch switch--yes-no switch--inline">
         <span class="switch-label switch-label--left">Developer mode</span>
