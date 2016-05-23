@@ -12090,8 +12090,8 @@ fieldset legend {
 /** Alerts **/
 .alert {
   background: #CC3300;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   padding: 12px 10px 12px 50px;
   border: none;
   position: relative;
@@ -12113,6 +12113,12 @@ fieldset legend {
 
 .alert button.close {
   margin: 0 5px 0 5px;
+  color: #fff;
+  opacity: 1;
+}
+
+.alert button.close:hover {
+  opacity: 0.6;
 }
 
 .alert.alert-danger {
@@ -12137,6 +12143,16 @@ fieldset legend {
   position: absolute;
   left: 8px;
   top: 9px;
+}
+
+.alert ul, .alert ol {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.alert li {
+  padding-left: 0;
 }
 
 /** /Alerts **/
