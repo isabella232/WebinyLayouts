@@ -102,16 +102,16 @@ function fooHideWizard(wName){
           }
         });
 
-        $('.Browser__header-actions a[data-viewtype]').bind('click', function() {
+        $('.browser__header-actions a[data-viewtype]').bind('click', function() {
           var browser_view = $(this).attr('data-viewtype');
-          var this_browser = $(this).parents('.Browser');
-          var this_browser_content = this_browser.find('.Browser__content');
+          var this_browser = $(this).parents('.browser');
+          var this_browser_content = this_browser.find('.browser__content');
 
           this_browser.find('a[data-viewtype]').removeClass('active');
           
-          this_browser_content.removeClass('Browser__content--list');
-          this_browser_content.removeClass('Browser__content--grid');
-          this_browser_content.addClass('Browser__content--'+browser_view);
+          this_browser_content.removeClass('browser__content--list');
+          this_browser_content.removeClass('browser__content--grid');
+          this_browser_content.addClass('browser__content--'+browser_view);
 
           $(this).addClass('active');
         });
