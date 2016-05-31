@@ -12881,7 +12881,7 @@ fieldset legend {
   height: 45px;
 }
 
-form.form-sm .selectize-control {
+.form-sm .selectize-control {
   height: 35px;
 }
 
@@ -12916,7 +12916,7 @@ form.form-sm .selectize-control {
   border-radius: 0;
 }
 
-form.form-sm .selectize-input, form.form-sm .selectize-input.selectize-sm {
+.form-sm .selectize-input, .form-sm .selectize-input.selectize-sm {
   height: 35px;
 }
 
@@ -12927,7 +12927,7 @@ form.form-sm .selectize-input, form.form-sm .selectize-input.selectize-sm {
   float: left;
 }
 
-form.form-sm .selectize-input .item {
+.form-sm .selectize-input .item {
   margin-top: 10px;
 }
 
@@ -13108,9 +13108,9 @@ form.form-sm .selectize-input .item {
   border-radius: 0;
 }
 
-form.form-sm .selectize-control.single .selectize-input input,
-form.form-sm .selectize-control.single .selectize-input.input-active,
-form.form-sm .selectize-control.single .selectize-input.input-active input {
+.form-sm .selectize-control.single .selectize-input input,
+.form-sm .selectize-control.single .selectize-input.input-active,
+.form-sm .selectize-control.single .selectize-input.input-active input {
   height: 35px;
   border-bottom: 2px solid #ccc;
 }
@@ -13535,7 +13535,7 @@ a.info span.icon {
   border-right: none;
 }
 
-form.form-sm .sortable .form-group {
+.form-sm .sortable .form-group {
   background-color: #fff;
   padding: 2px 10px;
   min-height: 65px;
@@ -14362,7 +14362,7 @@ table.table .icheckbox_minimal .iradio_minimal {
   clear: none;
 }
 
-.table-filters form .form-group {
+.table-filters .form-group {
   min-height: 0;
   margin-bottom: 5px;
 }
@@ -14994,46 +14994,46 @@ textarea.form-control {
   line-height: 98%;
 }
 
-form.form-sm .form-group {
+.form-sm .form-group {
   margin-bottom: 10px;
   min-height: 56px;
 }
 
-form.form-sm .form-group input.form-control, form.form-sm .form-group .dropdown.sel button {
+.form-sm .form-group input.form-control, .form-sm .form-group .dropdown.sel button {
   height: 42px;
 }
 
-form.form-sm .form-group span.icon, form.form-sm .form-group.error span.icon, form.form-sm .form-group.success span.icon {
+.form-sm .form-group span.icon, .form-sm .form-group.error span.icon, .form-sm .form-group.success span.icon {
   display: none;
 }
 
-form.form-sm textarea.form-control {
+.form-sm textarea.form-control {
   height: 80px;
 }
 
-form.form-sm .form-group .bootstrap-switch {
+.form-sm .form-group .bootstrap-switch {
   margin-top: 3px;
 }
 
-form.form-sm .form-group .dropdown.sel .dropdown-menu {
+.form-sm .form-group .dropdown.sel .dropdown-menu {
   margin-top: -5px;
 }
 
-form.form-sm .form-group .picker-holder span.icon_c {
+.form-sm .form-group .picker-holder span.icon_c {
   font-size: 20px;
 }
 
-form.navbar-form {
+.navbar-form {
   margin: 0;
   padding: 0;
 }
 
-form.navbar-form .form-group {
+.navbar-form .form-group {
   min-height: 0;
   margin-bottom: 5px;
 }
 
-form.navbar-form .form-group input {
+.navbar-form .form-group input {
   min-width: 200px;
 }
 
@@ -15415,24 +15415,6 @@ form.navbar-form .form-group input {
   text-align: center;
 }
 
-.tray-bin form {
-  position: relative;
-  min-height: 285px;
-  margin: 0 0 20px 0;
-  padding: 18px 8px;
-  background-color: #fbfbfb;
-  border: 2px dashed #cdcdcd;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-}
-
-.tray-bin form:after {
-  content: "";
-  display: block;
-  float: none;
-  clear: both;
-}
-
 .tray-bin span {
   font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 3px;
@@ -15443,6 +15425,24 @@ form.navbar-form .form-group input {
           border-radius: 0px;
   font-weight: bold;
   font-size: 19px;
+}
+
+.tray-bin__container {
+  position: relative;
+  min-height: 285px;
+  margin: 0 0 20px 0;
+  padding: 18px 8px;
+  background-color: #fbfbfb;
+  border: 2px dashed #cdcdcd;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.tray-bin__container:after {
+  content: "";
+  display: block;
+  float: none;
+  clear: both;
 }
 
 .tray-bin__main-text {
@@ -15601,7 +15601,7 @@ form.navbar-form .form-group input {
   color: #FFF;
 }
 
-.tray-bin--empty form {
+.tray-bin--empty .tray-bin__container {
   padding-top: 101px;
 }
 
@@ -19092,7 +19092,7 @@ footer .developer-mode ul li.active a {
   max-width: 640px;
 }
 
-.sign-in-holder form {
+.sign-in-holder .form-signin {
   background-color: #ffffff;
   padding: 50px 40px;
   overflow: hidden;
@@ -19146,10 +19146,10 @@ footer .developer-mode ul li.active a {
   z-index: 0;
   opacity: 1;
   -webkit-transform-origin: 100% 0%;
-  -ms-transform-origin: 100% 0%;
-      transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
   -webkit-animation: loader3 10s ease-in-out infinite;
-  animation: loader3 10s ease-in-out infinite;
+          animation: loader3 10s ease-in-out infinite;
   background-size: 45px 45px;
 }
 
@@ -19190,7 +19190,7 @@ footer .developer-mode ul li.active a {
 }
 
 @media (min-width: 768px) {
-  .sign-in-holder form {
+  .sign-in-holder .form-signin {
     padding: 50px 100px 40px;
   }
   .sign-in-holder.password-rec h2 {

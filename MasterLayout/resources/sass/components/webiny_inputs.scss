@@ -204,44 +204,42 @@ textarea.form-control {
   }
 }
 
-form {
-  &.form-sm {
-    .form-group {
-      margin-bottom: 10px;
-      min-height: 56px;
-      input.form-control, .dropdown.sel button {
-        height: 42px;
-      }
-      label {
-      }
-      span.icon, &.error span.icon, &.success span.icon {
-        display: none;
-      }
+.form-sm {
+  .form-group {
+    margin-bottom: 10px;
+    min-height: 56px;
+    input.form-control, .dropdown.sel button {
+      height: 42px;
     }
-    textarea.form-control {
-      height: 80px;
+    label {
     }
-    .form-group {
-      .bootstrap-switch {
-        margin-top: 3px;
-      }
-      .dropdown.sel .dropdown-menu {
-        margin-top: -5px;
-      }
-      .picker-holder span.icon_c {
-        font-size: 20px;
-      }
+    span.icon, &.error span.icon, &.success span.icon {
+      display: none;
     }
   }
-  &.navbar-form {
-    margin: 0;
-    padding: 0;
-    .form-group {
-      min-height: 0;
-      margin-bottom: 5px;
-      input {
-        min-width: 200px;
-      }
+  textarea.form-control {
+    height: 80px;
+  }
+  .form-group {
+    .bootstrap-switch {
+      margin-top: 3px;
+    }
+    .dropdown.sel .dropdown-menu {
+      margin-top: -5px;
+    }
+    .picker-holder span.icon_c {
+      font-size: 20px;
+    }
+  }
+}
+.navbar-form {
+  margin: 0;
+  padding: 0;
+  .form-group {
+    min-height: 0;
+    margin-bottom: 5px;
+    input {
+      min-width: 200px;
     }
   }
 }

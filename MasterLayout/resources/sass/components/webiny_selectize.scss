@@ -84,7 +84,7 @@
   height: 45px;
 }
 
-form.form-sm .selectize-control {
+.form-sm .selectize-control {
   height: 35px;
 }
 
@@ -119,7 +119,7 @@ form.form-sm .selectize-control {
   border-radius: 0;
 }
 
-form.form-sm .selectize-input, form.form-sm .selectize-input.selectize-sm {
+.form-sm .selectize-input, .form-sm .selectize-input.selectize-sm {
   height: 35px;
 }
 
@@ -130,7 +130,7 @@ form.form-sm .selectize-input, form.form-sm .selectize-input.selectize-sm {
   float: left;
 }
 
-form.form-sm .selectize-input .item {
+.form-sm .selectize-input .item {
   margin-top: 10px;
 }
 
@@ -312,9 +312,9 @@ form.form-sm .selectize-input .item {
   border-radius: 0;
 }
 
-form.form-sm .selectize-control.single .selectize-input input,
-form.form-sm .selectize-control.single .selectize-input.input-active,
-form.form-sm .selectize-control.single .selectize-input.input-active input{
+.form-sm .selectize-control.single .selectize-input input,
+.form-sm .selectize-control.single .selectize-input.input-active,
+.form-sm .selectize-control.single .selectize-input.input-active input{
   height: 35px;
   border-bottom: 2px solid #ccc;
 }
