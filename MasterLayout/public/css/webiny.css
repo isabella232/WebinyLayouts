@@ -15043,6 +15043,10 @@ textarea.form-control {
   margin-bottom: 3px;
 }
 
+.tray-bin a:focus {
+  color: #fa541d;
+}
+
 .tray-bin .btn {
   -webkit-border-radius: 0px;
           border-radius: 0px;
