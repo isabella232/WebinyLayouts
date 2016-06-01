@@ -14870,16 +14870,6 @@ textarea.form-control {
 }
 
 .tabs__navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-flex-basis: 25%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
   padding: 0;
   border: none;
   background-color: #F3F3F3;
@@ -14985,22 +14975,29 @@ textarea.form-control {
   .tabs--navigation-top .tabs__header {
     border-bottom: 1px solid #E7E5E5;
   }
-  .tabs--navigation-top .tabs__body {
+  .tabs--navigation-top > .tabs__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .tabs--navigation-top .tabs__navigation {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
   }
-  .tabs--navigation-top .tabs__navigation > li {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation > li {
     border-right: 1px solid #E7E5E5;
   }
-  .tabs--navigation-top .tabs__navigation > .active > a {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation > .active > a {
     border-bottom: 0px solid;
   }
   .tabs--navigation-top .tabs__panes {
@@ -15008,18 +15005,28 @@ textarea.form-control {
         -ms-flex-preferred-size: 1;
             flex-basis: 1;
   }
-  .tabs--navigation-left .tabs__navigation {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .tabs--navigation-left .tabs__navigation > li {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation > li {
     text-align: left;
     border-bottom: 1px solid #E7E5E5;
   }
-  .tabs--navigation-left .tabs__navigation > .active > a {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation > .active > a {
     border-right: 0px solid;
   }
 }
