@@ -99,6 +99,10 @@
     }
 }
 
+.tray-bin__file--dragging {
+    border-color: $color-primary;
+}
+
 .tray-bin__placeholder {
     display: inline-block;
     float: left;
@@ -112,7 +116,6 @@
     
     cursor:move;
     border: 2px dashed #ccc;
-    background-color: #f6f6f6;
 }
 
 .tray-bin__file--uploading {

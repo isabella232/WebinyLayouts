@@ -15129,6 +15129,10 @@ textarea.form-control {
   padding: 8px 0 9px;
 }
 
+.tray-bin__file--dragging {
+  border-color: #fa541d;
+}
+
 .tray-bin__placeholder {
   display: inline-block;
   float: left;
@@ -15141,7 +15145,6 @@ textarea.form-control {
           box-sizing: border-box;
   cursor: move;
   border: 2px dashed #ccc;
-  background-color: #f6f6f6;
 }
 
 .tray-bin__file--uploading .tray-bin__file-size {
