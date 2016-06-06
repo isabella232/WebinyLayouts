@@ -117,10 +117,11 @@
 			border-bottom: 1px solid #E7E5E5;
 		}
 
-		>.tabs__body {
+		> .tabs__body {
 			flex-direction: column;
 			
-			>.tabs__navigation {
+			> .tabs__navigation,
+			> .tabs__navigation-wrapper > .tabs__navigation {
 				display: flex;
 				flex-wrap: wrap;
 				flex-basis: 100%;
@@ -143,8 +144,9 @@
 	}
 	
 	.tabs--navigation-left {
-		>.tabs__body {
-			>.tabs__navigation {
+		> .tabs__body {
+			> .tabs__navigation,
+			> .tabs__navigation-wrapper > .tabs__navigation {
 				display: flex;
 				flex-wrap: wrap;
 				flex-basis: 25%;

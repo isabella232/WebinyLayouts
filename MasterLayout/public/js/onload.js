@@ -79,12 +79,10 @@ function fooHideWizard(wName){
 
             }
         });
-        
+
         $('select').select2({
           allowClear: true
-        });
-
-        $('select').select2().on('select2:open', function() {
+        }).on('select2:open', function() {
           var container = $('.select2-container').last();
           /*Add some css-class to container or reposition it*/
           container.appendTo($(this).siblings('.select2-container').find('.dropdown-wrapper'));

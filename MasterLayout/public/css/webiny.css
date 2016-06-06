@@ -11105,7 +11105,6 @@ button.btn:hover, button.btn span:hover {
 .select2-container--default .select2-selection--single .select2-selection__clear {
   cursor: pointer;
   float: right;
-  margin-right: 20px;
   margin-left: 20px;
   font-weight: bold;
 }
@@ -12730,13 +12729,12 @@ fieldset legend {
 
 .dropdown.balloon > .btn {
   border: none;
-  padding: 5px;
-  padding-right: 26px;
+  padding: 5px 26px 5px 5px;
 }
 
 .dropdown.open.balloon > .btn {
   border: none;
-  padding: 5px;
+  padding: 5px 26px 5px 5px;
 }
 
 .btn-group > .dropdown-toggle.btn-lg {
@@ -14979,7 +14977,8 @@ textarea.form-control {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .tabs--navigation-top > .tabs__body > .tabs__navigation {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation,
+  .tabs--navigation-top > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -14991,10 +14990,12 @@ textarea.form-control {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
   }
-  .tabs--navigation-top > .tabs__body > .tabs__navigation > li {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation > li,
+  .tabs--navigation-top > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation > li {
     border-right: 1px solid #E7E5E5;
   }
-  .tabs--navigation-top > .tabs__body > .tabs__navigation > .active > a {
+  .tabs--navigation-top > .tabs__body > .tabs__navigation > .active > a,
+  .tabs--navigation-top > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation > .active > a {
     border-bottom: 0px solid;
   }
   .tabs--navigation-top .tabs__panes {
@@ -15002,7 +15003,8 @@ textarea.form-control {
         -ms-flex-preferred-size: 1;
             flex-basis: 1;
   }
-  .tabs--navigation-left > .tabs__body > .tabs__navigation {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation,
+  .tabs--navigation-left > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -15019,11 +15021,13 @@ textarea.form-control {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .tabs--navigation-left > .tabs__body > .tabs__navigation > li {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation > li,
+  .tabs--navigation-left > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation > li {
     text-align: left;
     border-bottom: 1px solid #E7E5E5;
   }
-  .tabs--navigation-left > .tabs__body > .tabs__navigation > .active > a {
+  .tabs--navigation-left > .tabs__body > .tabs__navigation > .active > a,
+  .tabs--navigation-left > .tabs__body > .tabs__navigation-wrapper > .tabs__navigation > .active > a {
     border-right: 0px solid;
   }
 }
@@ -17009,7 +17013,6 @@ body.opened-mobile-nav .left-menu-submenu {
   .master-navigation .navbar-header .domain-picker .dropdown .caret {
     margin-left: 8px;
     float: right;
-    margin-top: 7px;
   }
   .master-navigation .navbar-header .domain-picker .dropdown .btn-default {
     float: left;
