@@ -99,6 +99,22 @@
     }
 }
 
+.tray-bin__placeholder {
+    display: inline-block;
+    float: left;
+    width: 163px;
+    height: 210px;
+    padding: 14px;
+    margin: 0 7px 15px;
+    vertical-align: top;
+    
+    box-sizing: border-box;
+    
+    cursor:move;
+    border: 2px dashed #ccc;
+    background-color: #f6f6f6;
+}
+
 .tray-bin__file--uploading {
     .tray-bin__file-size {
         display: none;
