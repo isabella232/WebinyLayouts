@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html class="ie-all ie-6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html class="ie-all ie-7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie-all ie-8" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 9]>
+<html class="ie-all ie-9" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WEBINY</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/webiny.css">
+</head>
+<body>
+<div class="master minimized">
+<div class="master-navigation">
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="nav" data-toggle="xcollapse" data-target=".navbar-collapse">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="#" class="search">
+        </a>
+        <a href="#" class="logo"><img src="img/logo.png" width="62" height="20" alt="Webiny"></a>
+
+        <div class="package">
+            <p>Package:<a href="#">Starter</a><a href="#" class="upgrade">Upgrade</a></p>
+        </div>
+        <div class="domain-picker">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    <span class="domain-name">www.badabing.com.hr</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="spec"><a role="menuitem" tabindex="-1" href="#"> + Add new
+                        website</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.booking.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.amazon.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.apple.com</a></li>
+                </ul>
+            </div>
+            <a href="#" class="open">
+                <span class="icon-external-link icon"></span>
+            </a>
+        </div>
+        <div class="dropdown profile-holder">
+            <a href="#" class="profile" id="dropdownMenu4" data-toggle="dropdown">
+                <span class="icon-user icon"></span>
+                <span class="user">Sven Al Hamad</span>
+                <span class="icon-caret-down icon"></span>
+            </a>
+
+            <div class="drop dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+                <span class="top-arr"></span>
+                <ul>
+                    <li>
+                        <a href="#">Account preferences</a>
+                        <span>Set your account and user preferences </span>
+                    </li>
+                    <li>
+                        <a href="#">Payment Gateways</a>
+                        <span>Set gateways and offline payments</span>
+                    </li>
+                    <li class="last">
+                        <a href="#">Some third option</a>
+                        <span>Short option description goes here</span>
+                    </li>
+                </ul>
+                <div class="drop-footer">
+                    <a href="#" class="logout">
+                        <span class="icon-sign-out icon-bell icon"></span>
+                        <span>Log out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="notification-holder">
+            <span class="num" data-toggle="dropdown">12</span>
+            <a href="#" class="notification" id="dropdownMenu5" data-toggle="dropdown">
+                <span class="icon-bell icon"></span>
+            </a>
+
+            <div class="drop dropdown-menu" role="menu" aria-labelledby="dropdownMenu5">
+                <span class="top-arr"></span>
+                <ul>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="all">VIEW ALL (14 MORE)</a>
+
+                <div class="drop-footer">
+                    <a href="#" class="read">
+                        <span class="icon-check icon"></span>
+                        Mark all as read</a>
+                    <a href="#" class="settings">Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subheader">
+    <a href="#" class="tablet-navigation"><span></span><span></span><span></span></a>
+
+    <div class="search">
+        <input name="" type="text" value="Find content, options or function">
+        <a href="#" class="btn">
+            <span class="icon-search icon"></span>
+        </a>
+
+        <div class="autosuggest">
+            <div class="functions">
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+            </div>
+            <div class="functions sec">
+                <h2>Recently viewed</h2>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+            </div>
+            <div class="plain-search">
+                <ul>
+                    <li>
+                        <span class="icon-file-o icon"></span>
+                        <a href="#">But what about private trackers?</a>
+                        <a href="#" class="url">www.kitchen.org/content/tracking for dummies</a>
+                    </li>
+                    <li>
+                        <span class="icon-file-o icon"></span>
+                        <a href="#">But what about private trackers?</a>
+                        <a href="#" class="url">www.kitchen.org/content/tracking for dummies</a>
+                    </li>
+                </ul>
+                <a href="#" class="all">SHOW ALL RESULTS</a>
+            </div>
+            <div class="footer">
+                <p>CTRL+F</p>
+
+                <p><span>Use arrows to navigate</span>
+                    <span class="icon-keys icon"></span>
+                </p>
+
+                <p class="enter">Press Enter to activate</p>
+            </div>
+        </div>
+    </div>
+    <div class="quicklinks">
+        <h2>QUICK LINKS</h2>
+        <span class="icon-caret-down icon"></span>
+        <ul>
+            <li><a href="#">New posts</a></li>
+            <li><a href="#">New posts</a></li>
+            <li><a href="#">New posts</a></li>
+        </ul>
+        <div class="dropdown add-new">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu9" data-toggle="dropdown">
+                Add new
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
+                <span class="top-arr"></span>
+                <li role="presentation">
+                   <div class="checkbox-custom mb5">
+                        <input id="th" type="checkbox">
+                        <label for="th">Add new post</label>
+                    </div>
+                </li>
+                <li role="presentation">
+                    <div class="checkbox-custom mb5">
+                        <input id="fo" type="checkbox">
+                        <label for="fo">Add new tag</label>
+                    </div>
+                </li>
+                <li role="presentation">
+                    <div class="checkbox-custom mb5">
+                        <input id="fi" type="checkbox">
+                        <label for="fi">Mange users</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="show">
+    </div>
+</div>
+    <div class="navbar-collapse collapse" id="left-sidebar">
+        <div class="shield"></div>
+        <div class="domain-picker-mobile visible-xs">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu10" data-toggle="dropdown">
+                    <span class="domain-name">www.badabing.com.hr</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu10">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.booking.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.amazon.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.apple.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-holder visible-xs">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="left-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dashboard"><a href="#">
+                    <span class="icon-gauge icon app-icon"></span>
+                    <span class="app-title">Dashboard</span>
+                    <span class="icon-caret-down icon mobile-caret"></span>
+                </a>
+                </li>
+                <li class="content active">
+                    <a href="#" data-open-submenu="content">
+                        <span class="icon-browser icon app-icon"></span>
+                        <span class="app-title">Content</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                    <ul class="subnavigation only-mob">
+                        <li><a href="#">Posts</a>
+                            <a href="#" class="small"><span>Add post</span>
+                                <span class="icon-plus-circled icon"></span>
+                            </a>
+                        </li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active"><a href="#">Menus</a>
+                            <ul>
+                                <li><a href="#">Add new page</a></li>
+                                <li><a href="#">View all pages</a></li>
+                                <li><a href="#">Download all content</a></li>
+                                <li><a href="#">Sub item No. 4</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Widgets</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Stats</a></li>
+                    </ul>
+                </li>
+                <li class="booking">
+                    <a href="#" data-open-submenu="booking">
+                        <span class="icon-calendar icon app-icon"></span>
+                        <span class="app-title">Booking</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+
+                </li>
+                <li class="store">
+                    <a href="#" data-open-submenu="store">
+                        <span class="icon-basket_n icon app-icon"></span>
+                        <span class="app-title">Store</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+                <li class="settings">
+                    <a href="#" data-open-submenu="settings">
+                        <span class="icon-settings icon app-icon"></span>
+                        <span class="app-title">Settings</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+                <li class="users">
+                    <a href="#" data-open-submenu="user">
+                        <span class="icon-user icon app-icon"></span>
+                        <span class="app-title">Users</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="left-menu-submenu">
+            <div>
+                <ul class="subnavigation" data-this-menu="content" style="display: block;">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small quick-link"><span>Add post</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active">
+                        <a href="#">Menus</a>
+                        <span class="icon-caret-down icon"></span>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li class="active"><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Widgets</a>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+                <ul class="subnavigation" data-this-menu="booking">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small"><span>Add BOOKING</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active"><a href="#">Menus</a>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+                <ul class="subnavigation" data-this-menu="store">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small"><span>Add ITEM</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active"><a href="#">Menus</a>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div><!-- /.master-navigation -->
+<div class="master-content">
+    <div class="master-content__header master-content__header--with-bg">
+        <h2>Form layout</h2>
+        <button class="btn btn-default pull-right">Change Grid</button>
+		<button class="btn btn-default pull-right">Edit Layout</button>
+    </div><!-- /.master-content__header -->
+    <div class="dashboard-content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="panel panel--boxed">
+                        <div class="panel-body no-padding">
+
+							<div class="tabs tabs--navigation-top">
+							    <div class="tabs__body">
+
+							        <ul class="tabs__navigation tabs__navigation--large nav nav-tabs" role="tablist">
+							            <li role="presentation" class="active">
+							                <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+							                    <span class="txt">General</span>
+							                </a>
+							            </li>
+							            <li role="presentation">
+							                <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+							                    <span class="txt">Products</span>
+							                </a>
+							            </li>
+							            <li role="presentation">
+							                <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+							                    <span class="txt">Revisions</span>
+							                </a>
+							            </li>
+							        </ul><!-- /.tab__navigation -->
+
+							        <div class="tabs__panes">
+							            
+							            <div id="tab-1" role="tabpanel" class="tab-pane active no-padding">
+							            	<div class="panel">
+							            		<div class="panel-body">
+							            			<div class="container-fluid">
+							            				<div class="row">
+							            					<div class="col-md-2">
+							            			
+							            						<div class="form-group">
+							            							<div class="avatars">
+							            								<label class="control-label">Upload your avatar</label>
+							            								<div class="avatar">
+							            									<div class="alert alert-danger" role="alert">Maximum file size 500kb</div>
+							            									<span class="avatar-placeholder avatar-placeholder--no-border"><img src="img/avatars/placeholder.png" alt="sven avatar" class="avatar img-responsive" height="157" width="157"></span>
+							            									<button type="button" class="btn btn-primary btn-block upload">Upload</button>
+							            									<span class="small-txt">max 250 KB</span>
+							            								</div>
+							            							</div>
+							            						</div>
+							            			
+							            					</div>
+							            			
+							            					<div class="col-md-5">
+							            						
+							            						<form role="form">
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Your username or email<span class="mandat">*</span>
+							            								</label>
+							            								<span class="info-txt">(Intro text for your article)</span>
+							            								<input type="email" placeholder="" class="form-control">
+							            							</div>
+
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Website<span class="mandat">*</span>
+							            								</label>
+							            								<input type="text" placeholder="" class="form-control">
+							            							</div>
+
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Created<span class="mandat">*</span>
+							            								</label>
+							            								<input type="text" placeholder="" class="form-control">
+							            							</div>
+							            			
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Textarea<span class="mandat">*</span>
+							            								</label>
+							            								<textarea class="form-control"></textarea>
+							            							</div> 
+							            			
+							            						</form>
+							            			
+							            					</div>
+							            			
+							            					<div class="col-md-5">
+							            						
+							            						<form role="form">
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Your username or email<span class="mandat">*</span>
+							            								</label>
+							            								<span class="info-txt">(Intro text for your article)</span>
+							            								<input type="email" placeholder="Mister Lister" class="form-control">
+							            							</div>
+
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Website<span class="mandat">*</span>
+							            								</label>
+							            								<input type="text" placeholder="" class="form-control">
+							            							</div>
+
+							            							<div class="form-group">
+							            								<label class="control-label">
+							            									Created<span class="mandat">*</span>
+							            								</label>
+							            								<input type="text" placeholder="" class="form-control">
+							            							</div>
+							            						</form>
+							            			
+							            					</div>
+							            				</div>
+							            			</div>
+							            		</div>
+
+							            		<div class="panel-footer panel-footer--white-bg">
+							            			<button class="btn btn-default">Go Back</button>
+							            			<button class="btn btn-primary pull-right" type="submit">Save Changes</button>
+							            		</div>
+							            	</div>
+							            </div>
+							            <div id="tab-2" role="tabpanel" class="tab-pane">
+							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+							            </div>
+							            <div id="tab-3" role="tabpanel" class="tab-pane">
+							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
+							            </div>
+
+							        </div><!-- /.tabs__content -->
+
+							    </div><!-- /.tabs__body -->
+							</div><!-- /.tabs -->
+
+						</div><!-- /.panel-body -->
+                        
+                    </div>
+
+                </div><!-- /.col-md-12 -->
+        
+            </div><!-- /.row -->
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="panel panel--boxed">
+                        <div class="panel-header panel-header--gray-bg">
+                            Panel header
+                        </div>
+                        <div class="panel-body panel-body--no-padding">
+
+							<div class="tabs tabs--navigation-top">
+
+							    <div class="tabs__header">
+							        <h4 class="tabs__title">PAGE PROPERTIES</h4>
+							    </div><!-- /.tab__header -->
+
+							    <div class="tabs__body">
+							        <!-- Nav tabs -->
+							        <ul class="tabs__navigation nav nav-tabs" role="tablist">
+							            <li role="presentation" class="active">
+							                <a href="#tab-9" aria-controls="tab-9" role="tab" data-toggle="tab">
+							                    <span class="icon left icon-gauge "></span><span class="txt">General</span>
+							                </a>
+							            </li>
+							            <li role="presentation">
+							                <a href="#tab-10" aria-controls="tab-10" role="tab" data-toggle="tab">
+							                    <span class="icon left  icon-columns"></span><span class="txt">Performance</span>
+							                </a>
+							            </li>
+							            <li role="presentation">
+							                <a href="#tab-11" aria-controls="tab-11" role="tab" data-toggle="tab">
+							                    <span class="icon left icon-browser"></span><span class="txt">SEO</span>
+							                </a>
+							            </li>
+							            <li role="presentation">
+							                <a href="#tab-12" aria-controls="tab-12" role="tab" data-toggle="tab">
+							                    <span class="icon left icon-user"></span><span class="txt">Social</span>
+							                </a>
+							            </li>
+							        </ul><!-- /.tab__navigation -->
+
+							        <div class="tabs__panes">
+							            
+							            <div id="tab-9" role="tabpanel" class="tab-pane active no-padding">
+							                <div class="tabs tabs--navigation-left">
+
+							                    <div class="tabs__header">
+							                        <h4 class="tabs__title">PAGE PROPERTIES</h4>
+							                    </div><!-- /.tab__header -->
+
+							                    <div class="tabs__body">
+							                        <!-- Nav tabs -->
+							                        <ul class="tabs__navigation nav nav-tabs" role="tablist">
+							                            <li role="presentation" class="active">
+							                                <a href="#tab-13" aria-controls="tab-13" role="tab" data-toggle="tab">
+							                                    <span class="icon left icon-gauge "></span><span class="txt">General</span>
+							                                </a>
+							                            </li>
+							                            <li role="presentation">
+							                                <a href="#tab-14" aria-controls="tab-14" role="tab" data-toggle="tab">
+							                                    <span class="icon left  icon-columns"></span><span class="txt">Performance</span>
+							                                </a>
+							                            </li>
+							                            <li role="presentation">
+							                                <a href="#tab-15" aria-controls="tab-15" role="tab" data-toggle="tab">
+							                                    <span class="icon left icon-browser"></span><span class="txt">SEO</span>
+							                                </a>
+							                            </li>
+							                            <li role="presentation">
+							                                <a href="#tab-16" aria-controls="tab-16" role="tab" data-toggle="tab">
+							                                    <span class="icon left icon-user"></span><span class="txt">Social</span>
+							                                </a>
+							                            </li>
+							                        </ul><!-- /.tab__navigation -->
+
+							                        <div class="tabs__panes">
+
+							                            <div class="tab-pane active" id="tab-13">
+							                                <div class="general-set">
+							                                    <div class="options-section">
+							                                        <div class="options-header">
+							                                            <h5 class="options-title">Layout options</h5>
+							                                            <div class="form-group form-group--inline-label search-container">
+							                                                <label class="control-label">COPY OPTIONS FROM PAGE<span class="mandat">*</span></label>
+							                                                <select class="dropdown" placeholder="placeholder text goes here...">
+							                                                    <option value="1">www.booking.com</option>
+							                                                    <option value="2">www.amazon.com</option>
+							                                                    <option value="3">www.apple.com</option>
+							                                                </select>
+							                                            </div>
+							                                        </div>
+							                                        <div class="options-content container-no-padding">
+							                                            <div class="row">
+							                                                <form role="form">
+							                                                    <div class="col-xs-4">
+							                                                        <div class="form-group">
+							                                                            <label class="control-label">SIZE</label> <input type="size" class="form-control">
+							                                                        </div>
+							                                                    </div>
+							                                                    <div class="col-xs-4">
+							                                                        <div class="form-group">
+							                                                            <label class="control-label">BREAKPOINT (PX)</label> <input type="breakpoint" class="form-control">
+							                                                        </div>
+							                                                    </div>
+							                                                    <div class="col-xs-4">
+							                                                        <div class="form-group">
+							                                                            <label class="control-label">TOP MARGIN (PX)</label> <input type="top-margin" class="form-control">
+							                                                        </div>
+							                                                    </div>
+							                                                </form>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                    <div class="options-section">
+							                                        <div class="options-header">
+							                                            <h5 class="options-title">Title and Metadata</h5>
+							                                            <div class="form-group form-group--inline-label search-container">
+							                                                <label class="control-label">COPY DATA FROM PAGE<span class="mandat">*</span></label>
+							                                                <select class="dropdown" placeholder="placeholder text goes here...">
+							                                                    <option value="1">www.booking.com</option>
+							                                                    <option value="2">www.amazon.com</option>
+							                                                    <option value="3">www.apple.com</option>
+							                                                </select>
+							                                            </div>
+							                                        </div>
+							                                        <div class="options-content container-no-padding">
+							                                            <div class="row">
+							                                                <form role="form">
+							                                                    <div class="col-xs-12">
+							                                                        <div class="form-group">
+							                                                            <label class="control-label">PAGE TITLE</label>
+							                                                            <input type="size" class="form-control" placeholder="<auto placement the title from editor> and vice-versa.">
+							                                                        </div>
+							                                                    </div>
+							                                                    <div class="col-xs-12">
+							                                                        <div class="form-group form-group--keywords">
+							                                                            <label class="control-label">KEYWORDS (separate keywords with comma)</label>
+							                                                            <div class="fileUpload btn btn-transparent">
+							                                                                <span>Insert XLS</span>
+							                                                                <input id="uploadBtn" type="file" class="upload">
+							                                                            </div>
+							                                                            <div class="keyword-container">
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.1</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.2</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.3</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.1</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.2</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.3</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.1</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.2</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <div class="keyword-block">
+							                                                                    <p>Keyword No.3</p>
+							                                                                    <i class="icon icon-cancel"></i>
+							                                                                </div>
+							                                                                <label for="keyword_input"></label>
+							                                                                <input id="keyword_input" type="text" class="keyword-input" placeholder="enter keyword">
+							                                                                <div class="remove-keyword">
+							                                                                    <p><i class="icon icon-cancel"></i>remove all</p>
+							                                                                </div>
+							                                                            </div>
+							                                                        </div>
+							                                                    </div>
+							                                                    <div class="col-xs-12">
+							                                                        <div class="form-group">
+							                                                            <label class="control-label">DESCRIPTION (separate keywords with comma)</label> <textarea type="description" class="form-control"></textarea>
+							                                                        </div>
+							                                                    </div>
+							                                                </form>
+							                                            </div>
+							                                        </div>
+							                                    </div>
+							                                </div>
+							                            </div>
+							                            <div class="tab-pane" id="tab-14">
+							                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+							                            </div>
+							                            <div class="tab-pane" id="tab-15">
+							                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
+							                            </div>
+							                            <div class="tab-pane" id="tab-16">
+							                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet beatae, consectetur quasi placeat modi, labore alias eos tempora non ipsum tempore at? Perferendis ab, quisquam soluta veritatis tempora animi dolorem, inventore eligendi iure accusantium necessitatibus deleniti fuga voluptatem, dicta aut labore asperiores dignissimos. Nobis ullam quae dolores soluta consequuntur, neque asperiores. Perspiciatis itaque, totam dignissimos quia dolore vel nostrum mollitia? Eveniet quis eum voluptates similique perferendis voluptatum dolorem quaerat.
+							                            </div>
+
+							                        </div><!-- /.tab__panes -->
+
+							                    </div><!-- /.tab__body -->
+							                </div><!-- /.tabs -->
+							            </div>
+							            <div id="tab-10" role="tabpanel" class="tab-pane">
+							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+							            </div>
+							            <div id="tab-11" role="tabpanel" class="tab-pane">
+							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
+							            </div>
+							            <div id="tab-12" role="tabpanel" class="tab-pane">
+							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet beatae, consectetur quasi placeat modi, labore alias eos tempora non ipsum tempore at? Perferendis ab, quisquam soluta veritatis tempora animi dolorem, inventore eligendi iure accusantium necessitatibus deleniti fuga voluptatem, dicta aut labore asperiores dignissimos. Nobis ullam quae dolores soluta consequuntur, neque asperiores. Perspiciatis itaque, totam dignissimos quia dolore vel nostrum mollitia? Eveniet quis eum voluptates similique perferendis voluptatum dolorem quaerat.
+							            </div>
+
+							        </div><!-- /.tabs__content -->
+
+							    </div><!-- /.tabs__body -->
+							</div><!-- /.tabs -->
+
+						</div><!-- /.panel-body -->
+                        
+                        <div class="panel-footer  panel-footer--white-bg text-right">
+                            <button class="btn btn-default">Cancel</button>
+                            <button class="btn btn-success">Explode</button>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                </div><!-- /.col-md-12 -->
+        
+            </div><!-- /.row -->
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="developer-mode switch switch--yes-no switch--inline">
+        <span class="switch-label switch-label--left">Developer mode</span>
+        <input id="developerModeSwitch" type="checkbox" name="developerModeSwitch"  checked>
+        <label for="developerModeSwitch" data-on="On" data-off="Off"></label>
+    </div>
+    <ul class="links">
+        <li><a href="#">Webiny 2.2</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Support</a></li>
+    </ul>
+    <ul class="links secondary">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">GitHub</a></li>
+    </ul>
+    <div class="dropdown sort feedback-wrap">
+        <button class="btn btn-default dropdown-toggle feedback" type="button" onclick="alert('Opens a modalbox')">
+            <span class="icon icon-comments"></span>
+            <span>HELP US WITH FEEDBACK</span>
+        </button>
+    </div>
+</footer>
+</div><!-- /.master -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="vendor/moment/moment.min.js"></script>
+
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="vendor/daterange/daterangepicker.min.js"></script>
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="js/onload.js"></script>
+
+</body>
+</html>
