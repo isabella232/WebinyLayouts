@@ -17587,10 +17587,18 @@ body.opened-mobile-nav .left-menu-submenu {
   padding: 40px 50px;
 }
 
-.master-content__header h2 {
+.master-content__header .btn {
+  position: relative;
+  top: 8px;
+}
+
+.master-content__title-wrapper {
   display: inline-block;
+}
+
+.master-content__title {
+  border: 0;
   margin: 0;
-  border: none;
 }
 
 .master-content__header--with-bg {
