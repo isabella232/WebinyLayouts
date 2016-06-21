@@ -14971,6 +14971,10 @@ textarea.form-control {
   background-color: #f0f0f0;
 }
 
+.tabs__details .progress--free-space {
+  padding: 40px 30px;
+}
+
 .tabs__panes {
   -webkit-flex-basis: 75%;
       -ms-flex-preferred-size: 75%;
@@ -15647,7 +15651,6 @@ textarea.form-control {
 }
 
 .browser .dropdown {
-  float: right;
   margin-right: 0;
 }
 
@@ -15806,6 +15809,10 @@ textarea.form-control {
           flex-basis: 350px;
   border-left: 1px solid #E3E3E3;
   background-color: #f0f0f0;
+}
+
+.browser__details .dropdown {
+  float: right;
 }
 
 .browser__content--list .browser__sorter-file {

@@ -101,6 +101,12 @@
 	background-color: #f0f0f0;
 }
 
+.tabs__details {
+	.progress--free-space {
+		padding: 40px 30px;
+	}
+}
+
 .tabs__panes {
 	flex-basis: 75%;
 	background-color: #fff;
