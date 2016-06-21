@@ -14480,7 +14480,7 @@ textarea.form-control {
 .form-group > span.icon {
   position: absolute;
   top: 28px;
-  z-index: 500;
+  z-index: 10;
   font-size: 41px;
   line-height: 98%;
   right: -6px;
@@ -14625,7 +14625,7 @@ textarea.form-control {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -6px;
-  z-index: 500;
+  z-index: 10;
   font-size: 41px;
   line-height: 98%;
 }
@@ -14637,10 +14637,6 @@ textarea.form-control {
 
 .form-sm .form-group input.form-control, .form-sm .form-group .dropdown.sel button {
   height: 42px;
-}
-
-.form-sm .form-group span.icon, .form-sm .form-group.error span.icon, .form-sm .form-group.success span.icon {
-  display: none;
 }
 
 .form-sm textarea.form-control {
