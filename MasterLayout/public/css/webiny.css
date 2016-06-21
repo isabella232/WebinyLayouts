@@ -11971,9 +11971,12 @@ button.btn:hover, button.btn span:hover {
   padding: 15px 0;
 }
 
+.panel-footer {
+  border-top: 1px solid #f2f2f2;
+}
+
 .panel--boxed {
   padding: 0;
-  border: 1px solid #e8e8e8;
 }
 
 .panel--boxed .panel-header--gray-bg {
@@ -14948,7 +14951,8 @@ textarea.form-control {
 }
 
 .tabs__navigation--large > li > a {
-  padding: 30px 40px;
+  padding: 25px 35px;
+  font-weight: 600;
 }
 
 .tabs__navigation-wrapper {
