@@ -40,9 +40,12 @@
 	
 	.panel-body--no-padding {
 		padding: 0;
+		
+		.tabs {
+			border: none;
+		}
 	}
 }
-
 
 .panel--horizontal {
 	padding: 0;

@@ -11992,6 +11992,10 @@ button.btn:hover, button.btn span:hover {
   padding: 0;
 }
 
+.panel--boxed .panel-body--no-padding .tabs {
+  border: none;
+}
+
 .panel--horizontal {
   padding: 0;
   border-bottom: 1px solid #e5e5e5;
@@ -14862,10 +14866,6 @@ textarea.form-control {
 
 .tabs {
   border: 1px solid #e7e5e5;
-}
-
-.panel--boxed .tabs {
-  border: none;
 }
 
 .tabs__header {
