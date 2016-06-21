@@ -11992,7 +11992,7 @@ button.btn:hover, button.btn span:hover {
   padding: 0;
 }
 
-.panel--boxed .panel-body--no-padding .tabs {
+.panel--boxed .panel-body--no-padding > .tabs {
   border: none;
 }
 
