@@ -47,9 +47,12 @@
 }
 
 .modal-content .modal-body {
-    color: #666;
-    margin-top: 0;
+  color: #666;
+  margin-top: 0;
+
+  .modal-body--no-padding {
     padding: 0;
+  }
 }
 
 .modal-header .close {
