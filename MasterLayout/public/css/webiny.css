@@ -10406,6 +10406,9 @@ body.opened-mobile-nav {
   text-transform: uppercase;
   -webkit-border-radius: 60px;
           border-radius: 60px;
+  will-change: opacity;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 button.btn:hover, button.btn span:hover {
@@ -13358,6 +13361,12 @@ a.info span.icon {
 .modal-backdrop {
   z-index: 2000;
   background-color: black;
+  will-change: opacity;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .modal-backdrop.in {
@@ -13375,6 +13384,25 @@ a.info span.icon {
           border-radius: 0;
   background-color: #fff;
   -webkit-animation: fadeIn 0.2s;
+}
+
+.modal-dialog .modal-content {
+  will-change: transform, opacity;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-show.modal-dialog .modal-content {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .modal-content .modal-header {
@@ -13403,6 +13431,9 @@ a.info span.icon {
 .modal-content .modal-body {
   color: #666;
   margin-top: 0;
+}
+
+.modal-content .modal-body .modal-body--no-padding {
   padding: 0;
 }
 
