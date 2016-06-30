@@ -177,6 +177,9 @@ textarea.form-control {
     }
     input {
       cursor: pointer;
+      &.empty {
+        color: #a9a9a9;
+      }
     }
     span.icon_c {
       font-size: 20px;
@@ -198,7 +201,7 @@ textarea.form-control {
     transform: translateY(-50%);
     right: -6px;
     z-index: 10;
-    
+
     font-size: 41px;
     line-height: 98%;
   }
