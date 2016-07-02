@@ -33,6 +33,7 @@ label, .form-group label, label.control-label {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  transition: all 225ms;
   &:focus {
     background: #fff;
     border-color: #333;
@@ -80,6 +81,12 @@ textarea.form-control {
   }
   &.error span.icon {
     color: #CC3300;
+  }
+
+  .help-block.w-anim {
+    opacity: 0;
+    position: relative;
+    top: -50px;
   }
 
   &.error .help-block {
@@ -181,6 +188,7 @@ textarea.form-control {
         color: #a9a9a9;
       }
     }
+
     span.icon_c {
       font-size: 20px;
       color: #333;
@@ -201,7 +209,7 @@ textarea.form-control {
     transform: translateY(-50%);
     right: -6px;
     z-index: 10;
-
+    transition: all 225ms;
     font-size: 41px;
     line-height: 98%;
   }
