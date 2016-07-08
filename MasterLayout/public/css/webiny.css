@@ -13263,7 +13263,8 @@ table.table .list-group-item-text {
 .keyword-container .keyword-block {
   position: relative;
   display: inline-block;
-  margin: 2px 0;
+  float: left;
+  margin: 2px 2px;
   padding: 8px 35px 8px 15px;
   background-color: #00ccae;
   -webkit-border-radius: 20px;
@@ -13289,6 +13290,7 @@ table.table .list-group-item-text {
 
 .keyword-container .keyword-input {
   width: 250px;
+  padding: 8px;
   background-color: #fbfbfb;
 }
 
@@ -13317,6 +13319,13 @@ table.table .list-group-item-text {
   margin-top: -2px;
   height: 8px;
   vertical-align: top;
+}
+
+.keyword-container:after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
 }
 
 .modal.modal-wizard .modal-dialog {
