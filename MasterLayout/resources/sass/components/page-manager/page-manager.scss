@@ -66,6 +66,11 @@
 	}
 }
 
+.pm-navigation {
+	max-height: 100vh;
+	overflow-y: auto;
+}
+
 .pm-navigation__item {
 	padding: 20px 15px 30px 25px;
 	list-style: none;
