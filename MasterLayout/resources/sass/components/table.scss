@@ -35,12 +35,15 @@ table.table {
   }
   thead {
     th {
-      padding: 10px;
+      padding: 10px 15px;
       vertical-align: middle;
       > a {
         font-weight: 800;
         font-size: 16px;
         color: #464646;
+      }
+      &.select-row {
+        max-width: 40px;
       }
     }
     .btn {
@@ -81,6 +84,9 @@ table.table {
       color: #666666;
       border-right: 1px solid #CCC;
       vertical-align: middle;
+      &.select-row {
+        max-width: 40px;
+      }
     }
   }
   > thead > tr > th {
