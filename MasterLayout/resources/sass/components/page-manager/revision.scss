@@ -1,0 +1,250 @@
+.revision {
+	@extend %clearfix;
+
+	position: relative;
+
+	.actions .btn {
+		font-size: 13px;
+		padding: 7px 20px 6px 20px;
+		margin-top: 0;
+	}
+
+	.set {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+
+		span {
+			font-size: 25px;
+			color: #C0C0C0;
+		}
+
+		&:hover span {
+			color: #999;
+		}
+	}
+
+	.actions {
+		background: rgba(255,255,255, 0.9);
+		padding: 30px 25px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 500;
+		display: none;
+	}
+}
+
+.revision--current {
+	.published {
+		float: left;
+		width: 72px;
+		height: 72px;
+		padding-top: 14px;
+		margin-right: 25px;
+		-webkit-border-radius: 100px;
+		border-radius: 100px;
+		color: #fff;
+		font-size: 11px;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		background: #41BFB0;
+
+		span {
+			display: block;
+		}
+
+		.icon {
+			font-size: 25px;
+		}
+	}
+
+	.text-wrap {
+		padding-top: 12px;
+		float: left;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0;
+		color: #3B3838;
+	}
+
+	.date {
+		font-size: 13px;
+		color: rgba(113,113,113, 0.7);
+		margin-right: 25px;
+	}
+
+	.btn {
+		font-size: 13px;
+	}
+
+	.save {
+		margin-top: 20px;
+	}
+}
+
+.revisions {
+	ul {
+		margin: 0;
+	}
+}
+
+
+.revision--previous {
+	padding: 25px;
+	border-bottom: 1px solid #EAE8E8;
+	overflow: hidden;
+	
+	text-align: left;
+	list-style-type: none;
+	
+	background: #F6F5F5;
+
+	h2 {
+		background: #EAE8E8;
+		padding: 25px;
+		text-transform: uppercase;
+		font-size: 14px;
+		text-align: left;
+		margin: 0;
+	}	
+	
+	h3 {
+		font-size: 17px;
+		color: #3B3838;
+		margin: 0;
+		font-weight: 700;
+		padding: 0;
+		text-transform: none;
+	}
+
+	.date {
+		font-size: 13px;
+		color: #717171;
+	}
+}
+
+.revision--actions {
+	.actions {
+		display: block;
+	}
+}
+
+.main-verison {
+  span.published {
+    float: left;
+    width: 72px;
+    height: 72px;
+    padding-top: 14px;
+    margin-right: 25px;
+    border-radius: 100px;
+    
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #41BFB0;
+
+    span {
+      display: block;
+      
+      &.icon {
+        font-size: 25px;
+      }
+    }
+  }
+  .text-wrap {
+    padding-top: 12px;
+    float: left;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #3B3838;
+  }
+  span.date {
+    font-size: 13px;
+    color: rgba(113,113,113, 0.7);
+    margin-right: 25px;
+  }
+  .btn {
+    font-size: 13px;
+
+    &.save {
+      margin-top: 20px;
+    }
+  }
+}
+
+
+// old styling used on editor
+
+.prev-revision {
+  h2 {
+    background: #EAE8E8;
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+  }
+  li {
+    background: #F6F5F5;
+    padding: 25px;
+    border-bottom: 1px solid #EAE8E8;
+    overflow: hidden;
+    text-align: left;
+    list-style-type: none;
+    position: relative;
+    h3 {
+      font-size: 17px;
+      color: #3B3838;
+      margin: 0;
+      font-weight: 700;
+      padding: 0;
+      text-transform: none;
+    }
+    span {
+      font-size: 13px;
+      color: #717171;
+    }
+    a.set {
+      float: right;
+      position: relative;
+      span {
+        font-size: 25px;
+        color: #C0C0C0;
+      }
+      &:hover span {
+        color: #999;
+      }
+    }
+  }
+  .actions {
+    background: #fff;
+    padding: 30px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    display: none;
+    .btn {
+      font-size: 13px;
+      padding: 7px 20px 6px 20px;
+      margin-top: 0;
+    }
+  }
+}

@@ -52,6 +52,8 @@
 
 	'components/page-manager/page-manager',
 	'components/page-manager/filter-bar',
+	'components/page-manager/revision',
+	'components/page-manager/page-options',
 
 	'partials/general',
 	'partials/navigation',
@@ -63,4 +65,7 @@
 	'partials/modifiers',
 	'partials/tables',
 	'partials/signin',
-	'partials/overwrites';
+	'partials/overwrites',
+
+	'pages/dashboard/dashboard',
+	'pages/editor/editor';

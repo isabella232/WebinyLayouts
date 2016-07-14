@@ -17,7 +17,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>WEBINY</title>
@@ -26,8 +26,14 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
     <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Range date picker -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-daterangepicker-master/daterangepicker.css" />
+
+    <!-- Load c3.css -->
+    <link href="vendor/c3/c3.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="css/webiny.css">
 </head>
@@ -447,7 +453,7 @@
             <h2 class="master-content__title">Pages</h2>
         </div>
         <div class="master-content__center">
-            <a href="#" class="btn btn-success btn-lg btn-create">
+            <a href="#" class="btn btn-success btn-lg btn-create" data-toggle="modal" data-target="#modal-1">
                 <span class="icon left icon-plus-circled"></span>
                 <span>Create New Page</span>
             </a>
@@ -838,26 +844,33 @@
                             </div>
                         </div>
                         <div class="panel-body panel-body--no-padding">
+                            <div class="panel-body__empty-placeholder">
+                                <div class="panel-body__empty-placeholder-inner">
+                                    <img src="img/blank-state-preview.svg" alt="">
+                                    <h3>So, this is a preview pane.</h3>
+                                    <p>Lets make it do it’s job. Just click on the article on the left and see your article, stats and revisions.</p>
+                                </div>
+                            </div>
 
 							<div class="tabs tabs--navigation-top">
 							    <div class="tabs__body">
 
 							        <ul class="tabs__navigation tabs__navigation--large nav nav-tabs" role="tablist">
-							            <li role="presentation" class="active">
-							                <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
-							                    <span class="txt">Preview page</span>
-							                </a>
-							            </li>
-							            <li role="presentation">
-							                <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
-							                    <span class="txt">Stats</span>
-							                </a>
-							            </li>
-							            <li role="presentation">
-							                <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
-							                    <span class="txt">Revisions</span>
-							                </a>
-							            </li>
+                                        <li role="presentation" class="active">
+                                            <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">
+                                                <span class="txt">Preview page</span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">
+                                                <span class="txt">Stats</span>
+                                            </a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">
+                                                <span class="txt">Revisions</span>
+                                            </a>
+                                        </li>
                                         <li class="actions">
                                             <a class="action" href="#"><i class="icon icon-edit-2"></i></a>
                                             <a class="action" href="#"><i class="icon icon-trash2"></i></a>
@@ -867,44 +880,557 @@
 							        </ul><!-- /.tab__navigation -->
 
 							        <div class="tabs__panes">
-							            
 							            <div id="tab-1" role="tabpanel" class="tab-pane active">
-                                            <div class="preview-page">
-                                                <div class="preview-page__header">
-                                                    <div class="preview-page__details">
-                                                        <div>Date created: 24.5.2015</div>
-                                                        <div>Category: Blogging</div>
-                                                        <div>By: Sven al Hamad</div>
-                                                        <div>Status: Published</div>
-                                                    </div>
-                                                    <div class="preview-page__revisions">
-                                                        <div class="form-group">
-                                                            <select class="dropdown" placeholder="placeholder text goes here...">
-                                                                <option value="1">Revision #5</option>
-                                                                <option value="2">Revision #4</option>
-                                                                <option value="3">Revision #3</option>
-                                                                <option value="3">Revision #2</option>
-                                                                <option value="3">Revision #1</option>
-                                                            </select>
+                                            <div class="pm-editor">
+                                                <div class="pm-editor__header">
+                                                    <div class="pm-editor__header-inner">
+                                                        <div class="pm-editor__details">
+                                                            <div>Date created: 24.5.2015</div>
+                                                            <div>Category: Blogging</div>
+                                                            <div>By: Sven al Hamad</div>
+                                                            <div>Status: Published</div>
+                                                        </div>
+                                                        <div class="pm-editor__revisions">
+                                                            <div class="form-group">
+                                                                <select class="dropdown" placeholder="placeholder text goes here...">
+                                                                    <option value="1">Revision #5</option>
+                                                                    <option value="2">Revision #4</option>
+                                                                    <option value="3">Revision #3</option>
+                                                                    <option value="3">Revision #2</option>
+                                                                    <option value="3">Revision #1</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="preview-page__body">
-        							            	<h1>The 15 Types of Blogger Playing their Trade in the Blogging World</h1>
-                                                    <p><img src="http://lorempixel.com/1920/768/city" alt=""></p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos neque cum ex optio voluptatum blanditiis, illum inventore facere porro. Eius nobis quasi voluptates numquam, dolor incidunt molestias architecto dicta natus, distinctio odio ipsam, autem, quis dolore dignissimos quo voluptate eaque ex. Tempore fugiat consequuntur aliquam enim odit ab, voluptas.</p>
-                                                    <p>Aliquid sit neque labore obcaecati veritatis. Ad blanditiis sequi vitae natus neque inventore, facere, fugit tempore velit hic quas eos optio molestiae quidem. Sit tempore minima corporis consequatur, dignissimos exercitationem possimus doloremque inventore ipsum harum modi nobis, aspernatur, consequuntur quos tempora laboriosam. Reiciendis mollitia quaerat, ducimus sunt repellendus eos soluta.</p>
-                                                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellendus necessitatibus itaque impedit deleniti! Nobis minus maiores adipisci inventore quasi, deserunt molestias. Perferendis, sint. Officiis optio consequuntur quis a esse.</blockquote>
-                                                    <p>Odio tempora facere laudantium nam odit nemo facilis repudiandae veniam. Vero non ut mollitia, illo neque aliquid voluptas delectus alias. Delectus totam numquam, libero aperiam excepturi minus nesciunt explicabo tenetur, magni facere perferendis? Optio non deleniti veniam, commodi obcaecati atque reiciendis asperiores. Explicabo, voluptatum. Dolores dignissimos error sed placeat totam.</p>
+                                                <div class="pm-editor__body">
+        							            	<div class="pm-editor__page-preview">
+                                                        <div class="pm-editor__page-preview-inner">
+                                                            <h1>The 15 Types of Blogger Playing their Trade in the Blogging World</h1>
+                                                            <p><img src="http://lorempixel.com/1920/768/city" alt=""></p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quos neque cum ex optio voluptatum blanditiis, illum inventore facere porro. Eius nobis quasi voluptates numquam, dolor incidunt molestias architecto dicta natus, distinctio odio ipsam, autem, quis dolore dignissimos quo voluptate eaque ex. Tempore fugiat consequuntur aliquam enim odit ab, voluptas.</p>
+                                                            <p>Aliquid sit neque labore obcaecati veritatis. Ad blanditiis sequi vitae natus neque inventore, facere, fugit tempore velit hic quas eos optio molestiae quidem. Sit tempore minima corporis consequatur, dignissimos exercitationem possimus doloremque inventore ipsum harum modi nobis, aspernatur, consequuntur quos tempora laboriosam. Reiciendis mollitia quaerat, ducimus sunt repellendus eos soluta.</p>
+                                                            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio repellendus necessitatibus itaque impedit deleniti! Nobis minus maiores adipisci inventore quasi, deserunt molestias. Perferendis, sint. Officiis optio consequuntur quis a esse.</blockquote>
+                                                            <p>Odio tempora facere laudantium nam odit nemo facilis repudiandae veniam. Vero non ut mollitia, illo neque aliquid voluptas delectus alias. Delectus totam numquam, libero aperiam excepturi minus nesciunt explicabo tenetur, magni facere perferendis? Optio non deleniti veniam, commodi obcaecati atque reiciendis asperiores. Explicabo, voluptatum. Dolores dignissimos error sed placeat totam.</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 							            </div>
 							            <div id="tab-2" role="tabpanel" class="tab-pane">
-							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi aut temporibus doloremque similique dolorem hic, dignissimos recusandae fugiat laborum, itaque esse illo et dolore dolor atque voluptas dolorum perspiciatis modi ipsum optio voluptatem voluptatum accusantium. Dicta atque, eveniet iusto quod assumenda placeat animi beatae perferendis ratione eum omnis quae recusandae praesentium provident deleniti quos, consectetur eaque voluptas inventore esse.
+                                            <div class="pm-editor__header">
+                                                <div class="pm-editor__period">
+                                                    <div class="date-picker">
+                                                        <form role="form">
+                                                            <div class="form-group">
+                                                                <label class="control-label">CHOOSE PERIOD</label>
+                                                                <div class="picker-holder">
+                                                                    <input type="text" id="config-demo" class="form-control" data-toggle="dropdown">
+                                                                    <span class="icon-calendar icon_c"></span>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div class="pm-editor__body">
+                                                <div class="pm-editor__stats">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="block counter-block visitors-counter">
+                                                                <div class="counter-block-element dash-counter">
+                                                                    <div class="counter-group-md counter-main">
+                                                                        <p class="counter-num">34.876</p>
+                                                                    </div>
+                                                                    <div class="counter-group-sm">
+                                                                        <p class="counter-label">PREVIOUS PERIOD</p>
+                                                                        <p class="counter-num">24,468</p>
+                                                                    </div>
+                                                                    <div class="counter-group-sm">
+                                                                        <p class="counter-label">INCREASE</p>
+                                                                        <p class="counter-num hl-element">+21,67%</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="counter-block-element dash-counter">
+                                                                    <div class="counter-group-md counter-main">
+                                                                        <p class="counter-num">784.876</p>
+                                                                    </div>
+                                                                    <div class="counter-group-sm">
+                                                                        <p class="counter-label">PREVIOUS PERIOD</p>
+                                                                        <p class="counter-num">24,468</p>
+                                                                    </div>
+                                                                    <div class="counter-group-sm">
+                                                                        <p class="counter-label">INCREASE</p>
+                                                                        <p class="counter-num hl-element">+21,67%</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="block chart-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">VISITORS</h4>
+                                                                    <p class="block-period block-title-light">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="chart-container">
+                                                                    <div id="chart" class="line-chart"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">TOP COUNTRIES</h4>
+                                                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="scrollable dash-table">
+                                                                        <table class="stats-table">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="item-name">United states</td>
+                                                                                    <td class="item-value">38%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Canada</td>
+                                                                                    <td class="item-value">18%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Croatia</td>
+                                                                                    <td class="item-value">18%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Mexico</td>
+                                                                                    <td class="item-value">9%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Bolivia</td>
+                                                                                    <td class="item-value">4%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Rwanda</td>
+                                                                                    <td class="item-value">3%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Sweden</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Russia</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Denmark</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Bolivia</td>
+                                                                                    <td class="item-value">4%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Rwanda</td>
+                                                                                    <td class="item-value">3%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Sweden</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Russia</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">Denmark</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">REFERRER DOMAINS</h4>
+                                                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="scrollable dash-table">
+                                                                        <table class="stats-table">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="item-name">netflix.com</td>
+                                                                                    <td class="item-value">38%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">kisha.com</td>
+                                                                                    <td class="item-value">18%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">badabing.com.hr</td>
+                                                                                    <td class="item-value">18%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">kudos.hr</td>
+                                                                                    <td class="item-value">9%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">mashable.hr</td>
+                                                                                    <td class="item-value">4%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">wired.com</td>
+                                                                                    <td class="item-value">3%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">gizmodo.com</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">bbc.com</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="item-name">somesite.com</td>
+                                                                                    <td class="item-value">1%</td>
+                                                                                    <td class="item-value">4.586</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">REFERRER SOURCES</h4>
+                                                                    <p class="block-title-light block-period">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="chart-container">
+                                                                        <div id="chart_sources" class="donut-chart"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">REFERRER SOURCES</h4>
+                                                                    <p class="block-title-light">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="chart-container">
+                                                                        <div id="chart_sources_2" class="chart-data donut-chart"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">TOP BROWSERS</h4>
+                                                                        <div class="view-switch">
+                                                                            <i class="icon icon-chart-line switch-graph"></i>
+                                                                            <i class=" icon icon-menu switch-list active"></i>
+                                                                        </div>
+                                                                        <p class="block-title-light">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="scrollable dash-table table-data">
+                                                                        <table class="stats-table">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td class="item-name">Chrome</td>
+                                                                                <td class="item-value">38%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Mobile Safari</td>
+                                                                                <td class="item-value">18%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Chrome Mobile</td>
+                                                                                <td class="item-value">18%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Firefox</td>
+                                                                                <td class="item-value">9%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Safari</td>
+                                                                                <td class="item-value">4%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">IE 10</td>
+                                                                                <td class="item-value">3%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">IE 9</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Edge</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Other</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Safari</td>
+                                                                                <td class="item-value">4%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">IE 10</td>
+                                                                                <td class="item-value">3%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">IE 9</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Edge</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Other</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="chart-container">
+                                                                        <div id="chart_browsers" class="chart-data donut-chart"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="block info-block">
+                                                                <div class="block-header">
+                                                                    <h4 class="block-title">OPERATING SYSTEM</h4>
+                                                                    <div class="view-switch">
+                                                                        <i class="icon icon-chart-line switch-graph"></i>
+                                                                        <i class="icon icon-menu switch-list active"></i>
+                                                                    </div>
+                                                                    <p class="block-title-light">LAST 30 DAYS</p>
+                                                                </div>
+                                                                <div class="block-content">
+                                                                    <div class="scrollable dash-table table-data" id="ps">
+                                                                        <table class="stats-table">
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <td class="item-name">Android</td>
+                                                                                <td class="item-value">38%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Windows</td>
+                                                                                <td class="item-value">18%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">iOS</td>
+                                                                                <td class="item-value">18%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Windows phone</td>
+                                                                                <td class="item-value">9%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">osX</td>
+                                                                                <td class="item-value">4%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Linux</td>
+                                                                                <td class="item-value">3%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Blackberry</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Samsung</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Symbian</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Windows phone</td>
+                                                                                <td class="item-value">9%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">osX</td>
+                                                                                <td class="item-value">4%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Linux</td>
+                                                                                <td class="item-value">3%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Blackberry</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Samsung</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="item-name">Symbian</td>
+                                                                                <td class="item-value">1%</td>
+                                                                                <td class="item-value">4.586</td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <div class="chart-container">
+                                                                        <div id="chart_os" class="chart-data donut-chart"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 							            </div>
 							            <div id="tab-3" role="tabpanel" class="tab-pane">
-							                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita beatae debitis, aliquam sit provident aperiam voluptate sapiente suscipit, sed nemo.
-							            </div>
+                                            <div class="pm-editor">
+                                                <div class="pm-editor__header">
+                                                    <div class="pm-editor__header-inner">
+                                                      <div class="revision revision--current">
+                                                            <span class="published"><span class="icon left icon-check"></span>Published</span>
+                                                            <div class="text-wrap">
+                                                                <h2>How to pet a pet - Christmas special</h2>
+                                                                <span class="date">Created: December 12 2014.</span>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <span class="date">By: Sven Al Hamad</span>
+                                                            </div>
+                                                            <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                            <div class="actions">
+                                                                <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pm-editor__body">
+                                                    <div class="revisions">
+                                                        <ul>
+                                                            <li class="revision revision--previous">
+                                                                <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                                <div class="actions">
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="revision revision--previous revision--actions">
+                                                                <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                                <div class="actions">
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="revision revision--previous">
+                                                                <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                                <div class="actions">
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="revision revision--previous">
+                                                                <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                                <div class="actions">
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                                </div>
+                                                            </li>
+                                                            <li class="revision revision--previous">
+                                                                <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                                                                <span class="date">Last edited: December 12 2014.</span>
+                                                                <a href="#" class="set"><span class="icon left icon-cog"></span></a>
+                                                                <div class="actions">
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Activate</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">View</button>
+                                                                    <button type="button" class="btn btn-default save" data-dismiss="modal">Create New</button>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div> 
+                                                </div>
+                                            </div>
+							            </div> 
 
 							        </div><!-- /.tabs__content -->
 
@@ -946,6 +1472,56 @@
         </button>
     </div>
 </footer>
+
+<div class="modal modal--new-page" id="modal-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog modal-show">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Revisions</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="page-options">
+                    <ul class="page-options__page-types">
+                        <li class="page-options__page-type page-options__page-type--blog">
+                            <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                            <span>Last edited: December 12 2014.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                            </div>
+                        </li>
+                        <li class="page-options__page-type page-options__page-type--presentation">
+                            <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                            <span>Last edited: December 12 2014.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                            </div>
+                        </li>
+                        <li class="page-options__page-type page-options__page-type--static">
+                            <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                            <span>Last edited: December 12 2014.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                            </div>
+                        </li>
+                        <li class="page-options__page-type page-options__page-type--category">
+                            <h3>How to pet a pet lorem ipsum very importaint deceision</h3>
+                            <span>Last edited: December 12 2014.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-default save" data-dismiss="modal">Delete</button>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
 </div><!-- /.master -->
 
 
@@ -954,15 +1530,27 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="vendor/moment/moment.min.js"></script>
 
-<!-- DateRange Plugin -->
-<script type="text/javascript" src="vendor/daterange/daterangepicker.min.js"></script>
-<!-- DateTime Plugin -->
-<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+
 <!-- Select2 Plugin Plugin -->
 <script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="js/list_switcher.js"></script>
+
+<script src="js/moment.min.js"></script>
+
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="vendor/d3/d3.min.js" charset="utf-8"></script>
+<script src="vendor/c3/c3.min.js"></script>
+
+<script src="js/dashboard/dashboard_charts.js"></script>
+<script src="js/dashboard/dashboard_tweaks.js"></script>
+
 <script type="text/javascript" src="js/onload.js"></script>
 
 </body>
