@@ -1,0 +1,91 @@
+.dashboard-content--lite {
+	.block-title {
+		margin-top: 7px;
+	}
+
+	.block-title-light {
+		margin-top: 0;
+	}
+
+	.counter-label {
+		margin-bottom: 10px;
+		color: #666666;
+		text-transform: uppercase;
+
+		.icon {
+			color: $color-primary;
+
+			&:before {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.counter-num {
+		color: #313131;
+		font-size: 60px;
+		line-height: 1;
+	}
+
+	.counter-group {
+		display: inline-block;
+		float: left;
+		width: 50%;
+		margin: 0;
+	}
+
+	.counter-group-sm {
+		margin-left: 0;
+
+		.counter-num {
+			margin-bottom: 30px;
+		}
+
+		.counter-label {
+			margin-bottom: 10px;
+			
+			font-size: 14px;
+
+			opacity: 1;
+		}
+	}
+	
+	.todo-list {
+		height: 100%;
+		overflow: hidden;
+		
+		li {
+			border-bottom: 1px solid #cdcdcd;
+			margin: 0 20px 10px 0;
+			padding: 10px 0;
+
+			color: #313131;
+
+			p {
+				font-size: 14px;
+				margin-bottom: 0;
+			}
+		}
+
+		.date {
+			color: #666666;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+
+	.block-dismiss {
+		color: #666666;
+	}
+
+	.icon-close-light {
+		color: transparentize(#434d55, 0.5);
+	}
+
+	@media (max-width: 992px) and (min-width: 485px) {
+		.counter-block-element {
+			display: block;
+			width: 100%;
+		}
+	}
+}

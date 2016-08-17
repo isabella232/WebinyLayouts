@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html class="ie-all ie-6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html class="ie-all ie-7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie-all ie-8" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 9]>
+<html class="ie-all ie-9" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WEBINY</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link href="vendor/select2/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="vendor/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Range date picker -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-daterangepicker-master/daterangepicker.css" />
+
+    <!-- Load c3.css -->
+    <link href="vendor/c3/c3.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/webiny.css">
+</head>
+<body>
+<div class="master minimized">
+<div class="master-navigation">
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="nav" data-toggle="xcollapse" data-target=".navbar-collapse">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="#" class="search">
+        </a>
+        <a href="#" class="logo"><img src="img/logo.png" width="62" height="20" alt="Webiny"></a>
+
+        <div class="package">
+            <p>Package:<a href="#">Starter</a><a href="#" class="upgrade">Upgrade</a></p>
+        </div>
+        <div class="domain-picker">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    <span class="domain-name">www.badabing.com.hr</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation" class="spec"><a role="menuitem" tabindex="-1" href="#"> + Add new
+                        website</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.booking.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.amazon.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.apple.com</a></li>
+                </ul>
+            </div>
+            <a href="#" class="open">
+                <span class="icon-external-link icon"></span>
+            </a>
+        </div>
+        <div class="dropdown profile-holder">
+            <a href="#" class="profile" id="dropdownMenu4" data-toggle="dropdown">
+                <span class="icon-user icon"></span>
+                <span class="user">Sven Al Hamad</span>
+                <span class="icon-caret-down icon"></span>
+            </a>
+
+            <div class="drop dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+                <span class="top-arr"></span>
+                <ul>
+                    <li>
+                        <a href="#">Account preferences</a>
+                        <span>Set your account and user preferences </span>
+                    </li>
+                    <li>
+                        <a href="#">Payment Gateways</a>
+                        <span>Set gateways and offline payments</span>
+                    </li>
+                    <li class="last">
+                        <a href="#">Some third option</a>
+                        <span>Short option description goes here</span>
+                    </li>
+                </ul>
+                <div class="drop-footer">
+                    <a href="#" class="logout">
+                        <span class="icon-sign-out icon-bell icon"></span>
+                        <span>Log out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="notification-holder">
+            <span class="num" data-toggle="dropdown">12</span>
+            <a href="#" class="notification" id="dropdownMenu5" data-toggle="dropdown">
+                <span class="icon-bell icon"></span>
+            </a>
+
+            <div class="drop dropdown-menu" role="menu" aria-labelledby="dropdownMenu5">
+                <span class="top-arr"></span>
+                <ul>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class=" icon-exclamation-circle icon"></span>
+
+                        <div class="drop-txt">
+                            <a href="#">Your payment is due </a>
+                            <span>Review</span>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="all">VIEW ALL (14 MORE)</a>
+
+                <div class="drop-footer">
+                    <a href="#" class="read">
+                        <span class="icon-check icon"></span>
+                        Mark all as read</a>
+                    <a href="#" class="settings">Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="subheader">
+    <a href="#" class="tablet-navigation"><span></span><span></span><span></span></a>
+
+    <div class="search">
+        <input name="" type="text" value="Find content, options or function">
+        <a href="#" class="btn">
+            <span class="icon-search icon"></span>
+        </a>
+
+        <div class="autosuggest">
+            <div class="functions">
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+            </div>
+            <div class="functions sec">
+                <h2>Recently viewed</h2>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Site tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Funnel tracking</a></li>
+                    <li>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Track record</a></li>
+                </ul>
+            </div>
+            <div class="plain-search">
+                <ul>
+                    <li>
+                        <span class="icon-file-o icon"></span>
+                        <a href="#">But what about private trackers?</a>
+                        <a href="#" class="url">www.kitchen.org/content/tracking for dummies</a>
+                    </li>
+                    <li>
+                        <span class="icon-file-o icon"></span>
+                        <a href="#">But what about private trackers?</a>
+                        <a href="#" class="url">www.kitchen.org/content/tracking for dummies</a>
+                    </li>
+                </ul>
+                <a href="#" class="all">SHOW ALL RESULTS</a>
+            </div>
+            <div class="footer">
+                <p>CTRL+F</p>
+
+                <p><span>Use arrows to navigate</span>
+                    <span class="icon-keys icon"></span>
+                </p>
+
+                <p class="enter">Press Enter to activate</p>
+            </div>
+        </div>
+    </div>
+    <div class="quicklinks">
+        <h2>QUICK LINKS</h2>
+        <span class="icon-caret-down icon"></span>
+        <ul>
+            <li><a href="#">New posts</a></li>
+            <li><a href="#">New posts</a></li>
+            <li><a href="#">New posts</a></li>
+        </ul>
+        <div class="dropdown add-new">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu9" data-toggle="dropdown">
+                Add new
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
+                <span class="top-arr"></span>
+                <li role="presentation">
+                   <div class="checkbox-custom mb5">
+                        <input id="th" type="checkbox">
+                        <label for="th">Add new post</label>
+                    </div>
+                </li>
+                <li role="presentation">
+                    <div class="checkbox-custom mb5">
+                        <input id="fo" type="checkbox">
+                        <label for="fo">Add new tag</label>
+                    </div>
+                </li>
+                <li role="presentation">
+                    <div class="checkbox-custom mb5">
+                        <input id="fi" type="checkbox">
+                        <label for="fi">Mange users</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="show">
+    </div>
+</div>
+    <div class="navbar-collapse collapse" id="left-sidebar">
+        <div class="shield"></div>
+        <div class="domain-picker-mobile visible-xs">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu10" data-toggle="dropdown">
+                    <span class="domain-name">www.badabing.com.hr</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu10">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.booking.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.amazon.com</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">www.apple.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-holder visible-xs">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="left-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dashboard"><a href="#">
+                    <span class="icon-gauge icon app-icon"></span>
+                    <span class="app-title">Dashboard</span>
+                    <span class="icon-caret-down icon mobile-caret"></span>
+                </a>
+                </li>
+                <li class="content active">
+                    <a href="#" data-open-submenu="content">
+                        <span class="icon-browser icon app-icon"></span>
+                        <span class="app-title">Content</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                    <ul class="subnavigation only-mob">
+                        <li><a href="#">Posts</a>
+                            <a href="#" class="small"><span>Add post</span>
+                                <span class="icon-plus-circled icon"></span>
+                            </a>
+                        </li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active"><a href="#">Menus</a>
+                            <ul>
+                                <li><a href="#">Add new page</a></li>
+                                <li><a href="#">View all pages</a></li>
+                                <li><a href="#">Download all content</a></li>
+                                <li><a href="#">Sub item No. 4</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Widgets</a></li>
+                        <li><a href="#">Plugins</a></li>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Stats</a></li>
+                    </ul>
+                </li>
+                <li class="booking">
+                    <a href="#" data-open-submenu="booking">
+                        <span class="icon-calendar icon app-icon"></span>
+                        <span class="app-title">Booking</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+
+                </li>
+                <li class="store">
+                    <a href="#" data-open-submenu="store">
+                        <span class="icon-basket_n icon app-icon"></span>
+                        <span class="app-title">Store</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+                <li class="settings">
+                    <a href="#" data-open-submenu="settings">
+                        <span class="icon-settings icon app-icon"></span>
+                        <span class="app-title">Settings</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+                <li class="users">
+                    <a href="#" data-open-submenu="user">
+                        <span class="icon-user icon app-icon"></span>
+                        <span class="app-title">Users</span>
+                        <span class="icon-caret-down icon mobile-caret"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="left-menu-submenu">
+            <div>
+                <ul class="subnavigation" data-this-menu="content" style="display: block;">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small quick-link"><span>Add post</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active">
+                        <a href="#">Menus</a>
+                        <span class="icon-caret-down icon"></span>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li class="active"><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Widgets</a>
+                        <span class="icon-caret-down icon"></span>
+                    </li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+                <ul class="subnavigation" data-this-menu="booking">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small"><span>Add BOOKING</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active"><a href="#">Menus</a>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+                <ul class="subnavigation" data-this-menu="store">
+                    <li><a href="#">Posts</a>
+                        <a href="#" class="small"><span>Add ITEM</span>
+                            <span class="icon-plus-circled icon"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active"><a href="#">Menus</a>
+                        <ul>
+                            <li><a href="#">Add new page</a></li>
+                            <li><a href="#">View all pages</a></li>
+                            <li><a href="#">Download all content</a></li>
+                            <li><a href="#">Sub item No. 4</a></li>
+                            <li><a href="#">Sub item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div><!-- /.master-navigation -->
+<div class="master-content master-dashboard--lite">
+    <div class="master-content__header">
+
+        <div class="master-content__left">
+            <h2 class="master-content__title">Dashboard Lite</h2>
+        </div>
+        <div class="master-content__center">
+            <div class="user-welcome">
+                <div class="user-welcome__avatar">
+                    <div class="avatar avatar--inline avatar--small">
+                        <span class="avatar-placeholder avatar-placeholder--no-border"><img src="img/avatars/placeholder.png" alt="sven avatar" class="avatar img-responsive" height="157" width="157"></span>
+                    </div>
+                </div>
+                <h3 class="user-welcome__message">Hi Sven, welcome back.</h3>
+            </div>
+        </div>
+        <div class="master-content__right">
+            <a href="#" class="btn btn-default btn-lg">
+                <span>Change Avatar</span>
+            </a>
+            <a href="#" class="btn btn-default btn-lg">
+                <span>Edit Profile</span>
+            </a>
+        </div>
+
+    </div><!-- /.master-content__header -->
+    <div class="dashboard-content dashboard-content--lite">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="block block--slider">
+                        <div class="block-header">
+                            <h4 class="block-title-light pull-left">Updates</h4>
+                            <a href="#" class="block-dismiss">Dismiss <i class="icon icon-close-light"></i></a>
+                        </div>
+                        <div class="block-content block-content--dynamic-height">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide slide--active">
+                                        <div class="slide__image">
+                                            <img src="img/ruby.jpg" alt="">
+                                        </div>
+                                        <div class="slide__content">
+                                            <div class="slide__title">You asked for it - Ruby integration now supported</div>
+                                            <div class="slide__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quibusdam, quos dolore ab ut commodi esse tempore quo perferendis neque beatae voluptate eius suscipit voluptates repellat nulla, hic. Quasi, beatae!</div>
+                                        </div>
+                                        <div class="slide__button">
+                                            <a href="#" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                                <div class="slider__pagination">
+                                    <span class="slider__page slider__page--active"></span>
+                                    <span class="slider__page"></span>
+                                    <span class="slider__page"></span>
+                                    <span class="slider__page"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+
+            </div><!-- /.row -->
+
+
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">QUICK STATS</h4>
+                            <p class="block-title-light">View Stats</p>
+                        </div>
+                        <div class="block-content">
+
+                           <div class="counter-block-element dash-counter">
+                                <div class="counter-group counter-main">
+                                    <div class="counter-label"><i class="icon icon-users"></i>Today's Visitors</div>
+                                    <div class="counter-num hl-element">285</div>
+                                </div>
+                                <div class="counter-group">
+                                    <div class="counter-label"><i class="icon icon-page-check"></i>Today's Views</div>
+                                    <div class="counter-num hl-element">3.876</div>
+                                </div>
+                            </div>
+
+                            <div class="counter-block-element dash-counter">
+                                <div class="counter-group-sm">
+                                    <div class="counter-label"><i class="icon icon-winner-cup"></i>Page of the day</div>
+                                    <div class="counter-num">The night of the headless horseman - Revised version</div>
+                                    <div class="counter-label">Created: 28.7.2015</div>
+                                    <div class="counter-label"><i class="icon icon-chart-line"></i> 2458 Views</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">NOTIFICATION</h4>
+                            <p class="block-title-light">View All</p>
+                        </div>
+                        <div class="block-content">
+                            <div class="notifications-list scrollable ps-container ps-active-y">
+                                <ul>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p><strong>6 articles</strong> are waiting for a review</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p><strong>Highest share count</strong> on article “The night of the headless horseman</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p>You have <strong>2 articles</strong> unfinished for over a month</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info list-icon"></i>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-info"></i>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                    </li>
+                                </ul>
+                            <div class="ps-scrollbar-x-rail" style="width: 798px; display: none; left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="opacity: 0.5; top: 0px; height: 345px; display: inherit; right: 0px;"><div class="ps-scrollbar-y" style="top: 0px; height: 240px;"></div></div></div>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">TO DO's</h4>
+                            <button type="button" class="btn btn-default btn-add btn-add-task"><span class="btn-caption">Add Task</span></button>
+                            <div class="header-options">
+                                <p class="block-title-light">View All</p>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <div class="todo-list scrollable ps-container ps-active-y">
+                                <ul>
+                                    <li>
+                                        <p>You have 2 articles unfinished for over a month</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>6 articles are waiting for a review</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>Highest share count on article “The night of the headless horseman</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>You have 2 articles unfinished for over a month</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>You have 2 articles unfinished for over a month</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                    <li>
+                                        <p>“The night of the headless horsemen” is performing 80% better then in last 100 days</p>
+                                        <div class="date">2d ago</div>
+                                    </li>
+                                </ul>
+                            <div class="ps-scrollbar-x-rail" style="width: 798px; display: none; left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="opacity: 0.5; top: 0px; height: 345px; display: inherit; right: 0px;"><div class="ps-scrollbar-y" style="top: 0px; height: 240px;"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.row -->
+
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">QUICK STATS</h4>
+                            <p class="block-title-light">View Stats</p>
+                        </div>
+                        <div class="block-content block-content--empty">
+                            <div class="blank-state-image">
+                                <img src="img/blank-state-baloon.jpg" alt="">
+                            </div>
+                            <p>Unfortunatly, there’s nothing to show.</p>
+                            <button class="btn btn-success">Add new page</button>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">TOP BROWSERS</h4>
+                            <p class="block-title-light">View All</p>
+                        </div>
+                        <div class="block-content block-content--empty">
+                            <div class="blank-state-image">
+                                <img src="img/blank-state-notifications.jpg" alt="">
+                            </div>
+                            <p>Nothing going on right now.</p>
+                        </div>
+                    </div>
+                </div><!-- /.col-md-12 -->
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="block notifications-block">
+                        <div class="block-header">
+                            <h4 class="block-title">TO DO's</h4>
+                            <button type="button" class="btn btn-default btn-add btn-add-task"><span class="btn-caption">Add Task</span></button>
+                            <div class="header-options">
+                                <p class="block-title-light">View All</p>
+                            </div>
+                        </div>
+                        <div class="block-content block-content--empty">
+                            <div class="blank-state-image">
+                                <img src="img/blank-state-island.jpg" alt="">
+                            </div>
+                            <p>Nothing to do... Nice!</p>
+                            <button class="btn btn-success">Create a todo</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="block-header block-header-outer">
+                            <h4 class="block-title">GET STARTED</h4>
+                        </div>
+                        <div class="block-content block-content--dynamic-height">
+                            <div>
+                                <ul class="block-list">
+                                    <li class="block-list__item">
+                                        <div class="block-list__item-image">
+                                            <img src="img/build-templates.jpg" alt="">
+                                        </div>
+                                        <a href="#" class="block-list__item-text">
+                                            Learn to build page templates
+                                        </a>
+                                    </li>
+                                    <li class="block-list__item">
+                                        <div class="block-list__item-image">
+                                            <img src="img/market-yourself-and-content.jpg" alt="">
+                                        </div>
+                                        <a href="#" class="block-list__item-text">
+                                            How to market yourself and your content?
+                                        </a>
+                                    </li>
+                                    <li class="block-list__item">
+                                        <div class="block-list__item-image">
+                                            <img src="img/SEO-and-Webiny.jpg" alt="">
+                                        </div>
+                                        <a href="#" class="block-list__item-text">
+                                            SEO and Webiny - It’s all there
+                                        </a>
+                                    </li>
+                                    <li class="block-list__item">
+                                        <div class="block-list__item-image">
+                                            <img src="img/Webiny-stats.jpg" alt="">
+                                        </div>
+                                        <a href="#" class="block-list__item-text">
+                                            Use Webiny Stats to understand your readers
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="block">
+                        <div class="block-header block-header-outer">
+                            <h4 class="block-title">RECOMENDED READING</h4>
+                            <div class="header-options">
+                                <button type="button" class="btn btn-default"><span class="btn-caption">Visit Blog</span></button>
+                            </div>
+                        </div>
+                        <div class="block-content block-content--transparent block-content--dynamic-height no-padding">
+                            <div>
+                                <div class="block-posts">
+                                    <div class="block-post">
+                                        <div class="block-post__thumbnail">
+                                            <img src="http://lorempixel.com/240/150/city" alt="">
+                                        </div>
+                                        <div class="block-post__content">
+                                            <div class="block-post__category">Content strategy</div>
+                                            <h3 class="block-post__title">How to Make Your Online Content Viral</h3>
+                                            <p class="block-post__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nisi, aperiam distinctio, repellendus, illum sint temporibus quas, natus quidem accusamus eum. Expedita animi, hic possimus vero, porro autem pariatur iure.</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-post">
+                                        <div class="block-post__thumbnail">
+                                            <img src="http://lorempixel.com/240/150/people" alt="">
+                                        </div>
+                                        <div class="block-post__content">
+                                            <div class="block-post__category">Technology</div>
+                                            <h3 class="block-post__title">Think about your mobile users!</h3>
+                                            <p class="block-post__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quos ratione qui rerum nihil, tempora unde natus, iste voluptate dolores adipisci nemo. Aperiam asperiores unde similique placeat quis? Assumenda, illo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-post">
+                                        <div class="block-post__thumbnail">
+                                            <img src="http://lorempixel.com/240/150/city" alt="">
+                                        </div>
+                                        <div class="block-post__content">
+                                            <div class="block-post__category">Content Strategy</div>
+                                            <h3 class="block-post__title">How to Make Your Online Content Viral</h3>
+                                            <p class="block-post__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque soluta saepe ratione aliquid hic quibusdam error tenetur laboriosam libero, sapiente dicta perspiciatis amet aspernatur, quo commodi, debitis ex. Officiis, quae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="developer-mode switch switch--yes-no switch--inline">
+        <span class="switch-label switch-label--left">Developer mode</span>
+        <input id="developerModeSwitch" type="checkbox" name="developerModeSwitch"  checked>
+        <label for="developerModeSwitch" data-on="On" data-off="Off"></label>
+    </div>
+    <ul class="links">
+        <li><a href="#">Webiny 2.2</a></li>
+        <li><a href="#">Legal</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Support</a></li>
+    </ul>
+    <ul class="links secondary">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">GitHub</a></li>
+    </ul>
+    <div class="dropdown sort feedback-wrap">
+        <button class="btn btn-default dropdown-toggle feedback" type="button" onclick="alert('Opens a modalbox')">
+            <span class="icon icon-comments"></span>
+            <span>HELP US WITH FEEDBACK</span>
+        </button>
+    </div>
+</footer>
+
+<div class="modal modal--new-page" id="modal-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog modal-show">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create new page</h4>
+                <button type="button" class="close md-close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body no-padding">
+                <div class="page-options">
+                    <ul class="page-types">
+                        <li class="page-type page-type--blog">
+                            <h3 class="page-type__title">Blog post</h3>
+                            <span class="page-type__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, saepe vel nam soluta totam voluptatem.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-primary create">Create</button>
+                            </div>
+                        </li>
+                        <li class="page-type page-type--presentation">
+                            <h3 class="page-type__title">Presentation page</h3>
+                            <span class="page-type__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quod odio sint, facere enim quia.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-primary create">Create</button>
+                            </div>
+                        </li>
+                        <li class="page-type page-type--static">
+                            <h3 class="page-type__title">Static page</h3>
+                            <span class="page-type__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nesciunt magni, placeat ea inventore voluptate?</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-primary create">Create</button>
+                            </div>
+                        </li>
+                        <li class="page-type page-type--category">
+                            <h3 class="page-type__title">Generic Category</h3>
+                            <span class="page-type__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga animi, exercitationem similique necessitatibus officia.</span>
+                            <div class="actions">
+                                <button type="button" class="btn btn-primary create">Create</button>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+
+            <div class="modal-footer new-category">
+                <button type="button" class="close md-close" aria-hidden="true">×</button>
+                <h4 class="new-category__title">Create New Category</h4>
+
+                <div class="new-category__options">
+                    <div class="form-group">
+                        <input type="email" placeholder="Choose category name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Type a shot description"></textarea>
+                    </div>
+
+                    <div class="new-category__advanced-options">
+                        <a href="#" class="new-category__advanced-toggle">Advanced Options</a>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="URL Format" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <select class="dropdown" placeholder="<Prefix>">
+                                <option value="1">Prefix 1</option>
+                                <option value="2">Prefix 2</option>
+                                <option value="3">Prefix 3</option>
+                                <option value="4">Prefix 4</option>
+                            </select>
+                        </div>
+
+                        <div class="new-category__color">
+                            <h4 class="new-category__color-title">Category color</h4>
+                            
+                            <div class="radio-custom radio-color">
+                                <input id="color1" name="color" type="radio" value="#f16d7b">
+                                <label for="color1" style="background-color: #f16d7b;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color2" name="color" type="radio" value="#c33333">
+                                <label for="color2" style="background-color: #c33333;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color3" name="color" type="radio" value="#a763a8">
+                                <label for="color3" style="background-color: #a763a8;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color4" name="color" type="radio" value="#605ca8">
+                                <label for="color4" style="background-color: #605ca8;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color5" name="color" type="radio" value="#438cca">
+                                <label for="color5" style="background-color: #438cca;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color6" name="color" type="radio" value="#00bef2">
+                                <label for="color6" style="background-color: #00bef2;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color7" name="color" type="radio" value="#3bb778">
+                                <label for="color7" style="background-color: #3bb778;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color8" name="color" type="radio" value="#7cc476">
+                                <label for="color8" style="background-color: #7cc476;"></label>
+                            </div>
+                            <div class="radio-custom radio-color">
+                                <input id="color9" name="color" type="radio" value="#fff100">
+                                <label for="color9" style="background-color: #fff100;"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-block">Add New Category</button>
+
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+</div><!-- /.master -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="vendor/moment/moment.min.js"></script>
+
+
+<!-- Select2 Plugin Plugin -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="js/list_switcher.js"></script>
+
+<script src="js/moment.min.js"></script>
+
+<!-- DateRange Plugin -->
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+
+<!-- DateTime Plugin -->
+<script type="text/javascript" src="vendor/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="vendor/d3/d3.min.js" charset="utf-8"></script>
+<script src="vendor/c3/c3.min.js"></script>
+
+<script src="js/dashboard/dashboard_charts.js"></script>
+<script src="js/dashboard/dashboard_tweaks.js"></script>
+
+<script type="text/javascript" src="js/onload.js"></script>
+
+</body>
+</html>

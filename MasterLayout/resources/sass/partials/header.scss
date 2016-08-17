@@ -8,17 +8,22 @@
 }
 
 .master-content__center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+	@media (min-width: 1200px) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .master-content__right {
-	position: absolute;
-	top: 50%;
-	right: 50px;
-	transform: translateY(-50%);
+	@media (min-width: 1200px) {
+		position: absolute;
+		top: 50%;
+		right: 50px;
+		transform: translateY(-50%);
+	}
 }
 
 .master-content__title {
@@ -28,4 +33,28 @@
 
 .master-content__header--with-bg {
 	background-color: #fff;
+}
+
+.user-welcome {
+	
+}
+
+.user-welcome__avatar {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+
+	.avatar-placeholder {
+		margin: 0;
+	}
+}
+
+.user-welcome__message {
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+
+	color: #313131;
+	font-weight: normal;
+	font-size: 24px;
 }
