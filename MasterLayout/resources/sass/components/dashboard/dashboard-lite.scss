@@ -1,11 +1,95 @@
+.master-dashboard--lite {
+	background-color: #f2f2f2;
+
+	.master-content__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+
+		>div {
+			margin-bottom: 20px;
+		}
+
+		@media (min-width: 992px) {
+			flex-direction: row;
+
+			>div {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.master-content__center {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		transform: none;
+
+		float: none;
+	}
+
+	.master-content__right {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		transform: none;
+
+		float: none;
+	}
+
+	.btn-default {
+		border-color: #eee;
+		color: #666;
+		font-weight: 600;
+	}
+
+	.master-content__title {
+		margin-top: 0;
+	}
+}
+
 .dashboard-content--lite {
-	.block-title {
-		margin-top: 7px;
+	.block-header {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+
+		&:after {
+			content: none;
+		}
+
+		.btn-add {
+			width: auto;
+		}
 	}
 
 	.block-title-light {
 		margin-top: 0;
 	}
+
+	.header-options {
+		margin-left: auto;
+		margin-top: 0;
+
+	}
+
+	.block-header-outer {
+		.btn-default {
+			border: none;
+		}
+	}
+
+	.counter-block-element {
+		height: auto;
+		min-height: 130px;
+	}
+
 
 	.counter-label {
 		margin-bottom: 10px;
@@ -50,6 +134,21 @@
 		}
 	}
 	
+	.dash-counter--lite {
+		.counter-label {
+			display: inline-block;
+			margin-right: 20px;
+
+			color: #9f9f9f;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+
+	.block-content--transparent {
+		padding: 0;
+	}
+
 	.todo-list {
 		height: 100%;
 		overflow: hidden;

@@ -11035,6 +11035,7 @@ button.btn:active, button.btn.active {
 
 .panel-footer {
   border-top: 1px solid #f2f2f2;
+  overflow: hidden;
 }
 
 .panel--boxed {
@@ -11248,6 +11249,16 @@ fieldset legend {
   display: inline-block;
   background-color: #ebebeb;
   color: #fff;
+}
+
+.label {
+  position: relative;
+  float: left;
+  margin: 2px 2px;
+}
+
+.label:first-of-type {
+  margin-left: 0;
 }
 
 .label.label-default {
@@ -14566,6 +14577,14 @@ textarea.form-control {
 
 /*If navbar has a contextual bg we make menu links white*/
 /*traybin divider text. Used primarily in li navs*/
+.block--slider .block-header {
+  padding-top: 15px;
+}
+
+.block--slider .block-content {
+  padding-bottom: 20px;
+}
+
 .block--slider .block-title-light {
   text-transform: uppercase;
 }
@@ -14594,6 +14613,7 @@ textarea.form-control {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: left;
   }
 }
 
@@ -16269,12 +16289,120 @@ textarea.form-control {
   background-color: #fff;
 }
 
-.dashboard-content--lite .block-title {
-  margin-top: 7px;
+.master-dashboard--lite {
+  background-color: #f2f2f2;
+}
+
+.master-dashboard--lite .master-content__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.master-dashboard--lite .master-content__header > div {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .master-dashboard--lite .master-content__header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .master-dashboard--lite .master-content__header > div {
+    margin-bottom: 0;
+  }
+}
+
+.master-dashboard--lite .master-content__center {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  float: none;
+}
+
+.master-dashboard--lite .master-content__right {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  float: none;
+}
+
+.master-dashboard--lite .btn-default {
+  border-color: #eee;
+  color: #666;
+  font-weight: 600;
+}
+
+.master-dashboard--lite .master-content__title {
+  margin-top: 0;
+}
+
+.dashboard-content--lite .block-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-content--lite .block-header:after {
+  content: none;
+}
+
+.dashboard-content--lite .block-header .btn-add {
+  width: auto;
 }
 
 .dashboard-content--lite .block-title-light {
   margin-top: 0;
+}
+
+.dashboard-content--lite .header-options {
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.dashboard-content--lite .block-header-outer .btn-default {
+  border: none;
+}
+
+.dashboard-content--lite .counter-block-element {
+  height: auto;
+  min-height: 130px;
 }
 
 .dashboard-content--lite .counter-label {
@@ -16316,6 +16444,18 @@ textarea.form-control {
   margin-bottom: 10px;
   font-size: 14px;
   opacity: 1;
+}
+
+.dashboard-content--lite .dash-counter--lite .counter-label {
+  display: inline-block;
+  margin-right: 20px;
+  color: #9f9f9f;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.dashboard-content--lite .block-content--transparent {
+  padding: 0;
 }
 
 .dashboard-content--lite .todo-list {
@@ -18333,13 +18473,7 @@ footer .developer-mode ul li.active a {
 }
 
 .block-post__content {
-  padding: 20px 0;
-}
-
-@media (min-width: 767px) {
-  .block-post__content {
-    padding: 20px;
-  }
+  padding: 20px;
 }
 
 .block-post__category {
