@@ -54,6 +54,8 @@
 }
 
 .dashboard-content--lite {
+	padding: 20px 20px 0;
+
 	.block-header {
 		display: flex;
 		width: 100%;
@@ -109,6 +111,10 @@
 		color: #313131;
 		font-size: 60px;
 		line-height: 1;
+	}
+
+	.counter-group-sm .counter-num {
+	    font-size: 19px;
 	}
 
 	.counter-group {
@@ -175,10 +181,38 @@
 
 	.block-dismiss {
 		color: #666666;
+		white-space: nowrap;
+
+		.icon-close-light {
+			font-size: 12px;
+		}
 	}
 
 	.icon-close-light {
 		color: transparentize(#434d55, 0.5);
+	}
+
+	.block-content {
+		padding: 15px;
+	}
+
+	@media (max-width: 484px) {
+		.counter-group {
+			display: block;
+			float: none;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		.block-header {
+			padding: 25px 15px 0;
+		}
+
+		.header-options {
+			.block-title-light {
+				white-space: nowrap;
+			}
+		}
 	}
 
 	@media (max-width: 992px) and (min-width: 485px) {
@@ -186,5 +220,9 @@
 			display: block;
 			width: 100%;
 		}
+	}
+
+	@media (min-width: 992px) {
+		padding: 50px 50px 0;
 	}
 }
