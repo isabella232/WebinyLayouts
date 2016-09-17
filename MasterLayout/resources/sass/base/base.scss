@@ -1,5 +1,11 @@
+.master{
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .container-no-padding {
