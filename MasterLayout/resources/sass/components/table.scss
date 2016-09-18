@@ -33,6 +33,16 @@ table.table {
       border-right: none;
     }
   }
+  &.no-hover {
+    tbody tr {
+      &.active td.sorted, &:hover {
+        background: transparent !important;
+      }
+    }
+    > tbody > tr:hover > td {
+      background: transparent !important;
+    }
+  }
   thead {
     th {
       padding: 10px 15px;
